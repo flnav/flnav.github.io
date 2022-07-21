@@ -1,3 +1,6 @@
+---
+---
+
 // common.js
 
 // menu
@@ -17,49 +20,52 @@ $(document).ready(function () {
 });
 
 // masthead background
-$('.ui.inverted.masthead.segment').addClass(`bg${Math.ceil(Math.random() * 14)}`).removeClass('zoomed');// analytics
-$.getJSON('https://matomo.flpro.cn/', {
+$('.ui.inverted.masthead.segment').addClass(`bg${Math.ceil(Math.random() * 14)}`).removeClass('zoomed');
+
+{%- if site.data.analytics.matomo.site_id -%}
+// analytics
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
-    'idSite': '1',
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     $('#yesterday-visits').text(data.value);
 });
-$.getJSON('https://matomo.flpro.cn/', {
+$.getJSON('{{ site.data.analytics.matomo.url }}', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
-    'idSite': '1',
+    'idSite': '{{ site.data.analytics.matomo.site_id }}',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    'token_auth': '{{ site.data.analytics.matomo.token }}'
 }, function (data) {
     $('#yesterday-actions').text(data.value);
 });
 function updateAnalytics() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': '1',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         $('#today-visits').text(data.value);
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': '1',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function (data) {
         $('#today-actions').text(data.value);
     });
@@ -70,3 +76,4 @@ setInterval(function () {
         updateAnalytics();
     };
 }, 60000);
+{%- endif -%}
