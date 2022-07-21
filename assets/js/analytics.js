@@ -2,11 +2,11 @@
 
 // date range
 var establishedAt = new Date($('meta[name=established_at]').attr('content'));
-// function siteEstablishedDays() {
-//     let d = new Date();
-//     let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-//     return Math.floor((today - establishedAt) / 86400000 + 1);
-// };
+function siteEstablishedDays() {
+    let d = new Date();
+    let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    return Math.floor((today - establishedAt) / 86400000 + 1);
+};
 
 // clock
 $('#established-at').countdown(establishedAt, {
@@ -15,7 +15,9 @@ $('#established-at').countdown(establishedAt, {
     if (event.elapsed) {
         $(this).html(event.strftime('<div class="ui label"><i class="rocket icon"></i>已上线</div><div class="ui label">%D<div class="detail">天</div></div><div class="ui label">%-H<div class="detail">小时</div></div><div class="ui label">%-M<div class="detail">分</div></div><div class="ui label">%-S<div class="detail">秒</div></div>'));
     };
-});// visit
+});
+
+// visit
 var countUpOptions = {
     useEasing: true,
     useGrouping: true,
@@ -27,96 +29,96 @@ var countUpOptions = {
 var yesterdayVisitorsCountUp = new CountUp('yesterday-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayVisitsCountUp = new CountUp('yesterday-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var yesterdayActionsCountUp = new CountUp('yesterday-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-// var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOptions);
+var totalActionsCountUp = new CountUp('total-actions', 0, 0, 0, 2.5, countUpOptions);
 var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON('https://tongji.flpro.cn/', {
+$.getJSON(analyticsAPI.url, {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
-    'idSite': '1',
+    'idSite': analyticsAPI.id,
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+    'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayVisitorsCountUp.update(data.value);
 });
-$.getJSON('https://tongji.flpro.cn/', {
+$.getJSON(analyticsAPI.url, {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
-    'idSite': '1',
+    'idSite': analyticsAPI.id,
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+    'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayVisitsCountUp.update(data.value);
 });
-$.getJSON('https://tongji.flpro.cn/', {
+$.getJSON(analyticsAPI.url, {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
-    'idSite': '1',
+    'idSite': analyticsAPI.id,
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+    'token_auth': analyticsAPI.token
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
-    // $.getJSON('https://tongji.flpro.cn/', {
-    //     'module': 'API',
-    //     'method': 'VisitsSummary.getActions',
-    //     'idSite': '1',
-    //     'period': 'range',
-    //     'date': `last${siteEstablishedDays()}`,
-    //     'format': 'JSON',
-    //     'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
-    // }, function (data) {
-    //     totalActionsCountUp.update(data.value);
-    // });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': analyticsAPI.id,
+        'period': 'range',
+        'date': `last${siteEstablishedDays()}`,
+        'format': 'JSON',
+        'token_auth': analyticsAPI.token
+    }, function (data) {
+        totalActionsCountUp.update(data.value);
+    });
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'Live.getCounters',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         liveVisitorsCountUp.update(data[0].visitors);
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         todayVisitorsCountUp.update(data.value);
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         todayVisitsCountUp.update(data.value);
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         todayActionsCountUp.update(data.value);
     });
@@ -227,14 +229,14 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -252,14 +254,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var visits = [];
         for (var i in data) {
@@ -272,14 +274,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var actions = [];
         for (var i in data) {
@@ -339,13 +341,13 @@ visitHourlyChart.setOption({
                     type: 'dashed'
                 }
             },
-            axisLine: {
-                show: false
-            }
         },
         yAxis: {
             type: 'category',
             data: [],
+            splitLine: {
+                show: true
+            },
             axisLine: {
                 show: false
             }
@@ -420,14 +422,14 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart() {
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitTime.getVisitInformationPerServerTime',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
         'date': 'last7',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -603,14 +605,14 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart() {
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'UserCountry.getCountry',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'month',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var visitors = [];
         var visits = [];
@@ -686,9 +688,8 @@ setInterval(function () {
 }, 60000);
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
-// var firstYear = establishedAt.getFullYear();
-var firstYear = 2022;
-var maxYear = 2022;
+var firstYear = establishedAt.getFullYear();
+var maxYear = 2021;
 visitCalendarChart.setOption({
     baseOption: {
         title: {
@@ -719,13 +720,58 @@ visitCalendarChart.setOption({
             left: 0
         },
         calendar: [{
-            range: 2022,
+            range: 2016,
             right: 5
+        }, {
+            range: 2017,
+            right: 5,
+            top: 240
+        }, {
+            range: 2018,
+            right: 5,
+            top: 420
+        }, {
+            range: 2019,
+            right: 5,
+            top: 600
+        }, {
+            range: 2020,
+            right: 5,
+            top: 780
+        }, {
+            range: 2021,
+            right: 5,
+            top: 960
         }],
         series: [{
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 0,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 1,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 2,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 3,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 4,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 5,
             data: []
         }]
     },
@@ -744,20 +790,39 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 90
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 1220
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 2350
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 3480
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 4610
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 5740
             }]
         }
     }]
 });
 function updateVisitCalendarChart() {
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON(analyticsAPI.url, {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
-        'idSite': '1',
+        'idSite': analyticsAPI.id,
         'period': 'day',
-        // 'date': `last${siteEstablishedDays()}`,
-        'date': 'last364',
+        'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': analyticsAPI.token
     }, function (data) {
         var cursorYear = firstYear;
         var series = [{
@@ -766,7 +831,7 @@ function updateVisitCalendarChart() {
         }];
         for (var i in data) {
             if (data[i] !== 0) {
-                year = Number(i.slice(0, 0));
+                year = Number(i.slice(0, 4));
                 if (year > cursorYear && year <= maxYear) {
                     cursorYear = year;
                     series.push({
