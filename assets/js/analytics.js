@@ -712,56 +712,20 @@ visitCalendarChart.setOption({
         },
         visualMap: {
             min: 50,
-            max: 1000,
+            max: 300,
             calculable: true,
             orient: 'horizontal',
             top: 'top',
             left: 0
         },
         calendar: [{
-            range: 2018,
-            right: 5
-        }, {
-            range: 2019,
-            right: 5,
-            top: 240
-        }, {
-            range: 2020,
-            right: 5,
-            top: 420
-        }, {
-            range: 2021,
-            right: 5,
-            top: 600
-        }, {
             range: 2022,
-            right: 5,
-            top: 780
+            right: 5
         }],
         series: [{
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 0,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 1,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 2,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 3,
-            data: []
-        }, {
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 4,
             data: []
         }]
     },
@@ -780,22 +744,6 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 90
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 1220
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 2350
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 3480
-            }, {
-                orient: 'vertical',
-                left: 'center',
-                top: 4610
             }]
         }
     }]
@@ -818,7 +766,7 @@ function updateVisitCalendarChart() {
         }];
         for (var i in data) {
             if (data[i] !== 0) {
-                year = Number(i.slice(0, 4));
+                year = Number(i.slice(0, 0));
                 if (year > cursorYear && year <= maxYear) {
                     cursorYear = year;
                     series.push({
