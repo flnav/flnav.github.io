@@ -687,7 +687,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
-var firstYear = 2021;
+var firstYear = 2022;
 var maxYear = 2022;
 visitCalendarChart.setOption({
     baseOption: {
@@ -755,7 +755,7 @@ function updateVisitCalendarChart() {
         'idSite': '1',
         'period': 'day',
         // 'date': `last${siteEstablishedDays()}`,
-        'date': 'last1825',
+        'date': 'last364',
         'format': 'JSON',
         'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
