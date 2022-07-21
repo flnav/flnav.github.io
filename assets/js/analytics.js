@@ -2,11 +2,11 @@
 
 // date range
 var establishedAt = new Date($('meta[name=established_at]').attr('content'));
-// function siteEstablishedDays() {
-//     let d = new Date();
-//     let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-//     return Math.floor((today - establishedAt) / 86400000 + 1);
-// };
+  function siteEstablishedDays() {
+      let d = new Date();
+      let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+      return Math.floor((today - establishedAt) / 86400000 + 1);
+  };
 
 // clock
 $('#established-at').countdown(establishedAt, {
