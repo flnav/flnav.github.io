@@ -687,7 +687,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
-var firstYear = 2018;
+var firstYear = establishedAt.getFullYear();
 var maxYear = 2022;
 visitCalendarChart.setOption({
     baseOption: {
@@ -807,7 +807,7 @@ function updateVisitCalendarChart() {
         'idSite': '1',
         'period': 'day',
         // 'date': `last${siteEstablishedDays()}`,
-        'date': 'last1825',
+        'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
         'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
     }, function (data) {
