@@ -28,24 +28,24 @@ setInterval(function () {
     };
 }, 60000);// visit
 function updateVisit() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         $('#today-visitors img').attr('src', `https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-${encodeURIComponent(data.value)}-brightgreen.svg`);
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'Live.getCounters',
         'idSite': '1',
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         $('#live-visitors img').attr('src', `https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-${encodeURIComponent(data[0].visitors)}-brightgreen.svg`);
     });

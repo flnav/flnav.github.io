@@ -32,91 +32,91 @@ var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countU
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON('https://matomo.flpro.cn/', {
+$.getJSON('https://tongji.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
 }, function (data) {
     yesterdayVisitorsCountUp.update(data.value);
 });
-$.getJSON('https://matomo.flpro.cn/', {
+$.getJSON('https://tongji.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
 }, function (data) {
     yesterdayVisitsCountUp.update(data.value);
 });
-$.getJSON('https://matomo.flpro.cn/', {
+$.getJSON('https://tongji.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
-    // $.getJSON('https://matomo.flpro.cn/', {
+    // $.getJSON('https://tongji.flpro.cn/', {
     //     'module': 'API',
     //     'method': 'VisitsSummary.getActions',
     //     'idSite': '1',
     //     'period': 'range',
     //     'date': `last${siteEstablishedDays()}`,
     //     'format': 'JSON',
-    //     'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    //     'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     // }, function (data) {
     //     totalActionsCountUp.update(data.value);
     // });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'Live.getCounters',
         'idSite': '1',
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         liveVisitorsCountUp.update(data[0].visitors);
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         todayVisitorsCountUp.update(data.value);
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         todayVisitsCountUp.update(data.value);
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         todayActionsCountUp.update(data.value);
     });
@@ -227,14 +227,14 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -252,14 +252,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var visits = [];
         for (var i in data) {
@@ -272,14 +272,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var actions = [];
         for (var i in data) {
@@ -420,14 +420,14 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitTime.getVisitInformationPerServerTime',
         'idSite': '1',
         'period': 'day',
         'date': 'last7',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -603,14 +603,14 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'UserCountry.getCountry',
         'idSite': '1',
         'period': 'month',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var visitors = [];
         var visits = [];
@@ -712,20 +712,56 @@ visitCalendarChart.setOption({
         },
         visualMap: {
             min: 50,
-            max: 300,
+            max: 1000,
             calculable: true,
             orient: 'horizontal',
             top: 'top',
             left: 0
         },
         calendar: [{
-            range: 2022,
+            range: 2018,
             right: 5
+        }, {
+            range: 2019,
+            right: 5,
+            top: 240
+        }, {
+            range: 2020,
+            right: 5,
+            top: 420
+        }, {
+            range: 2021,
+            right: 5,
+            top: 600
+        }, {
+            range: 2022,
+            right: 5,
+            top: 780
         }],
         series: [{
             type: 'heatmap',
             coordinateSystem: 'calendar',
             calendarIndex: 0,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 1,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 2,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 3,
+            data: []
+        }, {
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 4,
             data: []
         }]
     },
@@ -744,12 +780,28 @@ visitCalendarChart.setOption({
                 orient: 'vertical',
                 left: 'center',
                 top: 90
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 1220
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 2350
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 3480
+            }, {
+                orient: 'vertical',
+                left: 'center',
+                top: 4610
             }]
         }
     }]
 });
 function updateVisitCalendarChart() {
-    $.getJSON('https://matomo.flpro.cn/', {
+    $.getJSON('https://tongji.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
@@ -757,7 +809,7 @@ function updateVisitCalendarChart() {
         // 'date': `last${siteEstablishedDays()}`,
         'date': 'last1825',
         'format': 'JSON',
-        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
     }, function (data) {
         var cursorYear = firstYear;
         var series = [{
@@ -766,7 +818,7 @@ function updateVisitCalendarChart() {
         }];
         for (var i in data) {
             if (data[i] !== 0) {
-                year = Number(i.slice(0, 0));
+                year = Number(i.slice(0, 4));
                 if (year > cursorYear && year <= maxYear) {
                     cursorYear = year;
                     series.push({
