@@ -18,48 +18,48 @@ $(document).ready(function () {
 
 // masthead background
 $('.ui.inverted.masthead.segment').addClass(`bg${Math.ceil(Math.random() * 14)}`).removeClass('zoomed');// analytics
-$.getJSON('https://tongji.flpro.cn/', {
+$.getJSON('https://matomo.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
 }, function (data) {
     $('#yesterday-visits').text(data.value);
 });
-$.getJSON('https://tongji.flpro.cn/', {
+$.getJSON('https://matomo.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+    'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
 }, function (data) {
     $('#yesterday-actions').text(data.value);
 });
 function updateAnalytics() {
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
     }, function (data) {
         $('#today-visits').text(data.value);
     });
-    $.getJSON('https://tongji.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': 'ec5654dfe0ebda9177699b2a97e1d97a'
+        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
     }, function (data) {
         $('#today-actions').text(data.value);
     });
