@@ -687,7 +687,7 @@ setInterval(function () {
 
 var visitCalendarChart = echarts.init(document.getElementById('visit-calendar'), 'light');
 // var firstYear = establishedAt.getFullYear();
-var firstYear = 2022;
+var firstYear = 2021;
 var maxYear = 2022;
 visitCalendarChart.setOption({
     baseOption: {
