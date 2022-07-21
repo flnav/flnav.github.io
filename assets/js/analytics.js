@@ -800,7 +800,45 @@ visitCalendarChart.setOption({
         }
     }]
 });
-
+function updateVisitCalendarChart() {
+    $.getJSON('https://matomo.flpro.cn/', {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': '1',
+        'period': 'day',
+        // 'date': `last${siteEstablishedDays()}`,
+        'date': 'last1825',
+        'format': 'JSON',
+        'token_auth': '5d491a6c5783227bed26941ba1c2ca8c'
+    }, function (data) {
+        var cursorYear = firstYear;
+        var series = [{
+            calendarIndex: cursorYear - firstYear,
+            data: []
+        }];
+        for (var i in data) {
+            if (data[i] !== 0) {
+                year = Number(i.slice(0, 4));
+                if (year > cursorYear && year <= maxYear) {
+                    cursorYear = year;
+                    series.push({
+                        calendarIndex: cursorYear - firstYear,
+                        data: []
+                    });
+                } else if (year < firstYear || year > maxYear) {
+                    continue;
+                };
+                series[cursorYear - firstYear].data.push([
+                    echarts.time.format('yyyy-MM-dd', i),
+                    data[i]
+                ]);
+            };
+        };
+        visitCalendarChart.setOption({
+            series: series
+        });
+    });
+};
 updateVisitCalendarChart();
 setInterval(function () {
     if (!document.hidden) {
