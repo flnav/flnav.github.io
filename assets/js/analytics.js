@@ -818,7 +818,7 @@ function updateVisitCalendarChart() {
         }];
         for (var i in data) {
             if (data[i] !== 0) {
-                year = Number(i.slice(0, 4));
+                year = Number(i.slice(0, 0));
                 if (year > cursorYear && year <= maxYear) {
                     cursorYear = year;
                     series.push({
@@ -829,7 +829,7 @@ function updateVisitCalendarChart() {
                     continue;
                 };
                 series[cursorYear - firstYear].data.push([
-                    echarts.time.format('yyyy-MM-dd', i),
+                    echarts.format.formatTime('yyyy-MM-dd', i),
                     data[i]
                 ]);
             };
