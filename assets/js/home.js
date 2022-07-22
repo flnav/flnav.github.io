@@ -28,24 +28,24 @@ setInterval(function () {
     };
 }, 60000);// visit
 function updateVisit() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         $('#today-visitors img').attr('src', `https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-${encodeURIComponent(data.value)}-brightgreen.svg`);
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'Live.getCounters',
         'idSite': '1',
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         $('#live-visitors img').attr('src', `https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-${encodeURIComponent(data[0].visitors)}-brightgreen.svg`);
     });

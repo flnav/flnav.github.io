@@ -32,91 +32,91 @@ var liveVisitorsCountUp = new CountUp('live-visitors-stat', 0, 0, 0, 2.5, countU
 var todayVisitorsCountUp = new CountUp('today-visitors-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayVisitsCountUp = new CountUp('today-visits-stat', 0, 0, 0, 2.5, countUpOptions);
 var todayActionsCountUp = new CountUp('today-actions-stat', 0, 0, 0, 2.5, countUpOptions);
-$.getJSON('https://analytics.flpro.cn/', {
+$.getJSON('https://matomo.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getUniqueVisitors',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+    'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
 }, function (data) {
     yesterdayVisitorsCountUp.update(data.value);
 });
-$.getJSON('https://analytics.flpro.cn/', {
+$.getJSON('https://matomo.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getVisits',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+    'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
 }, function (data) {
     yesterdayVisitsCountUp.update(data.value);
 });
-$.getJSON('https://analytics.flpro.cn/', {
+$.getJSON('https://matomo.flpro.cn/', {
     'module': 'API',
     'method': 'VisitsSummary.getActions',
     'idSite': '1',
     'period': 'day',
     'date': 'yesterday',
     'format': 'JSON',
-    'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+    'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
 }, function (data) {
     yesterdayActionsCountUp.update(data.value);
 });
 function updateVisit() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'range',
         'date': `last${siteEstablishedDays()}`,
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         totalActionsCountUp.update(data.value);
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'Live.getCounters',
         'idSite': '1',
         'lastMinutes': '30',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         liveVisitorsCountUp.update(data[0].visitors);
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         todayVisitorsCountUp.update(data.value);
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         todayVisitsCountUp.update(data.value);
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         todayActionsCountUp.update(data.value);
     });
@@ -227,14 +227,14 @@ visitSummaryChart.setOption({
 });
 visitSummaryChart.showLoading();
 function updateVisitSummaryChart() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getUniqueVisitors',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -252,14 +252,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getVisits',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var visits = [];
         for (var i in data) {
@@ -272,14 +272,14 @@ function updateVisitSummaryChart() {
             }]
         });
     });
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
         'period': 'day',
         'date': 'last90',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var actions = [];
         for (var i in data) {
@@ -420,14 +420,14 @@ function normalizeSymbolSize(val, data, resize) {
     };
 };
 function updateVisitHourlyChart() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitTime.getVisitInformationPerServerTime',
         'idSite': '1',
         'period': 'day',
         'date': 'last7',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var days = [];
         var visitors = [];
@@ -603,14 +603,14 @@ visitMapChart.setOption({
     }]
 });
 function updateVisitMapChart() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'UserCountry.getCountry',
         'idSite': '1',
         'period': 'month',
         'date': 'today',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var visitors = [];
         var visits = [];
@@ -801,7 +801,7 @@ visitCalendarChart.setOption({
     }]
 });
 function updateVisitCalendarChart() {
-    $.getJSON('https://analytics.flpro.cn/', {
+    $.getJSON('https://matomo.flpro.cn/', {
         'module': 'API',
         'method': 'VisitsSummary.getActions',
         'idSite': '1',
@@ -809,7 +809,7 @@ function updateVisitCalendarChart() {
         'date': `last${siteEstablishedDays()}`,
         // 'date': 'last1825',
         'format': 'JSON',
-        'token_auth': '12e9736392c3de09fd6aeba448b464ab'
+        'token_auth': '2f4ccd88534429cd8ccb3e3a35fea03b'
     }, function (data) {
         var cursorYear = firstYear;
         var series = [{
