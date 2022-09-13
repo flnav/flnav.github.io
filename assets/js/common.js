@@ -46,33 +46,34 @@ $.getJSON('{{ site.data.analytics.matomo.url }}', {
 }, function (data) {
     $('#yesterday-actions').text(data.value);
 });
-(function updateAnalytics() {
+function updateAnalytics() {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        'module': 'API',
+        'method': 'VisitsSummary.getVisits',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
+    }, function (data) {
+        $('#today-visits').text(data.value);
+    });
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        'module': 'API',
+        'method': 'VisitsSummary.getActions',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
+    }, function (data) {
+        $('#today-actions').text(data.value);
+    });
+};
+updateAnalytics();
+setInterval(function () {
     if (!document.hidden) {
-        $.getJSON('{{ site.data.analytics.matomo.url }}', {
-            'module': 'API',
-            'method': 'VisitsSummary.getVisits',
-            'idSite': '{{ site.data.analytics.matomo.site_id }}',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': '{{ site.data.analytics.matomo.token }}'
-        }, function (data) {
-            $('#today-visits').text(data.value);
-        });
-        $.getJSON('{{ site.data.analytics.matomo.url }}', {
-            'module': 'API',
-            'method': 'VisitsSummary.getActions',
-            'idSite': '{{ site.data.analytics.matomo.site_id }}',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': '{{ site.data.analytics.matomo.token }}'
-        }, function (data) {
-            $('#today-actions').text(data.value);
-        });
-    };
-    setTimeout(function () {
         updateAnalytics();
-    }, {{ site.update_interval }});
-})();
+    };
+}, 60000);
 {%- endif -%}

@@ -4,59 +4,64 @@
 // home.js
 
 // GitHub
-(function updateGitHubBadges() {
+function updateGitHub(repository) {
+    $('#github-watch img').attr('src', `https://img.shields.io/github/watchers/${repository}.svg?style=social&label=Watch`);
+    $('#github-star img').attr('src', `https://img.shields.io/github/stars/${repository}.svg?style=social&label=Star`);
+    $('#github-fork img').attr('src', `https://img.shields.io/github/forks/${repository}.svg?style=social&label=Fork`);
+};
+var repository = $('meta[name=repository]').attr('content');
+updateGitHub(repository);
+setInterval(function () {
     if (!document.hidden) {
-        let repository = $('meta[name=repository]').attr('content');
-        $('#github-star img').attr('src', `https://img.shields.io/github/stars/${repository}?style=social`);
-        $('#github-fork img').attr('src', `https://img.shields.io/github/forks/${repository}?style=social`);
+        updateGitHub(repository);
     };
-    setTimeout(function () {
-        updateGitHubBadges();
-    }, {{ site.update_interval }});
-})();
+}, 60000);
 
-// build time
+// version
 dayjs.locale('zh-cn');
 dayjs.extend(window.dayjs_plugin_relativeTime);
-(function updateBuildTimeBadge() {
+function updateVersion(timestamp) {
+    $('#version img').attr('src', `https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-${encodeURIComponent(dayjs(timestamp).fromNow())}-brightgreen.svg`);
+};
+var updateAt = $('meta[name=updated_at]').attr('content');
+updateVersion(updateAt);
+setInterval(function () {
     if (!document.hidden) {
-        $('#build-time img').attr('src', `https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E4%BA%8E-${encodeURIComponent(dayjs($('meta[name=built_at]').attr('content')).fromNow())}-brightgreen?logo=jekyll`);
+        updateVersion(updateAt);
     };
-    setTimeout(function () {
-        updateBuildTimeBadge();
-    }, {{ site.update_interval }});
-})();
+}, 60000);
 
 {%- if site.data.analytics.matomo.site_id -%}
 // visit
-(function updateVisitorBadges() {
+function updateVisit() {
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        'module': 'API',
+        'method': 'VisitsSummary.getUniqueVisitors',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        'period': 'day',
+        'date': 'today',
+        'format': 'JSON',
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
+    }, function (data) {
+        $('#today-visitors img').attr('src', `https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-${encodeURIComponent(data.value)}-brightgreen.svg`);
+    });
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        'module': 'API',
+        'method': 'Live.getCounters',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        'lastMinutes': '30',
+        'format': 'JSON',
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
+    }, function (data) {
+        $('#live-visitors img').attr('src', `https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-${encodeURIComponent(data[0].visitors)}-brightgreen.svg`);
+    });
+};
+updateVisit();
+setInterval(function () {
     if (!document.hidden) {
-        $.getJSON('{{ site.data.analytics.matomo.url }}', {
-            'module': 'API',
-            'method': 'VisitsSummary.getUniqueVisitors',
-            'idSite': '{{ site.data.analytics.matomo.site_id }}',
-            'period': 'day',
-            'date': 'today',
-            'format': 'JSON',
-            'token_auth': '{{ site.data.analytics.matomo.token }}'
-        }, function (data) {
-            $('#today-visitors img').attr('src', `https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-${encodeURIComponent(data.value)}-brightgreen?logo=matomo`);
-        });
-        $.getJSON('{{ site.data.analytics.matomo.url }}', {
-            'module': 'API',
-            'method': 'Live.getCounters',
-            'idSite': '{{ site.data.analytics.matomo.site_id }}',
-            'lastMinutes': '30',
-            'format': 'JSON',
-            'token_auth': '{{ site.data.analytics.matomo.token }}'
-        }, function (data) {
-            $('#live-visitors img').attr('src', `https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-${encodeURIComponent(data[0].visitors)}-brightgreen?logo=matomo`);
-        });
+        updateVisit();
     };
-    setTimeout(function () {
-        updateVisitorBadges();
-    }, {{ site.update_interval }});
-})();
+}, 60000);
 {%- endif -%}
 
 // search
