@@ -1,9 +1,10 @@
 google:
-  id: UA-100531691-1
+  id: UA-235123434-1
 
 matomo:
-  url: https://vps.irockbunny.com/analytics/
+  url: https://matomo.flpro.cn/
   domains:
-  - "*.byr-navi.com"
+  - "https://flshi.gitee.com/"
   site_id: 1
-  token: b20d2b5002a1241da41853f33eccccdd
+  token: 2f4ccd88534429cd8ccb3e3a35fea03b
+
