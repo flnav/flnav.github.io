@@ -2,7 +2,7 @@ google:
   id: UA-235123434-1
 
 matomo:
-  url: //47.113.194.125:8000/
+  url: http://47.113.194.125:8000/
   domains:
   - "https://flpro.cn/"
   site_id: 1
