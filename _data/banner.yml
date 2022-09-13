@@ -1,0 +1,17 @@
+message:
+  show: true
+  hitokoto: true
+  content: 操作系统升级到了“Jammy Jellyfish”
+  detail: 大概影响了15位用户的使用
+  color: black
+  icon: ubuntu
+  image: false
+  link: https://releases.ubuntu.com/22.04/
+
+advertisement:
+  show: false
+  content: 学术精进 系统构建20K词汇体系
+  detail: 云英语VB词汇建造师
+  color: black
+  icon: university
+  link: https://y-english.cn/
