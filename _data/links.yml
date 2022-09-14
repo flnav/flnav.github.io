@@ -387,7 +387,7 @@
       
     - name: 飛龍翻译
       style: large black
-      url: https://www.feilong.space/translate/
+      url: /source/translate/index.html
       
     - name: DeepL翻译器
       style: large basic

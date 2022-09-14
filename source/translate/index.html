@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Genius Translation</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="headband"></div>
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div class="content page posts-expand">
+    <div class="post-block" lang="zh-CN">
+      <div class="post-body">         
+<style>
+  #languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #languages img {
+    height: 2em;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #languages select {
+    height: 2em;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0 0.5em;
+    background-color: transparent;
+  }
+
+  #app textarea {
+    font-family: serif;
+    font-size: 110%;
+    width: 95%;
+    height: 15em;
+    min-height: 35vh;
+    line-height: 1.25em;
+    display: block;
+    margin: 8px auto;
+    resize: none;
+  }
+</style>
+<div class="headband"><a href="https://flpro.cn"><img src="https://flpro.cn/favicon.ico" alt="" width="40" align="middle"></a></div>
+
+<div id="app">
+  <div id="languages">
+    <label>
+      源语言
+      <select v-model="sl">
+        <option :value="c" v-for="(l, c) in allSl">{{l}}</option>
+      </select>
+      {{status}}
+    </label>
+    <img @click="copyright" alt="谷歌翻译" src="https://translate.google.cn/favicon.ico">
+    <label>
+      目标语言
+      <select v-model="tl">
+        <option :value="c" v-for="(l, c) in allTl">{{l}}</option>
+      </select>
+    </label>
+  </div>
+
+  <textarea @paste.prevent="onpaste" spellcheck="false" v-model="src" placeholder="请将复制的内容粘贴到此处！"></textarea>
+  <textarea spellcheck="false" v-model="dest"></textarea>
+</div>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script>
+  const data = {
+    allSl: {},
+    allTl: {},
+    sl: 'auto',
+    dsl: '',
+    tl: navigator.language,
+    src: '',
+    dest: '',
+    requestTimer: undefined,
+    requesting: 0
+  };
+
+  function setLanguageCodes(languages) {
+    data.allSl = languages.sl;
+    data.allTl = languages.tl;
+    for (const lang of navigator.languages) {
+        if (lang in languages.tl) {
+          data.tl = lang;
+          break;
+        }
+    }
+  }
+
+  function request() {
+    if (data.requestTimer !== undefined) {
+      clearTimeout(data.requestTimer);
+    }
+    data.requestTimer = setTimeout(function () {
+      data.requestTimer = undefined;
+      data.requesting++;
+      const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl='
+          + data.sl + '&tl=' + data.tl + '&dt=t&q=' + encodeURIComponent(data.src);
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", url);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          data.requesting--;
+          if (xhr.status === 200) {
+            let response = JSON.parse(xhr.response);
+            data.dsl = response[2];
+            data.dest = response[0].map(s => s[0]).join('');
+          } else {
+            data.dest = xhr.response;
+          }
+        }
+      };
+      xhr.send();
+    }, 500);
+  }
+
+  new Vue({
+    el: '#app',
+    data: data,
+    methods: {
+      onpaste: function (event) {
+        let text = (event.clipboardData || window.clipboardData).getData("text")
+            .replace(/[\u0001]/g, '=')
+		    .replace(/[\u0004]/g, '+')
+            .replace(/[\u0003]/g, '-')
+            .replace(/[\ufffe]/g, '')
+            .replace(/[\x00-\x09\x0b\x0c\x0e-\x1f]/g, '')
+            .replace(/(?:\r\n|\r|\n)(?![\u0000-\u2E7F])/g, '')
+            .replace(/-(?:\r\n|\r|\n)(?![\r\n])/g, '\u00ad')
+            .replace(/(?:\r\n|\r|\n)(?![\r\n])/g, ' ');
+        let target = event.target;
+        this.src = this.src.substr(0, target.selectionStart) + text + this.src.substr(target.selectionEnd);
+      },
+      copyright: function () {
+        let text = '翻译功能均由Google Translate提供。\n' +
+            '跳至官网查看结果？';
+        if (confirm(text)) {
+          let url = 'https://translate.google.cn?sl=' + this.sl + '&tl=' + this.tl
+              + '&text=' + encodeURIComponent(this.src);
+          window.open(url, '_blank').focus();
+        }
+      }
+    },
+    computed: {
+      status: function () {
+        return this.requestTimer !== undefined ? '输入中' :
+            this.requesting ? '翻译中' :
+                this.sl === "auto" && this.dsl in this.allSl ? this.allSl[this.dsl] : '';
+      }
+    },
+    watch: {
+      src: request,
+      sl: request,
+      tl: request
+    }
+  });
+</script>
+
+<script src="https://translate.googleapis.com/translate_a/l?client=gtx&cb=setLanguageCodes"></script>
+
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
