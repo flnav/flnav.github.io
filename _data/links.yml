@@ -9,7 +9,7 @@
       style: basic
       url: http://jwgl.sdust.edu.cn/
 
-    - name: 智慧山科
+    - name: 山科信息服务
       style: basic
       url: http://my.sdust.edu.cn/cas/login
 
@@ -54,10 +54,10 @@
       style: basic
       url: http://www.dianping.com/
 
-    # - name: 网易邮箱
-    #   icon: envelope red
-    #   style: basic
-    #   url: http://email.163.com/
+    - name: 网易邮箱
+      icon: envelope red
+      style: basic
+      url: http://email.163.com/
 
     - name: QQ邮箱
       icon: qq black
@@ -74,7 +74,6 @@
       style: basic
       url: https://mail.google.com/
 
-
     - name: 维基百科
       icon: wikipedia w black
       style: basic
@@ -88,14 +87,6 @@
     - name: 天眼查
       style: basic
       url: https://www.tianyancha.com/
-
-    - name: 稿定设计
-      style: basic
-      url: https://www.gaoding.com/
-
-    - name: MacWk
-      style: basic
-      url: https://macwk.com/
       
   - name: 社交
     links:
@@ -104,10 +95,10 @@
       style: basic
       url: https://weibo.com/
 
-    - name: 微信网页版
+    - name: 微信文件传输助手
       icon: weixin green
       style: basic
-      url: https://wx.qq.com/
+      url: https://filehelper.weixin.qq.com/
 
     - name: 百度贴吧
       icon: paw blue
@@ -119,11 +110,6 @@
       style: basic
       url: https://www.zhihu.com/
 
-    - name: Quora
-      icon: quora red
-      style: basic
-      url: https://www.quora.com/
-
     - name: Facebook
       icon: facebook f blue
       style: basic
@@ -133,11 +119,6 @@
       icon: google plus g red
       style: basic
       url: https://plus.google.com/
-
-    - name: Tumblr
-      icon: tumblr blue
-      style: basic
-      url: https://www.tumblr.com/
 
     - name: Instagram
       icon: instagram pink
@@ -149,25 +130,28 @@
       style: basic
       url: https://github.com/
 
-    - name: LinkedIn
-      icon: linkedin blue
-      style: basic
-      url: https://www.linkedin.com/
-
   - name: 娱乐
     links:
-    - name: 优酷
-      style: basic
-      url: https://youku.com/
+    - name: 哔哩哔哩
+      style: pink
+      url: https://bilibili.com/
+      
+    - name: 斗鱼
+      style: orange
+      url: https://douyu.com/
 
-    # - name: 土豆
-    #   style: basic
-    #   url: https://tudou.com/
+    - name: 腾讯视频
+      style: basic
+      url: https://v.qq.com/
 
     - name: Youtube
       icon: youtube red
       style: basic
       url: https://youtube.com/
+      
+    - name: 优酷
+      style: basic
+      url: https://youku.com/
 
     - name: 爱奇艺
       style: green
@@ -177,14 +161,6 @@
       style: orange
       url: http://mgtv.com/
 
-    - name: 腾讯视频
-      style: basic
-      url: https://v.qq.com/
-
-    - name: 哔哩哔哩
-      style: pink
-      url: https://bilibili.com/
-
     - name: AcFun
       style: orange
       url: https://www.acfun.cn/
@@ -193,50 +169,10 @@
       style: basic
       url: https://ac.qq.com/
 
-    - name: 虾米
-      style: orange
-      url: https://xiami.com/
-
     - name: 豆瓣电影
       icon: film blue
       style: basic
       url: https://movie.douban.com/
-
-    - name: FIX
-      style: yellow
-      url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
-
-    - name: 弯弯
-      style: blue
-      url: http://wanwansub.com/node/139
-
-    - name: 人人
-      style: blue
-      url: http://www.yyetss.com/
-
-    # - name: 电波
-    #   style: basic
-    #   url: http://dbfansub.com/
-
-    - name: 猪猪
-      style: purple
-      url: http://www.zzrbl.com/
-
-    - name: TNH
-      style: basic
-      url: https://www.tokyonothot.com/
-
-    - name: 追新番
-      style: yellow
-      url: http://www.zhuixinfan.com/
-
-    # - name: 幻樱
-    #   style: pink
-    #   url: http://www.hysub.net/
-
-    - name: 斗鱼
-      style: orange
-      url: https://douyu.com/
 
 - categories:
   - name: Google学术
