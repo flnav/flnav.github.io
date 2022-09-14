@@ -442,7 +442,8 @@
     - name: 中国共产党思想理论资源数据库
       style: red
       url: https://data.lilun.cn/
-
+      
+- categories:
   - name: Literature DB(外文)
     links:
     - name: SCI科学引文索引(ISI)
@@ -507,29 +508,405 @@
       style: green
       url: https://onlinelibrary.wiley.com/
       
+    - name: ACM美国计算机学会
+      style: basic
+      url: https://dl.acm.org/
+      
     - name: ACS美国化学学会电子期刊
       style: yellow
       url: http://pubs.acs.org
       
+    - name: AGU美国地球物理学会期刊
+      style: basic
+      url: https://agupubs.onlinelibrary.wiley.com/
+      
+    - name: AIAA美国航空航天学会
+      style: basic
+      url: https://arc.aiaa.org/
+
+    - name: AIAA美国航空航天学会
+      style: basic
+      url: https://arc.aiaa.org/
+
+    - name: AIMS美国数学科学研究所期刊
+      style: basic
+      url: http://www.aimsciences.org/
+
+    - name: AIP美国物理研究所
+      style: basic
+      url: https://www.scitation.org/
+
+    - name: Al Manhal eLibrary
+      style: basic
+      url: https://platform.almanhal.com/
+
+    - name: AMD历史与文化珍稀史料库
+      style: basic
+      url: https://www.amdigital.co.uk/
+
+    - name: AMS美国数学学会电子期刊
+      style: basic
+      url: http://www.ams.org/epubsearch/
+
+    - name: Annual Reviews综述数据库
+      style: basic
+      url: https://www.annualreviews.org/
+
+    - name: APS美国物理学会
+      style: basic
+      url: https://journals.aps.org/
+
+    - name: ASCE美国土木工程学会
+      style: basic
+      url: http://ascelibrary.org/
+
+    - name: ASM美国微生物学会
+      style: basic
+      url: https://journals.asm.org/
+
+    - name: ASME美国机械工程师学会
+      style: basic
+      url: http://asmedigitalcollection.asme.org
+
+    - name: ASTM美国材料与试验协会电子图书数据库
+      style: basic
+      url: http://portal.igpublish.com
+
+    - name: ASTM SEDL工程标准与数字图书馆数据库
+      style: basic
+      url: https://compass.astm.org
+      
+    - name: Beck-Online德文法律全文数据库
+      style: basic
+      url: https://beck-online.beck.de/Home
+
+    - name: Begell Digital Library
+      style: basic
+      url: http://www.dl.begellhouse.com/
+
+    - name: Bentham Science药学期刊全文数据库
+      style: basic
+      url: https://www.eurekaselect.com/
+
+    - name: BMC生物医学中心开放获取期刊
+      style: basic
+      url: https://www.biomedcentral.com/
+
+    - name: BioOne生命科学数据库
+      style: basic
+      url: http://www.bioone.org
+      
+    - name: BMJ英国医学会
+      style: basic
+      url: https://journals.bmj.com/
+
+    - name: Brill's E-Books电子图书
+      style: basic
+      url: https://www.cnpereading.com/
+
+    - name: Britannica Academic大英百科学术版
+      style: basic
+      url: http://academic.eb.cnpeak.com/
+
+    - name: BSC商管财经类全文数据库
+      style: basic
+      url: http://search.ebscohost.com/
+      
+    - name: BvD-Bank Focus全球银行与金融机构分析库
+      style: basic
+      url: https://bankfocus.bvdinfo.com/ip
+      
+    - name: BvD-OSIRIS全球上市公司财务分析数据库
+      style: basic
+      url: https://osiris.bvdinfo.com/ip
+      
+    - name: BvD-Zephyr全球并购交易分析库
+      style: basic
+      url: https://zephyr.bvdinfo.com/ip
+      
+    - name: CAB农业文摘数据库
+      style: basic
+      url: https://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=main&D=cabz
+      
     - name: CA SciFinder Web化学文摘数据库
       style: blue
       url: http://scifinder.cas.org/
+      
+    - name: Cairn法语数据库
+      style: basic
+      url: https://www.cairn.info/
+
+    - name: Cambridge电子教材
+      style: basic
+      url: http://www.itextbook.cn
+      
+    - name: Cambridge Archive Editions剑桥档案编研数据库
+      style: basic
+      url: https://dlib.eastview.com/browse/udb/1670
+
+    - name: Cambridge Journals Digital Archive剑桥回溯期刊
+      style: basic
+      url: http://journals.cambridge.org/action/displaySpecialPage?pageId=3092&archive=3092
+
+    - name: Cambridge Journals online剑桥期刊&图书
+      style: basic
+      url: https://www.cambridge.org/core
+
+    - name: Cell Press(Elsevier)
+      style: basic
+      url: http://www.cellpress.com/
+
+    - name: COB生物学家联盟
+      style: basic
+      url: http://www.biologists.com/
+      
+    - name: CSD剑桥结构数据库
+      style: basic
+      url: https://www.ccdc.cam.ac.uk/
+
+    - name: CALIS外文期刊网
+      style: basic
+      url: http://ccc.calis.edu.cn/index.php
+
+    - name: DDS学位论文集成发现系统
+      style: basic
+      url: https://www.oadds.cn/
+
+    - name: Drug Information药物信息全文数据库
+      style: basic
+      url: http://ovidsp.ovid.com/autologin
+      
+    - name: EBSCO eBook Collection
+      style: basic
+      url: http://search.ebscohost.com/login.aspx?profile=ehost&defaultdb=NLEBK
 
     - name: EBSCOHost学术信息、商业信息数据库
       style: primary
       url: http://search.ebscohost.com/
 
+    - name: EDP Sciences出版社全文期刊数据库
+      style: basic
+      url: https://publications.edpsciences.org/
+      
+    - name: Embase医药卫生数据库
+      style: basic
+      url: https://www.embase.com/
+      
+    - name: Emerald管理学、经济学、工程学数据库
+      style: basic
+      url: https://www.emerald.com/insight
+
+    - name: EMS（欧洲数学学会）电子期刊
+      style: basic
+      url: http://www.ems-ph.org/journals/journals.php
+
+    - name: EMS（欧洲数学学会）电子图书
+      style: basic
+      url: https://www.ems-ph.org/books/title_index.php
+
+    - name: Frontiers（前沿）期刊数据库
+      style: basic
+      url: https://journal.hep.com.cn/hep/EN/hep/home.shtml
+
+    - name: FSTA食品科学文摘数据库
+      style: basic
+      url: http://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=main&D=fsta
+
+    - name: Gale Scholar文学资源
+      style: basic
+      url: https://link.gale.com/
+
+    - name: 哈佛大学出版社回溯电子图书
+      style: basic
+      url: https://www.degruyter.com/
+
+    - name: Heinonline法学全文期刊数据库
+      style: basic
+      url: https://heinonline.org/HOL/Welcome
+
+    - name: ICE英国土木工程师协会全文期刊库
+      style: basic
+      url: https://www.icevirtuallibrary.com/
+
+    - name: ICPSR美国校际政治及社会研究联盟
+      style: blue
+      url: https://www.icpsr.umich.edu/
+
+    - name: IEC（国际工程联合会）电子图书
+      style: basic
+      url: http://portal.igpublish.com
+
+    - name: IET英国工程技术学会
+      style: basic
+      url: https://digital-library.theiet.org/
+
+    - name: IOP（英国物理学会）期刊和图书
+      style: basic
+      url: https://iopscience.iop.org/
+
+    - name: JOVE（实验视频期刊）数据库
+      style: basic
+      url: https://www.jove.com/cn/
+
+    - name: Journal Storage (JSTOR数据库）
+      style: black
+      url: https://www.jstor.org/
+
+    - name: John Benjamins语言、文学电子期刊
+      style: basic
+      url: http://www.jbe-platform.com/content/journals      
+ 
+    - name: Karger医学期刊&图书
+      style: basic
+      url: https://www.karger.com/cn
+
+    - name: KISS韩国学术期刊全文数据库
+      style: basic
+      url: https://kiss.kstudy.com/index.asp
+
+    - name: Lippincott Williams & Wilkins全文期刊
+      style: basic
+      url: http://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=browse&D=yrovft
+
+    - name: Landes Bioscience医药卫生数据库
+      style: basic
+      url: https://www.tandfonline.com/topic/4253?target=topic%20%20%20%20
+
+    - name: MathSciNet（美国数学学会）
+      style: basic
+      url: http://mathscinet.ams.org/mathscinet/
+ 
+    - name: 马克思恩格斯文集
+      style: basic
+      url: https://muse.jhu.edu/search?action=search&limit=series_id%3A768&min=1&max=10&t=series_facet_select
+ 
+    - name: Magazine Plus（日文杂志库）
+      style: basic
+      url: https://web.nichigai.jp/nos/nweb/login/ 
+ 
+    - name: Morgan & Claypool综述文集数据库
+      style: basic
+      url: https://ieeexplore.ieee.org/xpl/MorganClaypool/BrowseTheSeries
+ 
+    - name: Microbiology Society（普通微生物学会）
+      style: basic
+      url: https://www.microbiologyresearch.org/
+ 
+    - name: NEJM新英格兰医学杂志
+      style: basic
+      url: https://www.nejm.org/
+
+    - name: OCLC FirstSearch
+      style: basic
+      url: https://firstSearch.oclc.org/fsip
+
+    - name: OSA（美国光学学会）
+      style: basic
+      url: http://www.osapublishing.org/
+
+    - name: Oxford Journals Collection牛津期刊现刊数据库
+      style: basic
+      url: https://academic.oup.com/journals/
+
+    - name: Oxford Medicine Online牛津医学在线
+      style: basic
+      url: https://oxfordmedicine.com/
+
+    - name: Oxford Reports on International Law牛津国际法数据库
+      style: basic
+      url: http://opil.ouplaw.com/home/ORIL
+
+    - name: Oxford Scholarship Online (OSO)牛津在线学术专著在线数据库
+      style: basic
+      url: https://oxford.universitypressscholarship.com/
+
+    - name: PAO典藏学术期刊数据库
+      style: basic
+      url: https://www.proquest.com/pao?accountid=13813
+
+    - name: PNAS（美国科学院院报）
+      style: basic
+      url: http://www.pnas.org
+
     - name: PQDT Global全球版博硕士论文全文数据库
       style: basic
       url: https://www.proquest.com/pqdtglobal/dissertations/fromDatabasesLayer?accountid=13813
+
+    - name: Princeton University Press图书(普林斯顿大学出版社）
+      style: basic
+      url: http://portal.igpublish.com/iglibrary/
+
+    - name: Project MUSE期刊数据库
+      style: basic
+      url: https://muse.jhu.edu
 
     - name: ProQuest博士论文全文检索系统
       style: teal
       url: https://www.proquest.com/
 
+    - name: PRL综合学术期刊数据库
+      style: basic
+      url: http://search.proquest.com/pqrl?accountid=13813
+
+    - name: PHMC‎健康与医学大全
+      style: basic
+      url: http://search.proquest.com/healthcomplete?accountid=13813
+
+    - name: Reaxys医药卫生(Elsevier)
+      style: basic
+      url: https://www.reaxys.com/
+
     - name: RSC（英国皇家化学学会期刊）
       style: black
       url: https://pubs.rsc.org/
+
+    - name: RUP（洛克菲勒大学出版社）
+      style: basic
+      url: http://www.rupress.org
+
+    - name: SAE（国际自动机工程师学会）
+      style: basic
+      url: https://saemobilus.sae.org/   
+
+    - name: SAGE全文期刊数据库
+      style: basic
+      url: https://journals.sagepub.com/
+
+    - name: Scopus文摘与索引数据库(Elsevier)
+      style: orange
+      url: https://www.scopus.com
+
+    - name: SIAM（美国工业与应用数学学会）
+      style: basic
+      url: https://epubs.siam.org/
+
+    - name: SPIE（国际光学工程学会）
+      style: basic
+      url: https://www.spiedigitallibrary.org/
+
+    - name: Taylor&Francis期刊数据库
+      style: basic
+      url: https://www.tandfonline.com/
+
+    - name: Thieme医学电子期刊数据库
+      style: basic
+      url: https://www.thieme-connect.de/products/all/home.html
+
+    - name: Thieme化学与药学电子期刊
+      style: basic
+      url: http://www.thieme-chemistry.com/thieme-chemistry/journals/
+
+    - name: Ulrich's（乌利希国际期刊指南）
+      style: basic
+      url: https://ulrichsweb.serialssolutions.com/
+
+    - name: U.K. Parliamentary Papers英国议会文献数据库
+      style: basic
+      url: https://parlipapers.proquest.com/
+
+    - name: Westlaw（法律全文数据库）
+      style: basic
+      url: http://www.westlaw.com/
 
     - name: WorldSciNet世界科学出版社全文电子期刊
       style: black
