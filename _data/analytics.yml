@@ -2,9 +2,9 @@ google:
   id: UA-235123434-1
 
 matomo:
-  url: https://analytics.flpro.cn/
+  url: https://47.113.194.125/
   domains:
   - "https://flpro.cn/"
   site_id: 1
-  token: 8c3d08d792d9f7cccb55ccb3afd6d369
+  token: 355b1b1dc039e29d9b3ab7b3db9cc372
 
