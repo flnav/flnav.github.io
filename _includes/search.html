@@ -4,7 +4,7 @@
         <img class="ui centered image" src="{{ site.logo_white }}" alt="Logo">
     </h1>
     <h2 class="ui inverted header">{{ site.title }}</h2>
-    <div id="search-shortcuts" class="ui mini labels">
+    <div id="search-shortcuts" class="ui labels">
         {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><img src="{{ item.shortcut.icon }}"></a>{% endif %}{% endfor %}
     </div>
     <div class="ui inverted fluid right action input" id="search-div">
