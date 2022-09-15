@@ -365,6 +365,6 @@
   name: 北邮人BT
   url: https://byr.pt/torrents.php?search={query}
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: cloud download alternate teal inverted
     style: black
     show: false

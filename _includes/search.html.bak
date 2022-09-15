@@ -5,7 +5,7 @@
     </h1>
     <h2 class="ui inverted header">{{ site.title }}</h2>
     <div id="search-shortcuts" class="ui mini labels">
-        {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><img src="{{ item.shortcut.icon }}"></a>{% endif %}{% endfor %}
+        {% for item in site.data.search_services %}{% if item.shortcut %}<a class="ui {{ item.shortcut.style }} label{% unless item.shortcut.show %} hidden{% endunless %}" data-search-service-id="{{ item.id }}" data-tooltip="{{ item.name }}" data-variation="mini basic" data-position="top center" data-inverted=""><i class="{{ item.shortcut.icon }} fitted icon"></i></a>{% endif %}{% endfor %}
     </div>
     <div class="ui inverted fluid right action input" id="search-div">
         <input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
