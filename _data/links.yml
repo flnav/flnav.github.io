@@ -50,6 +50,12 @@
       icon: flask purple
       style: basic
       url: http://aqks.sdu.edu.cn/
+
+    - name: 山东大学课程中心
+      icon: film
+      style: basic
+      url: http://course.sdu.edu.cn/G2S/ShowSystem/Index.aspx
+      
       
     - name: 学生公寓管理服务中心
       icon: building blue
