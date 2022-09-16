@@ -14,7 +14,7 @@
     - name: 信息化公共服务平台
       icon: laptop black
       style: large basic
-      url: http://www.lib.sdu.edu.cn/index.html
+      url: https://pass.sdu.edu.cn/cas/login
       
     - name: 师生服务大厅
       icon: shapes pink
