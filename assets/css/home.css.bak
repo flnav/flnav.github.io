@@ -9,9 +9,8 @@
 }
 
 .ui.masthead .ui.text.container {
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 10rem;
-    max-width: 950px;
 }
 
 .ui.masthead div.ui.pointing.label {
@@ -50,7 +49,7 @@
     margin-bottom: 0.5em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     .ui.masthead .ui.text.container {
         margin-top: 2rem;
         margin-bottom: 2rem;

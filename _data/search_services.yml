@@ -20,7 +20,7 @@
   shortcut:
     icon: /images/searchicon/biying.png
     style: basic
-    show: true
+    show: false
 
 - id: baidumap
   name: 百度地图
@@ -28,7 +28,7 @@
   shortcut:
     icon: /images/searchicon/baidumap.png
     style: basic
-    show: true
+    show: false
 
 - id: kuaidi100
   name: 快递查询
@@ -36,7 +36,7 @@
   shortcut:
     icon: /images/searchicon/kuaidi.gif
     style: basic
-    show: true
+    show: false
 
 - id: 17track
   name: 国际查件
@@ -60,7 +60,7 @@
   shortcut:
     icon: /images/searchicon/github.png
     style: basic
-    show: false
+    show: true
 
 - id: stackoverflow
   name: Stack Overflow
@@ -68,7 +68,7 @@
   shortcut:
     icon: /images/searchicon/Stack.png
     style: basic
-    show: true
+    show: false
 
 - id: zhihu
   name: 知乎
@@ -92,7 +92,7 @@
   shortcut:
     icon: /images/searchicon/douban.png
     style: basic
-    show: true      
+    show: false   
 
 - id: weixinmp
   name: 微信公众号
@@ -108,7 +108,7 @@
   shortcut:
     icon: /images/searchicon/weixin.png
     style: basic
-    show: true
+    show: false
 
 - id: minapp
   name: 微信小程序
@@ -180,7 +180,7 @@
   shortcut:
     icon: /images/searchicon/music163.ico
     style: basic
-    show: false
+    show: true
 
 - id: bilibili
   name: 哔哩哔哩
@@ -340,7 +340,7 @@
   shortcut:
     icon: /images/searchicon/cnki.png
     style: basic
-    show: true
+    show: false
     
 - id: wanfang
   name: 万方数据（全部）
@@ -388,7 +388,7 @@
   shortcut:
     icon: /images/searchicon/baidu.png
     style: basic
-    show: false
+    show: true
 
 - id: googlescholar
   name: 谷歌学术
@@ -396,6 +396,6 @@
   shortcut:
     icon: /images/searchicon/googlescholar.png
     style: basic
-    show: false
+    show: true
     
     
