@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="repository" content="flnav/flnav.github.io">
+    <meta name="updated_at" content="2022-09-17T20:18:58+08:00">
+    <meta name="established_at" content="2022-07-20T00:00+08:00">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>定制化 | 飛龍导航 · FL-Nav</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="定制化" />
+<meta name="author" content="Feilong" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="description" content="飛龍Navigation" />
+<meta property="og:description" content="飛龍Navigation" />
+<link rel="canonical" href="http://localhost:4000/customize/index.html.bak" />
+<meta property="og:url" content="http://localhost:4000/customize/index.html.bak" />
+<meta property="og:site_name" content="飛龍导航 · FL-Nav" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="定制化" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Feilong"},"description":"飛龍Navigation","headline":"定制化","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/logo.png"},"name":"Feilong"},"url":"http://localhost:4000/customize/index.html.bak"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/customize.css">
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/masthead.css">
+    
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-235123434-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-235123434-1');
+    </script><script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDomains", ["https://flpro.cn/"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://47.113.194.125/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="ui large top fixed borderless hidden menu">
+    <div class="ui container">
+        <a class="header item" href="/">
+            <div class="ui middle aligned image">
+                <img class="logo-image" src="/images/logo-dark.svg" alt="Logo">
+            </div>
+            <div class="logo-text">FL-Nav</div>
+        </a>
+        <a class="item" href="/"><i class="home icon"></i>首页</a><a class="item" href="/customize/"><i class="tools icon"></i>定制化</a><a class="item" href="/analytics/"><i class="chart bar icon"></i>访客分析</a><a class="item" href="/donate/"><i class="donate icon"></i>捐赠</a>
+        <div class="right menu">
+            <a class="item" href="https://github.com/flnav/flnav.github.io" target="_blank"><i class="github icon"></i>GitHub</a>
+        </div>
+    </div>
+</div>
+    <div class="ui vertical inverted sidebar menu">
+    <a class="header item" href="/">
+        <div class="ui middle aligned image">
+            <img class="logo-image" src="/images/logo-white.svg" alt="Logo">
+        </div>
+        <div class="logo-text">FL-Nav</div>
+    </a>
+    <a class="item" href="/"><i class="home icon"></i>首页</a><a class="item" href="/customize/"><i class="tools icon"></i>定制化</a><a class="item" href="/analytics/"><i class="chart bar icon"></i>访客分析</a><a class="item" href="/donate/"><i class="donate icon"></i>捐赠</a>
+    <a class="item" href="https://github.com/flnav/flnav.github.io" target="_blank"><i class="github icon"></i>GitHub</a>
+</div>
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment zoomed">
+    <div class="ui container">
+        <div class="ui large borderless inverted menu" style="border: none;">
+            <div class="toc link icon item"><i class="sidebar icon"></i></div>
+            <a class="header item" href="/">
+                <div class="ui middle aligned image">
+                    <img class="logo-image" src="/images/logo-white.svg" alt="Logo">
+                </div>
+                <div class="logo-text">FL-Nav</div>
+            </a>
+            <a class="item" href="/"><i class="home icon"></i>首页</a><a class="item" href="/customize/"><i class="tools icon"></i>定制化</a><a class="item" href="/analytics/"><i class="chart bar icon"></i>访客分析</a><a class="item" href="/donate/"><i class="donate icon"></i>捐赠</a>
+            <div class="right menu">
+                <a class="item" href="https://github.com/flnav/flnav.github.io" target="_blank"><i class="github icon"></i>GitHub</a>
+            </div>
+        </div>
+    </div><div class="ui text container">
+            <h1 class="ui inverted header"><i class="tools icon"></i>定制化</h1><div class="ui mini black label"><i class="flask icon"></i>Beta Feature</div></div></div>
+        <div class="ui vertical stripe segment">
+    <div class="ui container">
+        <div class="ui warning message">
+            <div class="header">温馨提示</div>
+            <ul>
+                <li>该定制化服务仍处于测试与迭代研发阶段。</li>
+                <li>该项服务依赖于浏览器的Cookie功能，若要使用此服务，请确保您的浏览器的Cookie功能被启用。</li>
+                <li>您的定制化内容将仅保存在您的浏览器Cookie中，本网站对任何形式的个人定制化数据的遗失概不负责。</li>
+                <li>本网站不保证在未来保留部分或全部该服务的内容，但网站代码对外开源，欢迎Fork。</li>
+            </ul>
+        </div>
+        <h2 class="ui header">快捷搜索菜单</h2>
+        <table class="ui sortable selectable celled table">
+            <thead>
+                <tr>
+                    <th>搜索服务</th>
+                    <th>URL</th>
+                    <th>预览样式</th>
+                    <th>可见性</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="baidu" class="shortcut">
+                    <td>百度</td>
+                    <td><code>https://baidu.com/s?ie=utf-8&wd={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="百度" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/baidu.svg fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="baidu" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="google" class="shortcut">
+                    <td>谷歌</td>
+                    <td><code>https://google.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="谷歌" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/google.svg fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="google" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="bing" class="shortcut">
+                    <td>必应</td>
+                    <td><code>https://cn.bing.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="必应" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/Bing.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="bing" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="baidumap" class="shortcut">
+                    <td>百度地图</td>
+                    <td><code>https://api.map.baidu.com/geocoder?address={query}&output=html</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="百度地图" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/baidumap.svg fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="baidumap" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="kuaidi100" class="shortcut">
+                    <td>快递查询</td>
+                    <td><code>https://kuaidi100.com/?nu={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="快递查询" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/kuaidi.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="kuaidi100" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="17track" class="shortcut">
+                    <td>国际查件</td>
+                    <td><code>https://t.17track.net/zh-cn#nums={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="国际查件" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/17track.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="17track" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="baidunews" class="shortcut">
+                    <td>百度资讯</td>
+                    <td><code>https://baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="百度资讯" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/baidu.svg fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="baidunews" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="stackoverflow" class="shortcut">
+                    <td>Stack Overflow</td>
+                    <td><code>https://stackoverflow.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Stack Overflow" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/Stack.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="stackoverflow" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="zhihu" class="shortcut">
+                    <td>知乎</td>
+                    <td><code>https://zhihu.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="知乎" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/zhihu.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="zhihu" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="weibo" class="shortcut">
+                    <td>微博</td>
+                    <td><code>https://s.weibo.com/weibo/{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="微博" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/weibo.svg fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="weibo" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="douban" class="shortcut">
+                    <td>豆瓣</td>
+                    <td><code>https://douban.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="豆瓣" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/douban.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="douban" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="weixinmp" class="shortcut">
+                    <td>微信公众号</td>
+                    <td><code>http://weixin.sogou.com/weixin?type=1&query={query}&ie=utf8</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="微信公众号" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/weixin.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="weixinmp" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="weixinarticle" class="shortcut">
+                    <td>微信文章</td>
+                    <td><code>http://weixin.sogou.com/weixin?type=2&query={query}&ie=utf8</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="微信文章" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/weixin.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="weixinarticle" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="minapp" class="shortcut">
+                    <td>微信小程序</td>
+                    <td><code>https://minapp.com/miniapp/search/?query={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="微信小程序" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/weixin.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="minapp" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="etymonline" class="shortcut">
+                    <td>Etymonline</td>
+                    <td><code>https://etymonline.com/index.php?search={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Etymonline" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/etymonline.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="etymonline" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="mw" class="shortcut">
+                    <td>Merriam-Webster</td>
+                    <td><code>https://merriam-webster.com/dictionary/{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Merriam-Webster" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/webster.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="mw" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="taobao" class="shortcut">
+                    <td>淘宝</td>
+                    <td><code>https://s.taobao.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="淘宝" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/taobao.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="taobao" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="tmall" class="shortcut">
+                    <td>天猫</td>
+                    <td><code>https://list.tmall.com/search_product.htm?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="天猫" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/Tianmao.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="tmall" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="jd" class="shortcut">
+                    <td>京东</td>
+                    <td><code>https://search.jd.com/Search?keyword={query}&enc=utf-8</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="京东" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/jingdong.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="jd" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="amazon" class="shortcut">
+                    <td>亚马逊</td>
+                    <td><code>https://amazon.cn/s?k={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="亚马逊" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/amazon.svg fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="amazon" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="music163" class="shortcut">
+                    <td>网易云音乐</td>
+                    <td><code>https://music.163.com/#/search/m/?s={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="网易云音乐" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/wangyiyun.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="music163" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="bilibili" class="shortcut">
+                    <td>哔哩哔哩</td>
+                    <td><code>https://search.bilibili.com/all?keyword={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="哔哩哔哩" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/bilibili.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="bilibili" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="youtube" class="shortcut">
+                    <td>YouTube</td>
+                    <td><code>https://youtube.com/results?search_query={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="YouTube" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/youtube.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="youtube" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="github" class="shortcut">
+                    <td>GitHub</td>
+                    <td><code>https://github.com/search?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="GitHub" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/github.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="github" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="onejav" class="shortcut">
+                    <td>OneJav</td>
+                    <td><code>https://onejav.com/search/{query}</code></td>
+                    <td class="black"><div class="ui mini black label shortcut-preview" data-tooltip="OneJav" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/onejav.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="onejav" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkisu" class="shortcut">
+                    <td>中国知网（主题）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=SU</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（主题）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="cnkisu" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="cnkitka" class="shortcut">
+                    <td>中国知网（篇关摘）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=TKA</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（篇关摘）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkitka" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiky" class="shortcut">
+                    <td>中国知网（关键词）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=KY</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（关键词）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiky" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiti" class="shortcut">
+                    <td>中国知网（篇名）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=TI</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（篇名）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiti" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkift" class="shortcut">
+                    <td>中国知网（全文）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FT</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（全文）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkift" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiau" class="shortcut">
+                    <td>中国知网（作者）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AU</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（作者）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiau" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkifi" class="shortcut">
+                    <td>中国知网（第一作者）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FI</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（第一作者）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkifi" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkirp" class="shortcut">
+                    <td>中国知网（通讯作者）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=RP</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（通讯作者）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkirp" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiaf" class="shortcut">
+                    <td>中国知网（作者单位）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AF</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（作者单位）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiaf" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkifu" class="shortcut">
+                    <td>中国知网（基金）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FU</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（基金）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkifu" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiab" class="shortcut">
+                    <td>中国知网（摘要）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AB</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（摘要）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiab" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkico" class="shortcut">
+                    <td>中国知网（小标题）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=CO</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（小标题）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkico" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkirf" class="shortcut">
+                    <td>中国知网（参考文献）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=RF</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（参考文献）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkirf" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkiclc" class="shortcut">
+                    <td>中国知网（分类号）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=CLC</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（分类号）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkiclc" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkily" class="shortcut">
+                    <td>中国知网（文献来源）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=LY</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（文献来源）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkily" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkidoi" class="shortcut">
+                    <td>中国知网（DOI）</td>
+                    <td><code>https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=DOI</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="中国知网（DOI）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkidoi" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cnkius" class="shortcut">
+                    <td>知网海外版</td>
+                    <td><code>http://chn.oversea.cnki.net/kns/DefaultResult/Index?dbcode=SCDB&kw={query}&korder=SU</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="知网海外版" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cnki.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="cnkius" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="wanfang" class="shortcut">
+                    <td>万方数据（全部）</td>
+                    <td><code>https://s.wanfangdata.com.cn/paper?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="万方数据（全部）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/wanfang.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="wanfang" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="wanfangkey" class="shortcut">
+                    <td>万方数据（关键词）</td>
+                    <td><code>https://s.wanfangdata.com.cn/paper?q=关键词%3A{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="万方数据（关键词）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/wanfang.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="wanfangkey" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="wanfangwriter" class="shortcut">
+                    <td>万方数据（作者）</td>
+                    <td><code>https://s.wanfangdata.com.cn/paper?q=作者%3A{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="万方数据（作者）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/wanfang.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="wanfangwriter" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="wanfangwriter" class="shortcut">
+                    <td>万方数据（摘要）</td>
+                    <td><code>https://s.wanfangdata.com.cn/paper?q=摘要%3A{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="万方数据（摘要）" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/wanfang.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="wanfangwriter" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="cssci" class="shortcut">
+                    <td>CSSCI</td>
+                    <td><code>http://cssci.nju.edu.cn/ly_search_view.html?title={query}+++15&pagenum=20&order_type=nian&order_px=DESC</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="CSSCI" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/cssci.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="cssci" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="baiduxueshu" class="shortcut">
+                    <td>百度学术</td>
+                    <td><code>https://xueshu.baidu.com/s?wd={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="百度学术" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/baidu.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="baiduxueshu" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="bingxueshu" class="shortcut">
+                    <td>必应学术</td>
+                    <td><code>https://cn.bing.com/academic/search?q={query}&qs=n&form=QBRE&sp=-1&pq=%E7%9F%A5%E4%B9%8E&sc=0-2&sk=&cvid=9A75F6365B9241DB931F686770F445BC</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="必应学术" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/Bing.png fitted icon"></i></div></td>
+                    <td class="shortcut-visibility">隐藏</td>
+                    <td><a class="ui mini icon button shortcut-toggle-show" data-search-service-id="bingxueshu" data-show="false" data-tooltip="标记“显示”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye slash icon"></i></a></td>
+                </tr><tr id="webofscience" class="shortcut">
+                    <td>Web of Science</td>
+                    <td><code>http://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Web of Science" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/web-of-science.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="webofscience" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="elsevier" class="shortcut">
+                    <td>sciencedirect</td>
+                    <td><code>https://www.sciencedirect.com/search?qs={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="sciencedirect" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/elsevier.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="elsevier" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="ieeexplore" class="shortcut">
+                    <td>IEEE Xplore</td>
+                    <td><code>http://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="IEEE Xplore" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/IEEE.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="ieeexplore" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="googlescholar" class="shortcut">
+                    <td>谷歌学术</td>
+                    <td><code>https://scholar.google.com/scholar?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="谷歌学术" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/googlescholar.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="googlescholar" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="sci-hub" class="shortcut">
+                    <td>SCI-HUB</td>
+                    <td><code>http://sci-hub.se/{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="SCI-HUB" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/sinhub.ico fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="sci-hub" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="zlibrary" class="shortcut">
+                    <td>Zlibrary</td>
+                    <td><code>https://zh.booksc.org/s/?q={query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Zlibrary" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/zlibrary.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="zlibrary" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr><tr id="semanticscholar" class="shortcut">
+                    <td>Semantic Scholar</td>
+                    <td><code>https://api.semanticscholar.org/{query}</code></td>
+                    <td class="black"><div class="ui mini basic label shortcut-preview" data-tooltip="Semantic Scholar" data-variation="mini basic" data-position="top center" data-inverted=""><i class="/images/searchicon/semanticscholar.png fitted icon"></i></div></td>
+                    <td class="active shortcut-visibility">显示</td>
+                    <td><a class="ui mini grey icon button shortcut-toggle-show" data-search-service-id="semanticscholar" data-show="true" data-tooltip="标记“隐藏”" data-variation="mini basic" data-position="top center" data-inverted=""><i class="eye icon"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a id="reset-cookie" class="ui mini negative left labeled icon button"><i class="undo icon"></i>全部重置</a>
+    </div>
+</div>
+        <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Built with</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="https://fomantic-ui.com/" target="_blank">Fomantic UI</a><a class="item" href="https://jquery.com/" target="_blank">jQuery</a><a class="item" href="https://github.com/iamkun/dayjs" target="_blank">Day.js</a><a class="item" href="https://inorganik.github.io/countUp.js/" target="_blank">CountUp.js</a><a class="item" href="https://hilios.github.io/jQuery.countdown/" target="_blank">jQuery.countdown</a><a class="item" href="https://github.com/js-cookie/js-cookie" target="_blank">JavaScript Cookie</a><a class="item" href="https://github.com/websanova/js-url" target="_blank">url.js</a><a class="item" href="https://echarts.apache.org/" target="_blank">ECharts</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Powered by</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="https://jekyllrb.com/" target="_blank">Jekyll</a><a class="item" href="https://shields.io/" target="_blank">Shields.io</a><a class="item" href="https://hitokoto.cn/api" target="_blank">Hitokoto</a><a class="item" href="https://matomo.org/" target="_blank">Matomo</a><a class="item" href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt</a><a class="item" href="https://www.linode.com/" target="_blank">Linode</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="https://flpro.cn" target="_blank">Feilong</a>
+                    <a class="item" href="/donate/">Donate</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">飛龍导航 · FL-Nav</h4>
+                <div class="ui inverted link list">
+                    <div class="item">&copy; 2022 鲁ICP备2021034838号-2</div>
+                    <div class="item">Designed and built with all the love and passion in the world by Feilong.</div>
+                    <a class="item" href="/analytics/">
+                        Visits / Page Views:
+                        <span id="today-visits">0</span> / <span id="today-actions">0</span> (Today)
+                        &middot;
+                        <span id="yesterday-visits">0</span> / <span id="yesterday-actions">0</span> (Yesterday)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/fomantic-ui/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+    
+    <script type="text/javascript" src="//unpkg.com/js-cookie/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="/assets/js/customize.js"></script>
+    
+    
+</body>
+</html>
