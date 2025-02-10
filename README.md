@@ -603,7 +603,6 @@ Jekyll 会将您的静态站点生成到 `_site` 目录中。您可以将此目�
 - [GeoIP][geoip]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/jekyll.svg" alt="Icon" /> [Jekyll][jekyll]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/letsencrypt.svg" alt="Icon" /> [Let’s Encrypt][letsencrypt]
-- <img height="16" src="https://www.svgrepo.com/show/306343/linode.svg" alt="Icon" /> [Linode][linode]
 
 ---
 
