@@ -7,7 +7,7 @@
 一个轻量级且可配置的导航框架（用于FL）
 
 ## :triangular_ruler: 设计理念
-这个项目是一个基于[Jekyll][jekyll]的静态网站，使用[Fomantic UI][fomantic] Web框架构建，**之前**通过[GitHub Pages][github-pages]部署（目前在[Linode][linode] VPS上运行）。
+这个项目是一个基于[Jekyll][jekyll]的静态网站，使用[Fomantic UI][fomantic] Web框架构建，**之前**通过[GitHub Pages][github-pages]部署（目前在[HuaweiYun][HuaweiYun] flexus服务器上运行）。
 
 整个项目的设计和构建具有很高的配置和自定义灵活性。
 你可以通过修改`_config.yml`文件进行配置，或者通过替换`_data`文件夹中的`*.yml`文件内容来自定义数据。
@@ -644,4 +644,4 @@ Jekyll 会将您的静态站点生成到 `_site` 目录中。您可以将此目�
 [localhost-4000]: http://localhost:4000 "本地服务器（端口：4000）"
 [github-pages]: https://pages.github.com/ "GitHub Pages"
 [letsencrypt]: https://letsencrypt.org/ "Let’s Encrypt"
-[linode]: https://www.linode.com/ "Linode"
+[HuaweiYun]: https://www.huaweicloud.com/product/flexus.html "HuaweiYun"
