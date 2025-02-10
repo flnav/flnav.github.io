@@ -14,4 +14,4 @@ Gemfile.lock
 Thumbs.db
 
 # MD
-assets/packages/*.md
+assets/packages/**/*.md
