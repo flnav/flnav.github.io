@@ -132,6 +132,32 @@ bundle exec jekyll serve
 
 ## 7、安装Matomo网站统计程序
 
+## 8、修改FL-Navi/assets/js/customize.js中开头和结尾的域名使得定制化界面生效
+
+```javascript
+// customize.js
+
+function setJSONCookie(name, value) {
+    Cookies.set(name, JSON.stringify(value), {
+        expires: 365,
+        domain: '.flnav.github.io', //修改这里为自己域名
+        secure: true
+    });
+};
+
+// reset button
+
+$('#reset-cookie').click(function () {
+    Cookies.remove('byr_navi_search_shortcuts', {
+        domain: '.flnav.github.io' //修改这里为自己域名
+    });
+    location.reload(true);
+});
+
+```
+
+
+
 ---
 
 # **npm安装了一些本地内容**
