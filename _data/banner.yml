@@ -1,0 +1,17 @@
+message:
+  show: true
+  hitokoto: true
+  content: 
+  detail: More
+  color: black
+  icon: plane
+  image: false
+  link: https://www.baidu.com/s?wd=mu5735
+
+advertisement:
+  show: false
+  content: 
+  detail: 
+  color: black
+  icon: university
+  link: https://y-english.cn/

@@ -1,0 +1,914 @@
+- categories:
+  - name: 山科校园
+    links:
+    - name: 山科官网
+      style: basic
+      url: https://www.sdust.edu.cn/
+
+    - name: 强智教务系统
+      style: basic
+      url: http://jwgl.sdust.edu.cn/
+
+    - name: 智慧山科
+      style: basic
+      url: http://my.sdust.edu.cn/cas/login
+
+    - name: 图书馆
+      style: basic
+      url: http://lib.sdust.edu.cn/
+
+    - name: 学习通
+      style: basic
+      url: https://passport2.chaoxing.com/login?fid=&newversion=true&refer=http%3A%2F%2Fi.chaoxing.com
+
+    - name: 智慧树
+      style: basic
+      url: https://passport.zhihuishu.com/login?service=https://onlineservice.zhihuishu.com/login/gologin
+
+    - name: 中国大学MOOC
+      style: basic
+      url: https://www.icourse163.org/
+
+    - name: 优学院
+      style: basic
+      url: https://www.ulearning.cn/portal/index.html#/index/portal
+
+    - name: 山科易班
+      style: basic
+      url: https://www.yiban.cn/
+
+  - name: 工具
+    links:
+    - name: '12306'
+      icon: train red
+      style: basic
+      url: http://www.12306.cn/
+
+    - name: 快递查询
+      icon: truck olive
+      style: basic
+      url: http://www.kuaidi100.com/
+
+    - name: 大众点评
+      icon: utensils orange
+      style: basic
+      url: http://www.dianping.com/
+
+    # - name: 网易邮箱
+    #   icon: envelope red
+    #   style: basic
+    #   url: http://email.163.com/
+
+    - name: QQ邮箱
+      icon: qq black
+      style: basic
+      url: https://mail.qq.com/
+
+    - name: 新浪邮箱
+      icon: envelope red
+      style: basic
+      url: https://mail.sina.com.cn/
+
+    - name: Gmail
+      icon: google red
+      style: basic
+      url: https://mail.google.com/
+
+
+    - name: 维基百科
+      icon: wikipedia w black
+      style: basic
+      url: https://www.wikipedia.org/
+
+    - name: 彩云天气
+      icon: cloud olive
+      style: basic
+      url: http://caiyunapp.com/map
+
+    - name: 天眼查
+      style: basic
+      url: https://www.tianyancha.com/
+
+    - name: 稿定设计
+      style: basic
+      url: https://www.gaoding.com/
+
+    - name: MacWk
+      style: basic
+      url: https://macwk.com/
+      
+  - name: 社交
+    links:
+    - name: 微博
+      icon: weibo red
+      style: basic
+      url: https://weibo.com/
+
+    - name: 微信网页版
+      icon: weixin green
+      style: basic
+      url: https://wx.qq.com/
+
+    - name: 百度贴吧
+      icon: paw blue
+      style: basic
+      url: https://tieba.baidu.com/
+
+    - name: 知乎
+      icon: zhihu blue
+      style: basic
+      url: https://www.zhihu.com/
+
+    - name: Quora
+      icon: quora red
+      style: basic
+      url: https://www.quora.com/
+
+    - name: Facebook
+      icon: facebook f blue
+      style: basic
+      url: https://www.facebook.com/
+
+    - name: Google+
+      icon: google plus g red
+      style: basic
+      url: https://plus.google.com/
+
+    - name: Tumblr
+      icon: tumblr blue
+      style: basic
+      url: https://www.tumblr.com/
+
+    - name: Instagram
+      icon: instagram pink
+      style: basic
+      url: https://www.instagram.com/
+
+    - name: GitHub
+      icon: github black
+      style: basic
+      url: https://github.com/
+
+    - name: LinkedIn
+      icon: linkedin blue
+      style: basic
+      url: https://www.linkedin.com/
+
+  - name: 娱乐
+    links:
+    - name: 优酷
+      style: basic
+      url: https://youku.com/
+
+    # - name: 土豆
+    #   style: basic
+    #   url: https://tudou.com/
+
+    - name: Youtube
+      icon: youtube red
+      style: basic
+      url: https://youtube.com/
+
+    - name: 爱奇艺
+      style: green
+      url: https://iqiyi.com/
+
+    - name: 芒果
+      style: orange
+      url: http://mgtv.com/
+
+    - name: 腾讯视频
+      style: basic
+      url: https://v.qq.com/
+
+    - name: 哔哩哔哩
+      style: pink
+      url: https://bilibili.com/
+
+    - name: AcFun
+      style: orange
+      url: https://www.acfun.cn/
+
+    - name: 腾讯动漫
+      style: basic
+      url: https://ac.qq.com/
+
+    - name: 虾米
+      style: orange
+      url: https://xiami.com/
+
+    - name: 豆瓣电影
+      icon: film blue
+      style: basic
+      url: https://movie.douban.com/
+
+    - name: FIX
+      style: yellow
+      url: http://www.zimuxia.cn/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BD%9C%E5%93%81
+
+    - name: 弯弯
+      style: blue
+      url: http://wanwansub.com/node/139
+
+    - name: 人人
+      style: blue
+      url: http://www.yyetss.com/
+
+    # - name: 电波
+    #   style: basic
+    #   url: http://dbfansub.com/
+
+    - name: 猪猪
+      style: purple
+      url: http://www.zzrbl.com/
+
+    - name: TNH
+      style: basic
+      url: https://www.tokyonothot.com/
+
+    - name: 追新番
+      style: yellow
+      url: http://www.zhuixinfan.com/
+
+    # - name: 幻樱
+    #   style: pink
+    #   url: http://www.hysub.net/
+
+    - name: 斗鱼
+      style: orange
+      url: https://douyu.com/
+
+- categories:
+  - name: Google学术
+    links:
+    - name: Google学术官网(US)
+      style: primary
+      icon: graduation cap
+      url: https://scholar.google.com/
+      
+    - name: Google学术官网(HK)
+      style: primary
+      icon: graduation cap
+      url: https://scholar.google.com.hk/
+      
+    - name: 镜像Ⅰ
+      style: basic
+      url: https://xueshu.dailyheadlines.cc/
+      
+    - name: 镜像Ⅱ
+      style: basic
+      url: https://xs.dailyheadlines.cc/
+
+    - name: 镜像Ⅲ
+      style: basic
+      url: https://xs2.dailyheadlines.cc/
+      
+    - name: 镜像Ⅳ
+      style: basic
+      url: https://xueshu.lanfanshu.cn/
+ 
+    - name: 镜像Ⅴ
+      style: basic
+      url: https://sc.panda321.com/
+     
+    - name: 镜像Ⅵ
+      style: basic
+      url: http://scholar.scqylaw.com/
+    
+  - name: SCI-HUB
+    links:
+    - name: Sci-Hub官网(yyds)
+      style: basic
+      icon: crow
+      url: https://sci-hub.se/
+      
+    - name: Sci-Hub中文社区
+      style: blue
+      icon: react 
+      url:  https://discuss.sci-hub.org.cn/  
+
+    - name: Sci-Hub文献检索
+      style: blue
+      icon: react 
+      url:  https://sci-hub.org.cn/
+      
+    - name: 官方镜像Ⅰ
+      style: red
+      url: https://sci-hub.st/ 
+    
+    - name: 官方镜像Ⅱ
+      style: red
+      url:  http://sci-hub.ru/
+    
+    - name: 镜像Ⅰ
+      style: basic
+      url:  https://sci-hub.wf/
+    
+    - name: 镜像Ⅱ
+      style: basic
+      url:  https://sci-hub.ee/
+    
+    - name: 镜像Ⅲ
+      style: basic
+      url:  https://sci-hub.et-fine.com/
+      
+    - name: 镜像Ⅳ
+      style: basic
+      url:  http://www.sci-hub.ren/
+
+  - name: Translation Tools
+    links:
+    - name: 谷歌翻译
+      icon: language blue
+      style: basic
+      url: https://translate.google.com/
+
+    - name: 百度翻译
+      icon: paw blue
+      style: basic
+      url: https://fanyi.baidu.com/
+
+    - name: 有道翻译
+      style: red
+      url:  https://fanyi.youdao.com/
+      
+    - name: 搜狗翻译
+      style: orange
+      url:  https://fanyi.sogou.com/text
+ 
+    - name: 百川翻译
+      style: blue
+      url:  http://www.bcwxfy.com/
+      
+    - name: 飛龍翻译
+      style: black
+      url: https://www.feilong.space/translate/
+      
+    - name: DeepL翻译器
+      style: basic
+      url: https://www.deepl.com/translator
+ 
+    - name: bing翻译
+      style: basic
+      icon: microsoft
+      url: https://cn.bing.com/translator
+ 
+    - name: cnki学术翻译
+      style: basic
+      url: https://dict.cnki.net/index
+- categories:
+  - name: Literature DB(中文)
+    links:
+    - name: CNKI中国知网学术文献总库
+      style: primary
+      url: https://www.cnki.net/
+      
+    - name: 万方数据知识服务平台
+      style: red
+      url: https://g.wanfangdata.com.cn/index.html
+
+    - name: 超星数字图书馆
+      style: primary
+      url: https://edu.sslibrary.com/
+      
+    - name: 维普期刊官网
+      style: black
+      url: http://cstj.cqvip.com/
+
+    - name: CSSCI（南大核心）中文社会科学引文索引
+      style: brown
+      url: https://cssrac.nju.edu.cn/
+      
+    - name: CSCD中国科学引文数据库
+      style: teal
+      url: http://sciencechina.cn/cscd_source.jsp
+
+    - name: 中文核心期刊（北大核心）
+      style: green
+      url: https://www.lib.pku.edu.cn/portal/cn/bggk/dtjj/qikanyaomu
+
+    - name: 核心期刊查询系统（上交大）
+      style: red
+      url: http://corejournal.lib.sjtu.edu.cn/
+ 
+    - name: 知网研学
+      style: primary
+      url: https://x.cnki.net/search
+
+    - name: CALIS高校学位论文库
+      style: blue
+      url: http://etd.calis.edu.cn/
+
+    - name: CADAL数字图书馆
+      style: brown
+      url: https://cadal.edu.cn/index/home
+ 
+    - name: 新东方在线多媒体资源服务平台
+      style: basic
+      url: https://library.koolearn.com/
+      
+    - name: 北大法宝法律数据库
+      style: teal
+      url: https://www.pkulaw.com/
+      
+    - name: 北大法意网
+      style: red
+      url: http://www.lawyee.org/default.html
+
+    - name: CSMAR经济金融数据库
+      style: basic
+      url: https://cn.gtadata.com/
+
+    - name: 中国经济社会大数据研究平台
+      style: basic
+      url: http://data.cnki.net/
+
+    - name: 中国生物医学文献数据库
+      style: green
+      url: http://www.sinomed.ac.cn/index.jsp
+      
+    - name: 世界经典艺术作品数据库
+      style: basic
+      url: http://th.reasonlib.com/
+      
+    - name: 爱如生—中国基本古籍库、中国方志库
+      style: blue
+      url: http://dh.ersjk.com/
+  
+    - name: 马克思主义理论学科知识服务平台
+      style: red
+      url: http://mks.cnki.net
+ 
+    - name: 中国共产党思想理论资源数据库
+      style: red
+      url: https://data.lilun.cn/
+      
+- categories:
+  - name: Literature DB(外文)
+    links:
+    - name: SCI科学引文索引(ISI)
+      style: violet
+      url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.SCI
+      
+    - name: SSCI社会科学引文索引(ISI)
+      style: black
+      url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.SSCI
+
+    - name: ISTP科技会议录索引(ISI)
+      style: brown
+      url: http://webofknowledge.com/?DestApp=WOS&editions=ISTP
+      
+    - name: A&HCI艺术与人文引文索引(ISI)
+      style: teal
+      url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.AHCI
+
+    - name: BIOSIS Previews生物学文摘(ISI)
+      style: green
+      url: https://www.webofscience.com/wos/biosis/basic-search
+      
+    - name: JCR期刊引证报告(ISI)
+      style: green
+      url: https://jcr.clarivate.com/jcr/home
+
+    - name: ESI基本科学指标(ISI)
+      style: olive
+      url: https://esi.clarivate.com
+      
+    - name: EI工程索引(Elsevier)
+      style: pink
+      url: http://www.engineeringvillage.com/
+      
+    - name: ScienceDirect(Elsevier)
+      style: orange
+      url: https://www.sciencedirect.com/
+      
+    - name: IEEExplorer(IEE Electronic)
+      style: primary
+      url: http://ieeexplore.ieee.org/
+      
+    - name: SpringerLink期刊&图书
+      style: orange
+      icon: chess knight
+      url: https://link.springer.com/
+    
+    - name: Springer Materials
+      style: basic
+      icon: chess knight
+      url: https://materials.springer.com/
+      
+    - name: Science《科学》学术期刊
+      style: red
+      url: http://www.sciencemag.org
+      
+    - name: Nature 《自然》科学杂志
+      style: black
+      url: http://www.nature.com/
+      
+    - name: Wiley Online Library
+      style: green
+      url: https://onlinelibrary.wiley.com/
+      
+    - name: ACM美国计算机学会
+      style: basic
+      url: https://dl.acm.org/
+      
+    - name: ACS美国化学学会电子期刊
+      style: yellow
+      url: http://pubs.acs.org
+      
+    - name: AGU美国地球物理学会期刊
+      style: basic
+      url: https://agupubs.onlinelibrary.wiley.com/
+      
+    - name: AIAA美国航空航天学会
+      style: basic
+      url: https://arc.aiaa.org/
+
+    - name: AIAA美国航空航天学会
+      style: basic
+      url: https://arc.aiaa.org/
+
+    - name: AIMS美国数学科学研究所期刊
+      style: basic
+      url: http://www.aimsciences.org/
+
+    - name: AIP美国物理研究所
+      style: basic
+      url: https://www.scitation.org/
+
+    - name: Al Manhal eLibrary
+      style: basic
+      url: https://platform.almanhal.com/
+
+    - name: AMD历史与文化珍稀史料库
+      style: basic
+      url: https://www.amdigital.co.uk/
+
+    - name: AMS美国数学学会电子期刊
+      style: basic
+      url: http://www.ams.org/epubsearch/
+
+    - name: Annual Reviews综述数据库
+      style: basic
+      url: https://www.annualreviews.org/
+
+    - name: APS美国物理学会
+      style: basic
+      url: https://journals.aps.org/
+
+    - name: ASCE美国土木工程学会
+      style: basic
+      url: http://ascelibrary.org/
+
+    - name: ASM美国微生物学会
+      style: basic
+      url: https://journals.asm.org/
+
+    - name: ASME美国机械工程师学会
+      style: basic
+      url: http://asmedigitalcollection.asme.org
+
+    - name: ASTM美国材料与试验协会电子图书数据库
+      style: basic
+      url: http://portal.igpublish.com
+
+    - name: ASTM SEDL工程标准与数字图书馆数据库
+      style: basic
+      url: https://compass.astm.org
+      
+    - name: Beck-Online德文法律全文数据库
+      style: basic
+      url: https://beck-online.beck.de/Home
+
+    - name: Begell Digital Library
+      style: basic
+      url: http://www.dl.begellhouse.com/
+
+    - name: Bentham Science药学期刊全文数据库
+      style: basic
+      url: https://www.eurekaselect.com/
+
+    - name: BMC生物医学中心开放获取期刊
+      style: basic
+      url: https://www.biomedcentral.com/
+
+    - name: BioOne生命科学数据库
+      style: basic
+      url: http://www.bioone.org
+      
+    - name: BMJ英国医学会
+      style: basic
+      url: https://journals.bmj.com/
+
+    - name: Brill's E-Books电子图书
+      style: basic
+      url: https://www.cnpereading.com/
+
+    - name: Britannica Academic大英百科学术版
+      style: basic
+      url: http://academic.eb.cnpeak.com/
+
+    - name: BSC商管财经类全文数据库
+      style: basic
+      url: http://search.ebscohost.com/
+      
+    - name: BvD-Bank Focus全球银行与金融机构分析库
+      style: basic
+      url: https://bankfocus.bvdinfo.com/ip
+      
+    - name: BvD-OSIRIS全球上市公司财务分析数据库
+      style: basic
+      url: https://osiris.bvdinfo.com/ip
+      
+    - name: BvD-Zephyr全球并购交易分析库
+      style: basic
+      url: https://zephyr.bvdinfo.com/ip
+      
+    - name: CAB农业文摘数据库
+      style: basic
+      url: https://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=main&D=cabz
+      
+    - name: CA SciFinder Web化学文摘数据库
+      style: blue
+      url: http://scifinder.cas.org/
+      
+    - name: Cairn法语数据库
+      style: basic
+      url: https://www.cairn.info/
+
+    - name: Cambridge电子教材
+      style: basic
+      url: http://www.itextbook.cn
+      
+    - name: Cambridge Archive Editions剑桥档案编研数据库
+      style: basic
+      url: https://dlib.eastview.com/browse/udb/1670
+
+    - name: Cambridge Journals Digital Archive剑桥回溯期刊
+      style: basic
+      url: http://journals.cambridge.org/action/displaySpecialPage?pageId=3092&archive=3092
+
+    - name: Cambridge Journals online剑桥期刊&图书
+      style: basic
+      url: https://www.cambridge.org/core
+
+    - name: Cell Press(Elsevier)
+      style: basic
+      url: http://www.cellpress.com/
+
+    - name: COB生物学家联盟
+      style: basic
+      url: http://www.biologists.com/
+      
+    - name: CSD剑桥结构数据库
+      style: basic
+      url: https://www.ccdc.cam.ac.uk/
+
+    - name: CALIS外文期刊网
+      style: basic
+      url: http://ccc.calis.edu.cn/index.php
+
+    - name: DDS学位论文集成发现系统
+      style: basic
+      url: https://www.oadds.cn/
+
+    - name: Drug Information药物信息全文数据库
+      style: basic
+      url: http://ovidsp.ovid.com/autologin
+      
+    - name: EBSCO eBook Collection
+      style: basic
+      url: http://search.ebscohost.com/login.aspx?profile=ehost&defaultdb=NLEBK
+
+    - name: EBSCOHost学术信息、商业信息数据库
+      style: primary
+      url: http://search.ebscohost.com/
+
+    - name: EDP Sciences出版社全文期刊数据库
+      style: basic
+      url: https://publications.edpsciences.org/
+      
+    - name: Embase医药卫生数据库
+      style: basic
+      url: https://www.embase.com/
+      
+    - name: Emerald管理学、经济学、工程学数据库
+      style: basic
+      url: https://www.emerald.com/insight
+
+    - name: EMS（欧洲数学学会）电子期刊
+      style: basic
+      url: http://www.ems-ph.org/journals/journals.php
+
+    - name: EMS（欧洲数学学会）电子图书
+      style: basic
+      url: https://www.ems-ph.org/books/title_index.php
+
+    - name: Frontiers（前沿）期刊数据库
+      style: basic
+      url: https://journal.hep.com.cn/hep/EN/hep/home.shtml
+
+    - name: FSTA食品科学文摘数据库
+      style: basic
+      url: http://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=main&D=fsta
+
+    - name: Gale Scholar文学资源
+      style: basic
+      url: https://link.gale.com/
+
+    - name: 哈佛大学出版社回溯电子图书
+      style: basic
+      url: https://www.degruyter.com/
+
+    - name: Heinonline法学全文期刊数据库
+      style: basic
+      url: https://heinonline.org/HOL/Welcome
+
+    - name: ICE英国土木工程师协会全文期刊库
+      style: basic
+      url: https://www.icevirtuallibrary.com/
+
+    - name: ICPSR美国校际政治及社会研究联盟
+      style: blue
+      url: https://www.icpsr.umich.edu/
+
+    - name: IEC（国际工程联合会）电子图书
+      style: basic
+      url: http://portal.igpublish.com
+
+    - name: IET英国工程技术学会
+      style: basic
+      url: https://digital-library.theiet.org/
+
+    - name: IOP（英国物理学会）期刊和图书
+      style: basic
+      url: https://iopscience.iop.org/
+
+    - name: JOVE（实验视频期刊）数据库
+      style: basic
+      url: https://www.jove.com/cn/
+
+    - name: Journal Storage (JSTOR数据库）
+      style: black
+      url: https://www.jstor.org/
+
+    - name: John Benjamins语言、文学电子期刊
+      style: basic
+      url: http://www.jbe-platform.com/content/journals      
+ 
+    - name: Karger医学期刊&图书
+      style: basic
+      url: https://www.karger.com/cn
+
+    - name: KISS韩国学术期刊全文数据库
+      style: basic
+      url: https://kiss.kstudy.com/index.asp
+
+    - name: Lippincott Williams & Wilkins全文期刊
+      style: basic
+      url: http://ovidsp.ovid.com/ovidweb.cgi?T=JS&NEWS=n&CSC=Y&PAGE=browse&D=yrovft
+
+    - name: Landes Bioscience医药卫生数据库
+      style: basic
+      url: https://www.tandfonline.com/topic/4253?target=topic%20%20%20%20
+
+    - name: MathSciNet（美国数学学会）
+      style: basic
+      url: http://mathscinet.ams.org/mathscinet/
+ 
+    - name: 马克思恩格斯文集
+      style: basic
+      url: https://muse.jhu.edu/search?action=search&limit=series_id%3A768&min=1&max=10&t=series_facet_select
+ 
+    - name: Magazine Plus（日文杂志库）
+      style: basic
+      url: https://web.nichigai.jp/nos/nweb/login/ 
+ 
+    - name: Morgan & Claypool综述文集数据库
+      style: basic
+      url: https://ieeexplore.ieee.org/xpl/MorganClaypool/BrowseTheSeries
+ 
+    - name: Microbiology Society（普通微生物学会）
+      style: basic
+      url: https://www.microbiologyresearch.org/
+ 
+    - name: NEJM新英格兰医学杂志
+      style: basic
+      url: https://www.nejm.org/
+
+    - name: OCLC FirstSearch
+      style: basic
+      url: https://firstSearch.oclc.org/fsip
+
+    - name: OSA（美国光学学会）
+      style: basic
+      url: http://www.osapublishing.org/
+
+    - name: Oxford Journals Collection牛津期刊现刊数据库
+      style: basic
+      url: https://academic.oup.com/journals/
+
+    - name: Oxford Medicine Online牛津医学在线
+      style: basic
+      url: https://oxfordmedicine.com/
+
+    - name: Oxford Reports on International Law牛津国际法数据库
+      style: basic
+      url: http://opil.ouplaw.com/home/ORIL
+
+    - name: Oxford Scholarship Online (OSO)牛津在线学术专著在线数据库
+      style: basic
+      url: https://oxford.universitypressscholarship.com/
+
+    - name: PAO典藏学术期刊数据库
+      style: basic
+      url: https://www.proquest.com/pao?accountid=13813
+
+    - name: PNAS（美国科学院院报）
+      style: basic
+      url: http://www.pnas.org
+
+    - name: PQDT Global全球版博硕士论文全文数据库
+      style: basic
+      url: https://www.proquest.com/pqdtglobal/dissertations/fromDatabasesLayer?accountid=13813
+
+    - name: Princeton University Press图书(普林斯顿大学出版社）
+      style: basic
+      url: http://portal.igpublish.com/iglibrary/
+
+    - name: Project MUSE期刊数据库
+      style: basic
+      url: https://muse.jhu.edu
+
+    - name: ProQuest博士论文全文检索系统
+      style: teal
+      url: https://www.proquest.com/
+
+    - name: PRL综合学术期刊数据库
+      style: basic
+      url: http://search.proquest.com/pqrl?accountid=13813
+
+    - name: PHMC‎健康与医学大全
+      style: basic
+      url: http://search.proquest.com/healthcomplete?accountid=13813
+
+    - name: Reaxys医药卫生(Elsevier)
+      style: basic
+      url: https://www.reaxys.com/
+
+    - name: RSC（英国皇家化学学会期刊）
+      style: black
+      url: https://pubs.rsc.org/
+
+    - name: RUP（洛克菲勒大学出版社）
+      style: basic
+      url: http://www.rupress.org
+
+    - name: SAE（国际自动机工程师学会）
+      style: basic
+      url: https://saemobilus.sae.org/   
+
+    - name: SAGE全文期刊数据库
+      style: basic
+      url: https://journals.sagepub.com/
+
+    - name: Scopus文摘与索引数据库(Elsevier)
+      style: orange
+      url: https://www.scopus.com
+
+    - name: SIAM（美国工业与应用数学学会）
+      style: basic
+      url: https://epubs.siam.org/
+
+    - name: SPIE（国际光学工程学会）
+      style: basic
+      url: https://www.spiedigitallibrary.org/
+
+    - name: Taylor&Francis期刊数据库
+      style: basic
+      url: https://www.tandfonline.com/
+
+    - name: Thieme医学电子期刊数据库
+      style: basic
+      url: https://www.thieme-connect.de/products/all/home.html
+
+    - name: Thieme化学与药学电子期刊
+      style: basic
+      url: http://www.thieme-chemistry.com/thieme-chemistry/journals/
+
+    - name: Ulrich's（乌利希国际期刊指南）
+      style: basic
+      url: https://ulrichsweb.serialssolutions.com/
+
+    - name: U.K. Parliamentary Papers英国议会文献数据库
+      style: basic
+      url: https://parlipapers.proquest.com/
+
+    - name: Westlaw（法律全文数据库）
+      style: basic
+      url: http://www.westlaw.com/
+
+    - name: WorldSciNet世界科学出版社全文电子期刊
+      style: black
+      url: http://www.worldscientific.com/page/worldscinet
+      

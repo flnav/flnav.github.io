@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="repository" content="{{ site.repository }}">
+    <meta name="updated_at" content="{{ site.time | date_to_xmlschema }}">
+    <meta name="established_at" content="{{ site.established_at }}">
+    {% seo %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/common.css' | relative_url }}">
+    {% if page.active_key == 'home' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/home.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'customize' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/customize.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'analytics' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/analytics.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'donate' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/donate.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'search' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/search.css' | relative_url }}">{% endif %}
+    {% if page.active_key == 'error' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/error.css' | relative_url }}">{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/masthead.css' | relative_url }}">
+    {% if page.active_key == 'home' and site.data.style.memorial %}<link rel="stylesheet" type="text/css" href="{{ '/assets/css/grayscale.css' | relative_url }}">{% endif %}
+    <link rel="apple-touch-icon" type="image/png" href="{{ '/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    {% include analytics.html %}
+</head>
+<body>
+    {% include following_menu.html %}
+    {% include sidebar.html %}
+    <div class="pusher">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
+    <script type="text/javascript" src="{{ '/assets/packages/package-jquery/node_modules/jquery/dist/jquery.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/common.js' | relative_url }}"></script>
+    {% if page.active_key == 'home' %}<script type="text/javascript" src="{{ '/assets/packages/package-dayjs/node_modules/dayjs/dayjs.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-dayjs/node_modules/dayjs/locale/zh-cn.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-dayjs/node_modules/dayjs/plugin/relativeTime.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-js-cookie/node_modules/js-cookie/dist/js.cookie.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/suggest-query.min.js' | relative_url }}"></script>
+    {% if site.data.banner.message.hitokoto %}<script type="text/javascript" src="{{ '/assets/js/hitokoto.js' | relative_url }}"></script>{% endif %}
+    <script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>{% endif %}
+    {% if page.active_key == 'customize' %}<script type="text/javascript" src="{{ '/assets/packages/package-js-cookie/node_modules/js-cookie/dist/js.cookie.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/customize.js' | relative_url }}"></script>{% endif %}
+    {% if page.active_key == 'analytics' %}<script type="text/javascript" src="{{ '/assets/packages/package-jquery-countdown/node_modules/jquery-countdown/dist/jquery.countdown.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-countup/node_modules/countup.js/dist/countUp.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-echarts/node_modules/echarts/dist/echarts.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/packages/package-echarts/node_modules/echarts/map/js/world.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/analytics.js' | relative_url }}"></script>{% endif %}
+    {% if page.active_key == 'search' %}<script type="text/javascript" src="{{ '/assets/packages/package-js-url/node_modules/js-url/url.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/search.js' | relative_url }}"></script>{% endif %}
+</body>
+</html>
