@@ -14,7 +14,7 @@ established_at: "2022-07-20T00:00+08:00"
 author: Feilong
 author_url: https://flpro.cn/
 organization: 鲁ICP备2024111425号
-organization_url: https://wap.miit.gov.cn
+organization_url: https://wap.miit.gov.cn/
 contact: contact[at]flpro[dot]cn
 
 image: /images/logo.png
@@ -25,16 +25,16 @@ logo_white: /images/logo-white.svg
 update_interval: 60000
 
 plugins:
-- jekyll-seo-tag
-- jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
-- .gitignore
-- .travis.yml
-- LICENSE
-- README.md
-- CNAME
-- Gemfile
-- Gemfile.lock
-- script
-- vendor
+  - .gitignore
+  - .travis.yml
+  - LICENSE
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - script
+  - vendor
