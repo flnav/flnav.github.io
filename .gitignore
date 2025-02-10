@@ -12,3 +12,6 @@ Gemfile.lock
 
 # Windows
 Thumbs.db
+
+# MD
+assets/packages/*.md
