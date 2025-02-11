@@ -126,13 +126,197 @@ bundle exec jekyll serve
 
 此时，使用ip:4000访问程序，注意要开放4000端口！！！
 
-这里除了可以使用命令行启动， **也可以直接将生成的_site文件夹丢到网站根目录访问。**
+```sh
+每次修改完网站信息后要重新进入FL-Navi目录，运行bundle exec jekyll serve,将会重新生成新的_site文件夹
+修改网站信息在/FL-Navi/_data文件夹和/FL-Navi/_config.yml里修改
+```
 
-如果要修改导航相关页面的信息显示的话，也可以在_site文件夹中修改。
+可以上传到github仓库中直接使用github pages，也可以使用命令行启动后直接将生成的_site文件夹丢到网站根目录访问。
 
-## 7、安装Matomo网站统计程序
+## 8、安装Matomo网站统计程序
 
-## 8、修改FL-Navi/assets/js/customize.js中开头和结尾的域名使得定制化界面生效
+**配置数据库**
+
+①可以使用docker
+```sh
+# 使用docker pull拉取mariadb:10.6.4
+docker pull mariadb:10.6.4
+
+# 安装mariadb:10.6.4
+docker run --restart=always --name mariadb -itd \
+-p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD=588345 \
+-e MYSQL_DATABASE=matomo \
+-e MYSQL_USER=matomo \
+-e MYSQL_PASSWORD=588345 \
+mariadb:10.6.4
+
+# 使用docker pull拉取phpmyadmin
+docker pull phpmyadmin
+
+# 使用phpmyadmin管理数据库的备份和导入导出
+docker run --name phpmyadmin -d -p 8080:80 -e PMA_HOST=mariadb --link mariadb  phpmyadmin/phpmyadmin
+```
+
+②也可以部署其他的数据库，比如宝塔面板（也很方便），或者手动安装等
+
+![image-20250211151906979](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111519056.png)
+
+**安装Matomo**
+
+①推荐使用docker安装Matomo，省去繁琐的环境配置
+
+[matomo-org/docker: Official Docker project for Matomo Analytics](https://github.com/matomo-org/docker)
+
+https://hub.docker.com/_/matomo
+
+```shell
+# 使用docker pull拉取matomo
+docker pull matomo
+
+# 假设您已经启动了合适的 MySQL 或 MariaDB 数据库服务。
+docker run -itd --name matomo -p 8000:80 -v /root/docker/matomo:/var/www/html matomo
+
+# 假设您已经启动了合适的 MySQL 或 MariaDB 数据库docker容器。
+docker run -itd --name matomo --link mariadb:matomodb -p 8000:80 -v /root/docker/matomo:/var/www/html matomo
+```
+
+**注意：**创建matomo容器，使用--link mariadb:matomodb 链接mariadb容器，matomodb是该容器在link下的别名（alias），可以在配置时使用matomodb代表mariadb容器的ip直接访问此容器
+
+②自主配置
+从链接处下载matomo数据包[Releases · matomo-org/matomo](https://github.com/matomo-org/matomo/releases)，然后放入到网站目录下，进行配置，前提是配置好php、数据库、以及网站服务器等。
+
+**配置反向代理**
+
+使用nginx服务器进行设置反向代理，建议使用宝塔面板设置，方便快捷
+
+![image-20250211151446013](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111514061.png)
+
+**全新配置Matomo**
+
+在浏览器输入反向代理的域名
+
+```http
+https://matomo.feilong.online
+```
+
+![image-20250211155950396](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111559472.png)
+
+点击下一步
+
+![image-20250211160047128](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111600376.png)
+
+系统检查无误后，点击下一步
+
+![image-20250211160338965](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111603058.png)
+
+输入数据库账户名和密码以及数据库名字，选择好数据库引擎，点击下一步
+
+![image-20250211160419531](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111604601.png)
+
+数据表会自动创建，之后点击下一步
+
+![image-20250211160605494](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111606579.png)
+
+设置好超级管理员的账号名和密码，以及电子邮箱后，点击下一步
+
+![image-20250211160820410](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111608496.png)
+
+设置需要统计的网站名称（任意）和域名，点击下一步
+
+![image-20250211160933670](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111609833.png)
+
+点击下一步
+
+![image-20250211161026735](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111610842.png)
+
+点击继续使用MATOMO，完成安装
+
+![image-20250211161110312](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111611381.png)
+
+输入用户名或者邮箱地址+密码，完成登录
+
+![image-20250211161216083](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111612164.png)
+
+点击设置
+
+![image-20250211161313218](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111613291.png)
+
+点击网站——管理
+
+![image-20250211161401464](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111614538.png)
+
+可以看到已经添加评价指标，可以看到网站ID为1，后面要用
+
+![image-20250211161710751](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111617870.png)
+
+点击个人——安全——向下滑动——验证令牌——创建新令牌
+
+![image-20250211161826727](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111618798.png)
+
+输入密码
+
+![image-20250211161911040](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111619119.png)
+
+输入简洁后，点击创建新令牌
+
+![image-20250211162041115](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111620188.png)
+
+点击复制令牌，后面要用，建议截图保存
+
+现在，打开analytics.yml文件
+
+```sh
+cd ./FL-Navi/_data
+vim analytics.yml
+```
+
+![image-20250211162714123](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111627186.png)
+
+![image-20250211163327935](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111633174.png)
+
+点击系统——通用设置——跨域资源共享(CROS)白名单域名——输入统计的域名——保存
+
+![image-20250211163523016](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111635091.png)
+
+输入密码——确定
+
+![image-20250211163701096](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111637229.png)
+
+最后，在个人——设置——语言——设置为English——保存，即可完成统计站点配置。
+
+**恢复配置Matomo**
+
+在浏览器输入反向代理的域名
+```http
+https://matomo.feilong.online
+```
+
+![image-20250211153645170](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111553291.png)
+
+点击下一步
+
+![image-20250211153903586](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111553499.png)
+
+进行系统检查，若无问题，点击下一步
+
+![image-20250211154329848](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111543941.png)
+
+配置好数据库后，点击下一步
+
+![image-20250211154807333](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111548424.png)
+
+点击“重复使用已经存在的数据表”进行下一步操作
+
+![image-20250211155006900](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111550976.png)
+
+点击下一步
+
+![image-20250211155132898](https://raw.githubusercontent.com/shifeilong/TyporaImage/main/202502111551005.png)
+
+点击继续使用MATOMO即可完成恢复操作
+
+## 9、修改FL-Navi/assets/js/customize.js中开头和结尾的域名使得定制化界面生效
 
 ```javascript
 // customize.js
@@ -160,11 +344,11 @@ $('#reset-cookie').click(function () {
 
 ---
 
-# **npm安装了一些本地内容**
+## npm安装了一些本地内容（已在代码中存在，无需重复安装，此处仅作为记录）
 
 以下是该项目所需安装的所有包及其指定版本：
 
-## 包列表
+### 包列表
 
 1. **fomantic-ui**  
    版本: `^2.9.2`  
@@ -198,7 +382,7 @@ $('#reset-cookie').click(function () {
    版本: `^1.9.3`  
    一个轻量级的JavaScript库，用于数字计数动画。
 
-## 安装
+### 安装
 
 你可以使用以下命令在packages目录下逐个安装这些包，或者使用 `/assets/install-packages.sh` 脚本一次性安装所有包：
 
@@ -292,11 +476,11 @@ npm list
 ---
 
 
-# **`.travis.yml` 简述**
+## **`.travis.yml` 简述**
 
 这是一个Travis CI配置文件，用于自动化构建和测试Ruby项目。
 
-## 主要内容：
+### 主要内容：
 
 - **Ruby版本与语言**：
   
@@ -363,11 +547,11 @@ npm list
 
 ---
 
-# **`.gitignore` 文件说明**
+## **`.gitignore` 文件说明**
 
 该 `.gitignore` 文件用于指定Git在版本控制中忽略哪些文件和目录。以下是该文件的内容及其作用：
 
-## 1. **Jekyll相关**
+### 1. **Jekyll相关**
 
 ```gitignore
 # Jekyll
@@ -382,7 +566,7 @@ _site/
   - `.jekyll-cache/`：Jekyll生成的缓存文件。
   - `.jekyll-metadata`：Jekyll的元数据文件。
 
-## 2. **Ruby相关**
+### 2. **Ruby相关**
 
 ```gitignore
 # Ruby
@@ -390,7 +574,7 @@ Gemfile.lock
 ```
 - 忽略`Gemfile.lock`，通常用于避免将锁定的依赖版本推送到版本控制中（视情况而定，有些项目可能希望保留它）。
 
-## 3. **macOS系统文件**
+### 3. **macOS系统文件**
 
 ```gitignore
 # macOS
@@ -398,7 +582,7 @@ Gemfile.lock
 ```
 - 忽略`.DS_Store`文件，这是macOS系统在每个目录中自动创建的隐藏文件，用于存储文件夹的自定义属性。
 
-## 4. **Windows系统文件**
+### 4. **Windows系统文件**
 
 ```gitignore
 # Windows
@@ -412,18 +596,18 @@ Thumbs.db
 
 ---
 
-# **`Gemfile` 文件说明**
+## **`Gemfile` 文件说明**
 
 该 `Gemfile` 文件用于指定Ruby项目的依赖库，并确保它们在不同的环境中被一致地安装。以下是该文件的内容及其作用：
 
-## 1. **源**
+### 1. **源**
 
 ```ruby
 source "https://rubygems.org"
 ```
 - `source`指定了依赖项的源，这里使用的是`https://rubygems.org`，这是Ruby的默认宝石库。
 
-## 2. **Jekyll及相关插件**
+### 2. **Jekyll及相关插件**
 
 ```ruby
 gem "jekyll"
@@ -436,7 +620,7 @@ gem "html-proofer"
 - `gem "jekyll-sitemap"`：Jekyll Sitemap插件，自动生成网站的XML站点地图。
 - `gem "html-proofer"`：用于检查Jekyll站点中链接、图像等的有效性。
 
-## 3. **Webrick**
+### 3. **Webrick**
 
 ```ruby
 gem "webrick", "~> 1.8"
@@ -448,7 +632,7 @@ gem "webrick", "~> 1.8"
 通过该 `Gemfile`，你可以确保项目的依赖库在开发和生产环境中一致，方便管理和自动化安装。使用`bundle install`命令可以安装这些依赖。
 
 ---
-# **`Gemfile.lock` 文件说明**
+## **`Gemfile.lock` 文件说明**
 
 `Gemfile.lock` 是一个由 `Bundler`（Ruby的包管理工具）自动生成的文件，它记录了当前项目的确切依赖版本。当你运行 `bundle install` 时，`Gemfile.lock` 会生成并锁定 `Gemfile` 中列出的所有宝石（gem）及其子依赖的确切版本。
 
