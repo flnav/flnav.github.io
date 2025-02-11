@@ -1,7 +1,7 @@
 message:
   show: true
   hitokoto: true
-  content: 
+  content: MU5735客机坠毁
   detail: More
   color: black
   icon: plane
@@ -10,8 +10,8 @@ message:
 
 advertisement:
   show: false
-  content: 
-  detail: 
+  content: 学术精进 系统构建20K词汇体系
+  detail: 云英语VB词汇建造师
   color: black
   icon: university
   link: https://y-english.cn/

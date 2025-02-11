@@ -3,15 +3,15 @@ repository_url: https://github.com/flnav/flnav.github.io
 
 timezone: Asia/Shanghai
 lang: zh_CN
-title: 我的个人空间 · FeiLong-Space
-alias_en: FL-Space
-alias_cn: 我的个人空间
-description: FeiLong-Space
-keywords: 飛龍, search, FL, Nav, Navigation
+title: 飛龍在线 · FeiLong-Online
+alias_en: FL-Online
+alias_cn: 飛龍在线
+description: FeiLong-Online
+keywords: 飛龍, search, FL, Nav, Navigation, Online
 url: https://flpro.cn/
 established_at: "2022-07-20T00:00+08:00"
 
-author: Feilong
+author: ShiFeilong
 author_url: https://flpro.cn/
 organization: 鲁ICP备2024111425号
 organization_url: https://beian.miit.gov.cn/
