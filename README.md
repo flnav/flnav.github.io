@@ -33,7 +33,7 @@ BYR-Navi是一个基于Fomantic UI的开源网站导航程序，支持在GitHub 
 
 **本教程基于Ubuntu 22.04**
 
-**Github地址** ： https://github.com/BYR-Navi/BYR-Navi
+**Github地址** ： [shifeilong/FL-Navi: 一个轻量级且可配置的导航网站框架](https://github.com/shifeilong/FL-Navi)
 
 ## 1、Ruby的安装
 
