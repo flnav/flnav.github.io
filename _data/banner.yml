@@ -1,6 +1,6 @@
 message:
   show: true
-  hitokoto: true
+  hitokoto: false
   content: 
   detail: More
   color: black
