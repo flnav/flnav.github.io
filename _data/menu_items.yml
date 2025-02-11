@@ -17,3 +17,8 @@
   icon: donate
   url: /donate/
   active_key: donate
+
+- name: 关于
+  icon: at
+  url: /about/
+  active_key: about
