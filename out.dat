@@ -116,3 +116,23 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
                     log.txt
                     ...done in 1.033355119 seconds.
                     
+[2025-02-13 19:45:47] ERROR '/actuator/env' not found.
+[2025-02-13 19:45:48] ERROR '/server' not found.
+[2025-02-13 19:45:48] ERROR '/.vscode/sftp.json' not found.
+[2025-02-13 19:45:50] ERROR '/debug/default/view' not found.
+[2025-02-13 19:45:52] ERROR '/v2/_catalog' not found.
+[2025-02-13 19:45:53] ERROR '/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application' not found.
+[2025-02-13 19:45:54] ERROR '/server-status' not found.
+[2025-02-13 19:45:55] ERROR '/login.action' not found.
+[2025-02-13 19:45:56] ERROR '/_all_dbs' not found.
+[2025-02-13 19:45:57] ERROR '/.DS_Store' not found.
+[2025-02-13 19:45:58] ERROR '/.env' not found.
+[2025-02-13 19:45:59] ERROR '/.git/config' not found.
+[2025-02-13 19:46:00] ERROR '/s/335313e2530323e26343e2032313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties' not found.
+[2025-02-13 19:46:02] ERROR '/config.json' not found.
+[2025-02-13 19:46:03] ERROR '/telescope/requests' not found.
+[2025-02-13 19:46:04] ERROR '/info.php' not found.
+      Regenerating: 1 file(s) changed at 2025-02-13 19:51:01
+                    _data/links.yml
+                    ...done in 6.840579514 seconds.
+                    
