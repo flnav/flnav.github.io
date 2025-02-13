@@ -20,3 +20,15 @@ nohup: ignoring input
 127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-jquery/node_modules/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
 127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js HTTP/1.1[0m" 304 -
 127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-sortable/node_modules/sortablejs/Sortable.min.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /images/linkimage/image-20250213T093506456Z.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-jquery/node_modules/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-sortable/node_modules/sortablejs/Sortable.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/LatoLatin-Bold.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/LatoLatin-Regular.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/outline-icons.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "GET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 19:02:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
