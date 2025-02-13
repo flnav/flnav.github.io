@@ -38,3 +38,6 @@ exclude:
   - Gemfile.lock
   - script
   - vendor
+  - app.py            # 排除 app.py 文件
+  - templates/        # 排除 templates 文件夹
+  - log.dat           # 排除 log.dat 文件

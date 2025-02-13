@@ -51,8 +51,17 @@
 }
 
 .ui.masthead .basic.label, .ui.masthead .basic.labels .label {
-	background: transparent;
-	border: 0px;
+    background: transparent;
+    border: 0px;
+}
+
+.ui.mini.label .link-image {
+    width: 1em !important; /* 提高优先级 */
+    height: 1em !important; /* 提高优先级 */
+    object-fit: cover; /* 确保图片按比例裁剪为方形 */
+    border-radius: 0.2em; /* 可选：添加轻微的圆角 */
+    vertical-align: top; /* 确保图片与文字垂直对齐 */
+    margin-right: 0.75em; /* 图片与文字之间的间距 */
 }
 
 @media only screen and (max-width: 1000px) {

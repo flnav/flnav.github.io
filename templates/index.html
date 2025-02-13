@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的收藏夹</title>
+    <!-- 引入 Fomantic UI 样式 -->
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css">
+    <!-- 引入 SortableJS 样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.css">
+    <style>
+        .ui.vertical.stripe.segment {
+            padding: 0em;
+        }
+        .ui.labels .label {
+            margin: 0.2em;
+        }
+        .ui.mini.label .link-image {
+            width: 1em !important; /* 提高优先级 */
+            height: 1em !important; /* 提高优先级 */
+            object-fit: cover; /* 确保图片按比例裁剪为方形 */
+            border-radius: 0.2em; /* 可选：添加轻微的圆角 */
+            vertical-align: top; /* 确保图片与文字垂直对齐 */
+            margin-right: 0.75em; /* 图片与文字之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 遍历 sections 数据 -->
+        {%- for section in sections -%}
+            <div class="ui vertical stripe links segment">
+                <div class="ui equal width stackable internally celled grid">
+                    <div class="center aligned row">
+                        <!-- 遍历 categories 数据 -->
+                        {%- for category in section.categories -%}
+                            <div class="links column">
+                                <!-- 分类标题 -->
+                                <div class="ui large top attached label">{{ category.name }}</div>
+                                <!-- 链接容器，每个分类的链接列表 -->
+                                <div class="ui labels" id="category-{{ category.name }}">
+                                    <!-- 遍历 links 数据 -->
+                                    {% for link in category.links %}
+                                        <!-- 单个链接 -->
+                                        <div class="ui mini {{ link.style }} label" data-name="{{ link.name }}">
+                                            <!-- 链接图标 -->
+                                            {% if link.icon %}
+                                                <i class="{{ link.icon }} icon"></i>
+                                            {% endif %}
+                                            <!-- 链接图片 -->
+                                            {% if link.image %}
+                                                <img src="{{ link.image }}" alt="{{ link.name }}" class="link-image">
+                                            {% endif %}
+                                            <!-- 链接名称 -->
+                                            {{ link.name }}
+                                            <!-- 超链接按钮 -->
+                                            <a href="{{ link.url }}" target="_blank" style="margin-left: 0.3em;">
+                                                <i class="linkify icon"></i>
+                                            </a>
+                                            <!-- 编辑按钮 -->
+                                            <a><i class="edit icon" onclick="editLink('{{ category.name }}', '{{ link.name }}')"></i></a>
+                                            <!-- 删除按钮 -->
+                                            <a><i class="trash alternate outline icon" onclick="deleteLink('{{ category.name }}', '{{ link.name }}')"></i></a>
+                                        </div>
+                                    {% endfor %}
+                                    <!-- 添加链接按钮 -->
+                                    <a class="ui mini label add-link" data-category="{{ category.name }}" onclick="addLink('{{ category.name }}')">
+                                        <i class="plus icon"></i> 添加链接
+                                    </a>
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+
+    <!-- 添加链接的对话框 -->
+    <div class="ui modal">
+        <i class="ui close icon"></i>
+        <div class="ui header">添加链接</div>
+        <div class="content">
+            <form class="ui form" id="add-link-form" enctype="multipart/form-data">
+                <!-- 新增隐藏字段 -->
+                <input type="hidden" name="original_category" id="original-category-input">
+                <input type="hidden" name="original_name" id="original-name-input">
+
+                <!-- 新增分类选择下拉菜单 -->
+                <div class="field" id="category-select-field">
+                    <label>分类</label>
+                    <select class="ui dropdown" name="category" id="category-select">
+                        {% for section in sections %}
+                            {% for category in section.categories %}
+                                <option value="{{ category.name }}">{{ category.name }}</option>
+                            {% endfor %}
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>名称</label>
+                    <input type="text" name="name" placeholder="名称" id="name-input">
+                </div>
+                <div class="field">
+                    <label>图标</label>
+                    <input type="text" name="icon" placeholder="图标" id="icon-input">
+                </div>
+                <div class="field">
+                    <label>样式</label>
+                    <input type="text" name="style" placeholder="样式" id="style-input">
+                </div>
+                <div class="field">
+                    <label>URL</label>
+                    <input type="text" name="url" placeholder="URL" id="url-input">
+                </div>
+                <div class="field">
+                    <label>上传图片</label>
+                    <input type="file" name="image" accept="image/*" id="image-upload">
+                </div>
+                <div class="field">
+                    <label>图片 URL</label>
+                    <input type="text" name="image_url" placeholder="图片 URL" id="image-url-input">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="download_image" id="download-image-checkbox">
+                        <label>下载图片到服务器</label>
+                    </div>
+                </div>
+            </form>
+
+            <!-- 预览区域 -->
+            <div class="ui segment" style="display: flex; justify-content: center; align-items: center;">
+                <a href="#" class="ui mini label" id="preview-link">
+                    <i class="icon" id="preview-icon"></i>
+                    <img src="" alt="" class="link-image" id="preview-image">
+                    <span id="preview-name"></span>
+                </a>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button">取消</div>
+            <div class="ui positive right labeled icon button" id="submit-button">提交<i class="checkmark icon"></i></div>
+        </div>
+    </div>
+
+    <!-- 引入 jQuery -->
+    <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
+    <!-- 引入 Fomantic UI 的 JavaScript -->
+    <script type="text/javascript" src="//unpkg.com/fomantic-ui/dist/semantic.min.js"></script>
+    <!-- 引入 SortableJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 实时更新预览效果
+            $('#name-input, #icon-input, #style-input, #image-upload, #image-url-input').on('input change', function() {
+                updatePreview();
+            });
+
+            // 提交添加链接的表单
+            $('#submit-button').click(async function() {
+                // 图片相关
+                // 图片 URL
+                const imageUrl = $('#image-url-input').val();
+                // 是否勾选下载图片复选框
+                const downloadImage = $('#download-image-checkbox').is(':checked');
+                let imageFile = null;
+               // 如果用户输入了图片 URL 并选择下载图片
+                if (imageUrl && downloadImage) {
+                    try {
+                        console.log('开始下载图片:', imageUrl); // 日志：开始下载图片
+
+                        // 下载图片到浏览器缓存
+                        const response = await fetch(imageUrl);
+                        if (!response.ok) throw new Error('图片下载失败');
+                        const blob = await response.blob();
+
+                        console.log('图片下载成功:', blob); // 日志：图片下载成功
+
+                        // 生成默认文件名
+                        const extension = blob.type.split('/')[1] || 'png'; // 从 MIME 类型中提取扩展名
+                        const currentTime = new Date().toISOString().replace(/[:.-]/g, ''); // 生成当前时间字符串
+                        const filename = `image-${currentTime}.${extension}`; // 默认文件名
+                        console.log('使用默认文件名:', filename); // 日志：使用默认文件名
+
+                        // 将 Blob 转换为 File 对象
+                        imageFile = new File([blob], filename, { type: blob.type });
+                        console.log('File 对象创建成功:', imageFile); // 日志：File 对象创建成功
+                    } catch (error) {
+                        console.error('图片下载失败:', error); // 日志：图片下载失败
+                        alert('图片下载失败，请检查 URL 是否正确');
+                        return;
+                    }
+                }
+
+                // 获取表单数据, 准备上传
+                // 创建 FormData 对象
+                const formData = new FormData($('#add-link-form')[0]);
+
+                // 如果下载了图片, 将其添加到 FormData
+                if (imageFile) {
+                    formData.set('image', imageFile); // 替换或添加图片文件
+                    console.log('图片已添加到 FormData:', imageFile); // 日志：图片已添加到 FormData
+                }
+
+                // 提交表单数据
+                $.ajax({
+                    url: '/edit_link',
+                    type: 'POST',
+                    data: formData,
+                    processData: false, // 必须设置为 false
+                    contentType: false, // 必须设置为 false
+                    success: function(response) {
+                        if (response.success) {
+                           location.reload(); // 重新加载页面以显示新链接
+                        } else {
+                            alert('添加链接失败');
+                        }
+                    },
+                    error: function() {
+                        alert('请求失败，请检查网络或服务器状态');
+                    }
+                });
+            });
+
+            // 初始化 Sortable，实现跨分类拖动排序
+            {% for section in sections %}
+                {% for category in section.categories %}
+                    new Sortable(document.getElementById('category-{{ category.name }}'), {
+                        animation: 150, // 动画时长
+                        group: 'links', // 允许跨分类拖移
+                       // filter: '.add-link', // 排除带有 add-link 类的元素
+                        onEnd: function(evt) {
+                            var fromCategory = evt.from.id.replace('category-', '');
+                            var toCategory = evt.to.id.replace('category-', '');
+                            var linkName = evt.item.getAttribute('data-name');
+
+                            // 获取新的顺序
+                            var newOrder = Array.from(evt.to.children).map(function(child) {
+                                return child.getAttribute('data-name');
+                            }).filter(function(name) {
+                                return name !== null;
+                            });
+
+                            // 发送 AJAX 请求更新链接的分类和顺序
+                            $.ajax({
+                                url: '/move_link',
+                                type: 'POST',
+                                data: {
+                                    fromCategory: fromCategory,
+                                    toCategory: toCategory,
+                                    linkName: linkName,
+                                    order: newOrder
+                                },
+                                success: function(response) {
+                                    if (!response.success) {
+                                        alert('移动链接失败');
+                                    }
+                                }
+                            });
+                        }
+                    });
+                {% endfor %}
+            {% endfor %}
+        });
+    </script>
+    <script>
+        // 初始化表单的函数
+        function initializeForm() {
+            // 原始category和原始name
+            $('#original-category-input').val('');
+            $('#original-name-input').val('');
+
+            // 初始化 name, icon, style, url, image_url
+            $('#name-input').val('');
+            $('#icon-input').val('');
+            $('#style-input').val('');
+            $('#url-input').val('');
+            $('#image-url-input').val('');
+
+            // 清除图片
+            document.getElementById('image-upload').value = '';
+
+            // 更新预览效果
+            updatePreview();
+        }
+    </script>
+    <script>
+        // 更新预览函数
+        function updatePreview() {
+                const name = $('#name-input').val();
+                const icon = $('#icon-input').val();
+                const style = $('#style-input').val();
+                const imageUpload = $('#image-upload')[0].files[0];
+                const imageUrl = $('#image-url-input').val();
+
+                // 更新链接样式
+                $('#preview-link').removeClass().addClass(`ui mini ${style || ''} label`);
+
+                // 更新图标
+                if (icon) {
+                    $('#preview-icon').attr('class', `${icon} icon`).show();
+                } else {
+                    $('#preview-icon').hide();
+                }
+
+                // 更新图片
+                if (imageUpload) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('#preview-image').attr('src', e.target.result).show();
+                    };
+                    reader.readAsDataURL(imageUpload);
+                } else if (imageUrl) {
+                    $('#preview-image').attr('src', imageUrl).show();
+                } else {
+                    $('#preview-image').hide();
+                }
+
+                // 更新名称
+                $('#preview-name').text(name || '名称');
+            }
+    </script>
+    <script>
+        // 添加链接函数
+        function addLink(category) {
+            // 初始化表单
+            initializeForm();
+
+            // 更新category
+            $('#category-select').val(category);
+            $('#category-select-field').show();
+
+            // 修改ui modal标题
+            $('.modal .header').text('添加链接');
+
+            // 更新预览效果
+            updatePreview();
+
+            // 显示 ui modal
+            $('.ui.modal').modal('show');
+        }
+    </script>
+    <script>
+        // 编辑链接函数
+        function editLink(category, name) {
+            // 从服务器获取链接数据
+            $.ajax({
+                url: '/get_link',
+                type: 'GET',
+                data: {
+                    category: category,
+                    name: name
+                },
+                success: function(response) {
+                    if (response.success) {
+                        const link = response.link;
+
+                        // 初始化表单
+                        initializeForm();
+
+                        // 填充表单
+                        $('#name-input').val(link.name);
+                        $('#icon-input').val(link.icon || '');
+                        $('#style-input').val(link.style || '');
+                        $('#url-input').val(link.url || '');
+                        $('#image-url-input').val(link.image || '');
+                        $('#original-category-input').val(category);
+                        $('#original-name-input').val(name);
+
+                        // 设置分类选择
+                        $('#category-select').val(category);
+                        $('#category-select-field').show();
+                        // 修改ui modal标题
+                        $('.modal .header').text('编辑链接');
+                        // 更新预览
+                        updatePreview();
+
+                        // 显示ui modal
+                        $('.ui.modal').modal('show');
+                    } else {
+                        alert('找不到链接数据');
+                    }
+                },
+                error: function() {
+                    alert('无法获取链接信息');
+                }
+            });
+        }
+    </script>
+    <script>
+        // 删除链接
+        function deleteLink(category, name) {
+            if (confirm('确定要删除这个链接吗？')) {
+                $.ajax({
+                    url: '/delete_link',
+                    type: 'POST',
+                    data: {
+                        category: category,
+                        name: name
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            location.reload(); // 重新加载页面以显示更新后的链接
+                        } else {
+                            alert('删除链接失败');
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
