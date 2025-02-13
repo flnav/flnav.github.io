@@ -136,3 +136,18 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
                     _data/links.yml
                     ...done in 6.840579514 seconds.
                     
+[2025-02-13 22:21:07] ERROR '/wp-includes/ID3/license.txt' not found.
+[2025-02-13 22:21:07] ERROR '/feed/' not found.
+[2025-02-13 22:21:08] ERROR '/xmlrpc.php' not found.
+[2025-02-13 22:21:08] ERROR '/blog/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:08] ERROR '/web/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:09] ERROR '/wordpress/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:10] ERROR '/wp/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:10] ERROR '/2020/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:11] ERROR '/2019/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:11] ERROR '/2021/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:12] ERROR '/shop/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:13] ERROR '/wp1/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:14] ERROR '/test/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:14] ERROR '/site/wp-includes/wlwmanifest.xml' not found.
+[2025-02-13 22:21:15] ERROR '/cms/wp-includes/wlwmanifest.xml' not found.
