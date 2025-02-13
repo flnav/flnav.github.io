@@ -1,10 +1,25 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from ruamel.yaml import YAML
 import os
 from werkzeug.utils import secure_filename
 
 # 初始化 Flask 应用
-app = Flask(__name__, static_folder='/home/feilong/FL-Navi/images/')
+app = Flask(__name__)
+
+# 配置静态文件目录
+ASSETS_FOLDER = '/home/feilong/FL-Navi/assets'
+IMAGES_FOLDER = '/home/feilong/FL-Navi/images'
+
+# 自定义静态文件路由
+@app.route('/assets/<path:filename>')
+def serve_assets(filename):
+    """提供 assets 文件夹中的静态文件"""
+    return send_from_directory(ASSETS_FOLDER, filename)
+
+@app.route('/images/<path:filename>')
+def serve_images(filename):
+    """提供 images 文件夹中的静态文件"""
+    return send_from_directory(IMAGES_FOLDER, filename)
 
 # 初始化 ruamel.yaml
 yaml = YAML()
@@ -104,8 +119,8 @@ def edit_link():
     new_style = request.form['style']
     new_url = request.form['url']
     # 获取 new_image，若未传值，默认为空字符串
-    new_image = request.form.get('new_image', '')
-
+    new_image = request.form.get('image_url', '')
+    
     # 处理本地上传图片
     file = request.files['image']
     if file and file.filename and allowed_file(file.filename):  # 检查文件名是否为空
@@ -126,6 +141,11 @@ def edit_link():
         'image': new_image if new_image else ''  # 如果没有新的图片，使用空字符串
     }
 
+    # 移除空值的元素
+    new_link = {key: value for key, value in new_link.items() if value}
+
+    print(new_link)
+
     # 加载数据
     links_data = load_links()
 
@@ -137,6 +157,10 @@ def edit_link():
                     for link in category['links']:
                         if link['name'] == original_name:
                             link.update(new_link)  # 使用 new_link 来更新链接信息
+                            # 去掉 link 中比 new_link 多的元素
+                            for key in list(link.keys()):
+                                if key not in new_link:
+                                    del link[key]
                             save_links(links_data)
                             return jsonify({'success': True})
 
@@ -161,6 +185,10 @@ def edit_link():
                     if category['name'] == original_category:
                         for link in category['links']:
                             if link['name'] == original_name:
+                                # 去掉 link 中比 new_link 多的元素
+                                for key in list(link.keys()):
+                                    if key not in new_link:
+                                        del link[key]
                                 target_link = link
                                 category['links'].remove(link)
                                 break
@@ -255,4 +283,4 @@ def delete_link():
 
 # 启动 Flask 应用
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=15000)
+    app.run(debug=True, host='0.0.0.0', port=4500)

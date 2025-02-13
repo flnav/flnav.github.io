@@ -41,3 +41,4 @@ exclude:
   - app.py            # 排除 app.py 文件
   - templates/        # 排除 templates 文件夹
   - log.dat           # 排除 log.dat 文件
+  - out.dat           # 排除 out.dat 文件

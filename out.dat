@@ -1,0 +1,118 @@
+nohup: ignoring input
+Configuration file: /home/feilong/FL-Navi/_config.yml
+            Source: /home/feilong/FL-Navi
+       Destination: /home/feilong/FL-Navi/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 4.137 seconds.
+ Auto-regeneration: enabled for '/home/feilong/FL-Navi'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2025-02-13 18:15:59
+                    _data/links.yml
+                    ...done in 0.874597005 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:16:11
+                    _data/links.yml
+                    ...done in 0.811345661 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:16:23
+                    _data/links.yml
+                    ...done in 0.876839151 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:19:31
+                    _data/links.yml
+                    ...done in 2.505521261 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:23:07
+                    _data/links.yml
+                    ...done in 3.053006606 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:24:04
+                    _data/links.yml
+                    ...done in 2.17064036 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:25:15
+                    _data/links.yml
+                    ...done in 1.92643454 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:25:39
+                    _data/links.yml
+                    ...done in 0.986894235 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:27:10
+                    _data/links.yml
+                    ...done in 3.152605141 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:28:38
+                    _data/links.yml
+                    ...done in 3.066706646 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:30:18
+                    _data/links.yml
+                    ...done in 3.918962856 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:32:21
+                    _data/links.yml
+                    ...done in 3.207964465 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:33:29
+                    _data/links.yml
+                    ...done in 2.061320939 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:35:03
+                    _data/links.yml
+                    ...done in 1.615103746 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:35:05
+                    _data/links.yml
+                    ...done in 0.929172339 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:35:23
+                    _data/links.yml
+                    ...done in 1.888688449 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:36:20
+                    _data/links.yml
+                    ...done in 1.630643517 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:36:48
+                    _data/links.yml
+                    ...done in 1.489194912 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:41:06
+                    _data/links.yml
+                    ...done in 4.291103218 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:43:57
+                    _data/links.yml
+                    ...done in 3.329856761 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:45:45
+                    _data/links.yml
+                    ...done in 2.862287098 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:46:10
+                    _data/links.yml
+                    ...done in 1.12734771 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:46:26
+                    _data/links.yml
+                    ...done in 1.009400934 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:46:30
+                    _data/links.yml
+                    ...done in 1.009092701 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:47:17
+                    log.txt
+                    ...done in 1.721924979 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:47:19
+                    log.txt
+                    ...done in 1.001761976 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-13 18:47:38
+                    log.txt
+                    ...done in 1.033355119 seconds.
+                    

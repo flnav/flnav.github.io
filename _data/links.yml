@@ -2,10 +2,9 @@
   - name: 收藏夹
     links:
     - name: FL-Space
-      icon: heartbeat
-      style: black
+      icon: heartbeat red
+      style: large basic
       url: https://flpro.cn/
-
     - name: Matomo
       icon: list
       style: orange
@@ -120,15 +119,15 @@
 - categories:
   - name: 娱乐
     links:
+    - name: 斗鱼
+      style: large orange
+      url: https://douyu.com/
+
     - name: 哔哩哔哩 (゜-゜)つロ 干杯~
       image: images/linkimage/image-20250213T093506456Z.png
       icon: thumbs up outline
       style: large pink
       url: https://bilibili.com/
-
-    - name: 斗鱼
-      style: large orange
-      url: https://douyu.com/
 
     - name: 腾讯视频
       style: basic

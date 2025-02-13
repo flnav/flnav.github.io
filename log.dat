@@ -1,0 +1,22 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4500
+ * Running on http://180.201.9.160:4500
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 496-899-421
+127.0.0.1 - - [13/Feb/2025 18:48:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/icons.woff2 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/LatoLatin-Regular.woff2 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/LatoLatin-Bold.woff2 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/themes/default/assets/fonts/outline-icons.woff2 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /images/linkimage/image-20250213T093506456Z.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-jquery/node_modules/jquery/dist/jquery.min.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Feb/2025 18:48:03] "[36mGET /assets/packages/package-sortable/node_modules/sortablejs/Sortable.min.js HTTP/1.1[0m" 304 -
