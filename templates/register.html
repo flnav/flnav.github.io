@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书签添加系统注册</title>
+    <link rel="stylesheet" type="text/css" href="/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css">
+</head>
+<body>
+    <div class="ui middle aligned center aligned grid" style="height: 100vh;">
+        <div class="column" style="max-width: 450px;">
+            <!-- 系统标题 -->
+            <h2 class="ui blue header">
+                <i class="user plus icon"></i>
+                <div class="content">
+                    注册账号
+                    <div class="sub header">Power by ShiFeilong</div>
+                </div>
+            </h2>
+
+            <!-- 注册表单卡片 -->
+            <div class="ui raised segment">
+                <form class="ui form" method="POST" action="{{ url_for('register') }}">
+                    <!-- 用户名输入 -->
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <input type="text" name="username" placeholder="请输入用户名" required>
+                            <i class="user icon"></i>
+                        </div>
+                    </div>
+
+                    <!-- 密码输入 -->
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <input type="password" name="password" placeholder="请输入密码" required>
+                            <i class="lock icon"></i>
+                        </div>
+                    </div>
+
+                    <!-- 注册按钮 -->
+                    <button class="ui fluid large blue submit button" type="submit">
+                        注册
+                    </button>
+                </form>
+            </div>
+
+            <!-- 登录链接 -->
+            <div class="ui message">
+                已经有账号？<a href="{{ url_for('login') }}">点击这里登录</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js"></script>
+</body>
+</html>

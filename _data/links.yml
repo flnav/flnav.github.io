@@ -49,14 +49,17 @@
       style: basic
       url: https://exmail.qq.com/login
 
+    - name: 宝塔面板
+      style: basic big
+      url: https://120.46.205.153:40265/genius
     - name: MSDN
       style: basic
       url: https://msdn.itellyou.cn/
 
-    - name: 添加链接
-      icon: add
-      style: basic big
-      url: http://m.flpro.cn/
+    - name: love
+      icon: heart red
+      style: basic large
+      url: https://love.flpro.cn
   - name: AI工具
     links:
     - name: ChatGPT官网

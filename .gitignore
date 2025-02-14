@@ -15,3 +15,6 @@ Thumbs.db
 
 # MD
 assets/packages/**/*.md
+
+# DB
+users.db

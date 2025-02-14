@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify, send_from_directory, session, redirect, url_for
 from ruamel.yaml import YAML
 import os
 from werkzeug.utils import secure_filename
+from flask_sqlalchemy import SQLAlchemy
+from datetime import timedelta  # 用于设置会话过期时间
+from werkzeug.security import generate_password_hash, check_password_hash  # 安全加密和验证密码
 
 # 初始化 Flask 应用
 app = Flask(__name__)
@@ -48,6 +51,101 @@ ALLOWED_EXTENSIONS = {
 }
 
 
+# 数据库配置
+# 获取当前应用程序的目录
+basedir = os.path.abspath(os.path.dirname(__file__))
+# 使用SQLite数据库，数据库文件名为users.db
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(basedir, "users.db")}'
+# 禁用SQLAlchemy的修改跟踪功能
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# 设置密钥，用于加密会话数据，防止篡改
+app.secret_key = 'geniusfeilongloveajiao'
+
+# 设置会话的过期时间为1小时
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=1)
+
+# 初始化SQLAlchemy
+db = SQLAlchemy(app)
+
+
+# 用户模型
+class User(db.Model):
+    """定义用户模型，映射到数据库中的用户表"""
+    id = db.Column(db.Integer, primary_key=True)  # 用户ID，主键
+    username = db.Column(db.String(80), unique=True, nullable=False)  # 用户名，唯一且不能为空
+    password_hash = db.Column(db.String(128), nullable=False)  # 密码哈希，不能为空
+
+
+# 创建数据库表
+with app.app_context():
+    db.create_all()  # 在数据库中创建所有模型所对应的表
+
+# 假设 app 是 Flask 应用实例
+app.config['REGISTER_ENABLED'] = False  # 设置为 False 禁用注册功能
+
+
+# 注册用户
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    """处理用户注册"""
+    if not app.config['REGISTER_ENABLED']:
+        return '注册功能已禁用', 403  # 返回 403 状态码表示禁止访问
+
+    """处理用户注册"""
+    if request.method == 'POST':  # 如果是POST请求
+        username = request.form['username']  # 获取用户名
+        password = request.form['password']  # 获取密码
+
+        # 加密密码
+        hashed_password = generate_password_hash(password)
+
+        # 检查用户名是否已经存在
+        if User.query.filter_by(username=username).first():
+            return '用户已存在，请选择其他用户名', 400  # 如果存在，返回错误信息
+
+        # 创建新用户实例
+        new_user = User(username=username, password_hash=hashed_password)
+        db.session.add(new_user)  # 将新用户添加到会话
+        db.session.commit()  # 提交会话，将更改保存到数据库
+
+        return redirect(url_for('login'))  # 注册成功后重定向到登录页面
+
+    return render_template('register.html')  # GET请求时渲染注册页面
+
+
+# 登录路由
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """处理用户登录"""
+    if request.method == 'POST':  # 如果是POST请求
+        username = request.form['username']  # 获取用户名
+        password = request.form['password']  # 获取密码
+
+        # 验证用户名和密码
+        user = User.query.filter_by(username=username).first()  # 查询数据库获取用户信息
+        if user is None:
+            return '用户名不存在，请注册一个新账号', 400  # 用户不存在，返回错误信息
+
+        if check_password_hash(user.password_hash, password):  # 验证密码
+            session['user_id'] = username  # 将用户名存入会话  # 将用户ID存入会话
+            session.permanent = True  # 设置会话为永久，遵循超时时间
+            return redirect(url_for('index'))  # 登录成功，重定向到主页
+        else:
+            return '密码错误，请检查密码', 400  # 密码错误，返回错误信息
+
+    return render_template('login.html')  # GET请求时渲染登录页面
+
+
+# 注销路由
+@app.route('/logout')
+def logout():
+    """处理用户注销"""
+    user_id = session.get('user_id')
+    session.clear()  # 清除会话数据
+    return redirect(url_for('login'))  # 重定向到登录页面
+
+
 # 加载 YAML 数据
 def load_links():
     """
@@ -78,6 +176,10 @@ def index():
     """
     渲染首页模板，并将加载的 YAML 数据传递给模板。
     """
+    # 如果用户未登录，重定向到登录页面
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+
     links_data = load_links()
     return render_template('index.html', sections=links_data)
 
@@ -283,4 +385,4 @@ def delete_link():
 
 # 启动 Flask 应用
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=4500)
+    app.run(debug=True, host='127.0.0.1', port=4500)
