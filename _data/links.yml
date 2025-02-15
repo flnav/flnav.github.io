@@ -1,15 +1,15 @@
 - categories:
   - name: 收藏夹
     links:
-    - name: FL-Space
+    - name: FL-Online
       icon: heartbeat red
       style: large basic
       url: https://flpro.cn/
     - name: Matomo
-      icon: list
-      style: orange
+      style: basic
       url: https://matomo.flpro.cn/
 
+      image: images/linkimage/matomo.svg
     - name: Secret
       icon: user secret
       style: basic
@@ -32,41 +32,47 @@
 
     - name: PDF Search
       icon: search
-      style: orange
+      style: basic
       url: https://so.flpro.cn/
 
     - name: Lammps
-      icon: atom
-      style: orange
+      style: basic medium
       url: https://www.lammps.org/
 
+      image: images/linkimage/logo.gif
     - name: VASP
       style: basic
       url: https://www.vasp.at/
 
-    - name: 腾讯企业邮箱
-      icon: mail bulk
-      style: basic
-      url: https://exmail.qq.com/login
-
+      image: images/linkimage/vasp.svg
     - name: 宝塔面板
-      style: basic big
+      style: basic
       url: https://120.46.205.153:40265/genius
+      image: images/linkimage/bt.svg
     - name: MSDN
       style: basic
       url: https://msdn.itellyou.cn/
 
+      image: images/linkimage/MSDNitellyou.svg
     - name: love
       icon: heart red
       style: basic large
       url: https://love.flpro.cn
+    - name: 矢量校徽
+      style: basic
+      url: https://www.urongda.com/logos
+      image: https://www.urongda.com/favicon/favicon.ico
   - name: AI工具
     links:
+    - name: DeepSeek
+      style: large basic
+      url: https://www.deepseek.com/
+      image: images/linkimage/deepseek-logo.svg
     - name: ChatGPT官网
-      icon: comment dots black
       style: large basic
       url: https://chat.openai.com/
 
+      image: images/linkimage/ChatGPT.svg
     - name: ChatGPT分享1
       icon: share alternate green
       style: basic
@@ -87,89 +93,109 @@
       style: basic
       url: https://chat.typegpt.net/
 
-    - name: 豆包
-      style: large basic
-      url: https://www.doubao.com/chat/
-
     - name: 秘塔写作猫
-      style: blue
+      style: basic
       url: https://xiezuocat.com/
 
+      image: images/linkimage/AI-copy.svg
     - name: Kimi
-      style: blue
+      style: basic
       url: https://kimi.moonshot.cn/
 
+      image: images/linkimage/kimi.svg
     - name: 秘塔AI搜索
       style: basic
       url: https://metaso.cn/
 
-    - name: 纳米搜索
+      image: images/linkimage/AI-copy.svg
+    - name: 纳米AI搜索
       style: basic
       url: https://n.cn/
 
-    - name: 天工AI
-      style: basic
-      url: https://www.tiangong.cn/
-
-    - name: ThinkAny
-      style: basic
-      url: https://thinkany.so/zh
-
+      image: images/linkimage/AI.svg
     - name: 腾讯元宝
       style: basic
       url: https://yuanbao.tencent.com/chat/
 
+      image: images/linkimage/-copy.svg
+    - name: 天工AI
+      style: basic
+      url: https://www.tiangong.cn/
+
+      image: images/linkimage/1708592406180.webp
+    - name: ThinkAny
+      style: basic
+      url: https://thinkany.so/zh
+
+      image: images/linkimage/thinkany.png
+    - name: 豆包
+      style: large basic
+      url: https://www.doubao.com/chat/
+
+      image: images/linkimage/-_AI_-Mac-512x512.png
     - name: 海螺AI
       style: basic
       url: https://hailuoai.com/
 
+      image: images/linkimage/favicon-192.png
 - categories:
   - name: 娱乐
     links:
+    - name: 哔哩哔哩
+      image: images/linkimage/bilibili.svg
+      style: large basic
+      url: https://bilibili.com/
+
     - name: 斗鱼
       style: large orange
       url: https://douyu.com/
 
-    - name: 哔哩哔哩 (゜-゜)つロ 干杯~
-      image: images/linkimage/image-20250213T093506456Z.png
-      icon: thumbs up outline
-      style: large pink
-      url: https://bilibili.com/
+      image: images/linkimage/douyu-caise.svg
+    - name: 抖音
+      style: large basic
+      url: https://www.douyin.com/
 
+      image: images/linkimage/douyin_2.svg
     - name: 腾讯视频
-      style: basic
+      style: basic large
       url: https://v.qq.com/
 
+      image: images/linkimage/tencent.svg
+    - name: 芒果
+      style: basic
+      url: http://mgtv.com/
+
+      image: images/linkimage/mangguoTV.svg
+    - name: 优酷
+      style: basic large
+      url: https://youku.com/
+
+      image: images/linkimage/youku_3.svg
+    - name: AcFun
+      style: basic
+      url: https://www.acfun.cn/
+
+      image: images/linkimage/acfunlogo.svg
     - name: Youtube
       icon: youtube red
       style: basic
       url: https://youtube.com/
 
-    - name: 优酷
-      style: basic
-      url: https://youku.com/
-
-    - name: 爱奇艺
-      style: large green
-      url: https://iqiyi.com/
-
-    - name: 芒果
-      style: orange
-      url: http://mgtv.com/
-
-    - name: AcFun
-      style: orange
-      url: https://www.acfun.cn/
-
     - name: 腾讯动漫
       style: basic
       url: https://ac.qq.com/
 
-    - name: 豆瓣电影
-      icon: film blue
-      style: basic
+      image: images/linkimage/tencent.svg
+    - name: 豆瓣
+      style: basic large
       url: https://movie.douban.com/
 
+      image: images/linkimage/douban.svg
+    - name: 爱奇艺
+      style: large basic
+      url: https://iqiyi.com/
+
+      image: images/linkimage/aiqiyix.svg
   - name: 工具
     links:
     - name: 微信文件传输助手
@@ -188,9 +214,10 @@
       url: https://gitee.com/
 
     - name: CSDN
-      style: basic
+      style: basic large
       url: https://www.csdn.net/
 
+      image: images/linkimage/csdn.svg
     - name: OneDrive
       icon: microsoft
       style: basic
@@ -202,20 +229,25 @@
       url: http://www.12306.cn/
 
     - name: 网易邮箱
-      icon: envelope red
-      style: basic
+      style: basic large
       url: http://email.163.com/
 
+      image: images/linkimage/wangyi.svg
     - name: QQ邮箱
-      icon: qq black
       style: large basic
       url: https://mail.qq.com/
 
+      image: images/linkimage/QQyouxiang.svg
+    - name: 腾讯企业邮箱
+      style: basic
+      url: https://exmail.qq.com/login
+
+      image: images/linkimage/tencentmail.svg
     - name: 新浪邮箱
-      icon: envelope red
       style: basic
       url: https://mail.sina.com.cn/
 
+      image: images/linkimage/xinlangyouxiang.svg
     - name: Gmail
       icon: google red
       style: basic
@@ -229,27 +261,30 @@
       url: https://weibo.com/
 
     - name: 贴吧
-      icon: paw blue
       style: basic
       url: https://tieba.baidu.com/
 
+      image: images/linkimage/baidutieba.svg
     - name: 知乎
       icon: zhihu blue
       style: large basic
       url: https://www.zhihu.com/
 
-    - name: 抖音
-      style: large black
-      url: https://www.douyin.com/
+    - name: Instagram
+      icon: instagram pink
+      style: basic
+      url: https://www.instagram.com/
 
     - name: 快手
-      style: orange
+      style: basic
       url: https://www.kuaishou.com/
 
+      image: images/linkimage/kuaishou.svg
     - name: 西瓜视频
-      style: red
+      style: basic
       url: https://www.ixigua.com/
 
+      image: images/linkimage/ixigua.svg
     - name: Facebook
       icon: facebook f blue
       style: basic
@@ -260,11 +295,6 @@
       style: basic
       url: https://twitter.com/
 
-    - name: Instagram
-      icon: instagram pink
-      style: basic
-      url: https://www.instagram.com/
-
     - name: Telegram
       icon: telegram plane blue
       style: basic
@@ -274,14 +304,14 @@
     links:
     - name: Google学术官网(US)
       style: large basic
-      icon: graduation cap
       url: https://scholar.google.com/
 
+      image: images/linkimage/a-Google_Scholar_logo1.svg
     - name: Google学术官网(HK)
       style: large basic
-      icon: graduation cap
       url: https://scholar.google.com.hk/
 
+      image: images/linkimage/a-Google_Scholar_logo1.svg
     - name: 镜像Ⅰ
       style: basic
       url: https://xueshu.dailyheadlines.cc/
@@ -314,13 +344,13 @@
       url: https://sci-hub.se/
 
     - name: Sci-Hub中文社区
-      style: blue
-      icon: react
+      style: basic
+      icon: react blue
       url: https://discuss.sci-hub.org.cn/
 
     - name: Sci-Hub文献检索
-      style: blue
-      icon: react
+      style: basic
+      icon: react blue
       url: https://sci-hub.org.cn/
 
     - name: 官方镜像Ⅰ
@@ -350,52 +380,53 @@
   - name: Translation Tools
     links:
     - name: 谷歌翻译
-      icon: language blue
       style: large basic
       url: https://translate.google.com/
 
+      image: images/linkimage/gugefanyi.svg
     - name: 百度翻译
-      icon: paw blue
       style: large basic
       url: https://fanyi.baidu.com/
 
+      image: images/linkimage/baidufanyi.svg
     - name: 有道翻译
-      style: large red
+      style: large basic
       url: https://fanyi.youdao.com/
 
+      image: images/linkimage/youdao.svg
     - name: 搜狗翻译
-      style: orange
+      style: basic
       url: https://fanyi.sogou.com/text
 
-    - name: 百川翻译
-      style: blue
-      url: http://www.bcwxfy.com/
-
+      image: images/linkimage/sougouico-18px.svg
     - name: 飛龍翻译
-      style: large black
+      style: basic
       url: /source/translate/index.html
 
+      image: images/linkimage/logo-dark.svg
     - name: DeepL翻译器
       style: large basic
       url: https://www.deepl.com/translator
 
+      image: images/linkimage/DeepL.svg
     - name: bing翻译
       style: basic
-      icon: microsoft
       url: https://cn.bing.com/translator
 
+      image: images/linkimage/bing.svg
     - name: cnki学术翻译
       style: basic
       url: https://dict.cnki.net/index
 
+      image: images/linkimage/cnki.png
 - categories:
   - name: 山大导航
     links:
-    - name: 山大官网
-      icon: university red
-      style: large basic
+    - name: 山东大学
+      style: big basic
       url: https://www.sdu.edu.cn/
 
+      image: images/linkimage/sdu-logo.svg
     - name: 图书馆
       icon: book reader orange
       style: large basic
@@ -460,11 +491,11 @@
 
   - name: 山科导航
     links:
-    - name: 山科官网
-      icon: university blue
-      style: large basic
+    - name: 山东科技大学
+      style: big basic
       url: https://www.sdust.edu.cn/
 
+      image: images/linkimage/sdust-logo.svg
     - name: 图书馆
       icon: book reader orange
       style: large basic
@@ -546,9 +577,10 @@
   - name: Literature DB(中文)
     links:
     - name: CNKI中国知网学术文献总库
-      style: big primary
+      style: big basic
       url: https://www.cnki.net/
 
+      image: images/linkimage/cnki.png
     - name: 万方数据知识服务平台
       style: large red
       url: https://g.wanfangdata.com.cn/index.html
@@ -632,9 +664,10 @@
   - name: Literature DB(外文)
     links:
     - name: SCI科学引文索引(ISI)
-      style: big violet
+      style: big basic
       url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.SCI
 
+      image: images/linkimage/web_of_science.svg
     - name: SSCI社会科学引文索引(ISI)
       style: basic
       url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.SSCI

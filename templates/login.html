@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>书签添加系统登录</title>
+    <title>书签管理系统</title>
+    <!-- 引用 favicon.ico -->
+    <link rel="shortcut icon" href="{{ url_for('favicon') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css">
 </head>
 <body>
@@ -51,6 +54,8 @@
         </div>
     </div>
 
+    <!-- 引入 jQuery -->
+    <script type="text/javascript" src="/assets/packages/package-jquery/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.js"></script>
 </body>
 </html>

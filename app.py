@@ -24,6 +24,10 @@ def serve_images(filename):
     """提供 images 文件夹中的静态文件"""
     return send_from_directory(IMAGES_FOLDER, filename)
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path), 'favicon.ico')
+
 # 初始化 ruamel.yaml
 yaml = YAML()
 # 设置 YAML 文件的缩进格式（可选）

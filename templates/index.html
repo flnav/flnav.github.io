@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的收藏夹</title>
+    <title>书签管理系统</title>
+    <!-- 引用 favicon.ico -->
+    <link rel="shortcut icon" href="{{ url_for('favicon') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('favicon') }}" type="image/x-icon">
     <!-- 引入 Fomantic UI 样式 -->
     <link rel="stylesheet" type="text/css" href="/assets/packages/package-fomantic-ui/semantic/dist/semantic.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css"> -->
@@ -14,13 +17,12 @@
         .ui.labels .label {
             margin: 0.2em;
         }
-        .ui.mini.label .link-image {
-            width: 1em !important; /* 提高优先级 */
+        .ui.small.label .link-image {
+            width: auto !important; /* 提高优先级 */
             height: 1em !important; /* 提高优先级 */
-            object-fit: cover; /* 确保图片按比例裁剪为方形 */
             border-radius: 0.2em; /* 可选：添加轻微的圆角 */
             vertical-align: top; /* 确保图片与文字垂直对齐 */
-            margin-right: 0.75em; /* 图片与文字之间的间距 */
+            margin-right: 0.5em; /* 图片与文字之间的间距 */
         }
         /* 新增样式，让注销按钮占满整行 */
        .logout-button-container {
@@ -49,7 +51,7 @@
                                     <!-- 遍历 links 数据 -->
                                     {% for link in category.links %}
                                         <!-- 单个链接 -->
-                                        <div class="ui mini {{ link.style }} label" data-name="{{ link.name }}">
+                                        <div class="ui small {{ link.style }} label" data-name="{{ link.name }}">
                                             <!-- 链接图标 -->
                                             {% if link.icon %}
                                                 <i class="{{ link.icon }} icon"></i>
@@ -71,7 +73,7 @@
                                         </div>
                                     {% endfor %}
                                     <!-- 添加链接按钮 -->
-                                    <a class="ui mini label add-link" data-category="{{ category.name }}" onclick="addLink('{{ category.name }}')">
+                                    <a class="ui small label add-link" data-category="{{ category.name }}" onclick="addLink('{{ category.name }}')">
                                         <i class="plus icon"></i> 添加链接
                                     </a>
                                 </div>
