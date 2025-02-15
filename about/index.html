@@ -6,29 +6,139 @@ active_key: about
 
 <div class="ui vertical stripe segment">
     <div class="ui container">
-        <div class="ui warning message">
-            <div class="header">温馨提示</div>
-            <ul>
-                <li>该定制化服务仍处于测试与迭代研发阶段。</li>
-                <li>该项服务依赖于浏览器的Cookie功能，若要使用此服务，请确保您的浏览器的Cookie功能被启用。</li>
-                <li>您的定制化内容将仅保存在您的浏览器Cookie中，本网站对任何形式的个人定制化数据的遗失概不负责。</li>
-                <li>本网站不保证在未来保留部分或全部该服务的内容，但网站代码对外开源，欢迎Fork。</li>
-            </ul>
+        <!-- 个人信息卡片 -->
+        <div class="ui raised stackable card" style="width: 100%;">
+            <div class="content">
+                <div class="ui grid">
+                    <div class="four wide column" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <img src="/images/logo-dark.svg" class="ui medium circular image" alt="头像" style="width: 100px; height: auto;">
+                    </div>
+                    <div class="twelve wide column">
+                        <h1 class="ui header">飞龙
+                            <div class="sub header">小学生一枚</div>
+                        </h1>
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <i class="mail icon"></i>
+                                feilong.shi@163.com
+                            </div>
+                            <div class="item">
+                                <i class="phone icon"></i>
+                                176-6402-2868
+                            </div>
+                            <div class="item">
+                                <i class="map marker icon"></i>
+                                山东 · 济南
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2 class="ui header">快捷搜索菜单</h2>
-        <table class="ui sortable selectable celled table">
+
+        <!-- 技能展示 -->
+        <h2 class="ui horizontal divider header">
+            <i class="code icon"></i>
+            技术能力
+        </h2>
+        <div class="ui three statistics">
+            <div class="statistic">
+                <div class="value">2+</div>
+                <div class="label">年开发经验</div>
+            </div>
+            <div class="statistic">
+                <div class="value">0+</div>
+                <div class="label">个项目完成</div>
+            </div>
+            <div class="statistic">
+                <div class="value">99%</div>
+                <div class="label">客户满意度</div>
+            </div>
+        </div>
+
+        <div class="ui segments">
+            <div class="ui secondary segment">技术栈</div>
+            <div class="ui segment">
+                <div class="ui indicating progress" data-percent="90">
+                    <div class="bar" style="width: 90%;">
+                        <div class="progress">JavaScript (90%)</div>
+                    </div>
+                </div>
+                <div class="ui indicating progress" data-percent="85">
+                    <div class="bar" style="width: 85%;">
+                        <div class="progress">Python (85%)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 教育经历 -->
+        <h2 class="ui horizontal divider header">
+            <i class="graduation cap icon"></i>
+            教育经历
+        </h2>
+        <div class="ui relaxed list">
+            <div class="item">
+                <i class="large university middle aligned icon"></i>
+                <div class="content">
+                    <div class="header">山东科技大学</div>
+                    <div class="description">金属材料工程学士 | 2018-2022</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large university middle aligned icon"></i>
+                <div class="content">
+                    <div class="header">山东大学</div>
+                    <div class="description">博士在读 | 2022-至今</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经验 -->
+        <h2 class="ui horizontal divider header">
+            <i class="folder open icon"></i>
+            项目经验
+        </h2>
+        <div class="ui three stackable cards">
+            <div class="ui card">
+                <div class="content">
+                    <div class="header">Lammps科学计算</div>
+                    <div class="meta">技术负责人</div>
+                    <div class="description">
+                        <p>Lammps相关计算</p>
+                        <div class="ui horizontal list">
+                            <div class="ui label">Python</div>
+                            <div class="ui label">Lammps</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <h2 class="ui horizontal divider header">
+            <i class="address book icon"></i>
+            联系方式
+        </h2>
+        <table class="ui sortable celled table">
             <thead>
                 <tr>
-                    <th>搜索服务</th>
-                    <th>URL</th>
-                    <th>预览样式</th>
-                    <th>可见性</th>
-                    <th>操作</th>
+                    <th><i class="qq icon"></i> QQ</th>
+                    <th><i class="wechat icon"></i> 微信</th>
+                    <th><i class="mail icon"></i> 邮箱</th>
+                    <th><i class="github icon"></i> GitHub</th>
+                    <th><i class="globe icon"></i> 个人网站</th>
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td>3450058588</td>
+                    <td>Shi-FL</td>
+                    <td><a href="mailto:feilong.shi@163.com">feilong.shi@163.com</a></td>
+                    <td><a href="#">@shifeilong</a></td>
+                    <td><a href="#">www.feilong.online</a></td>
+                </tr>
             </tbody>
         </table>
-        <a id="reset-cookie" class="ui mini negative left labeled icon button"><i class="undo icon"></i>全部重置</a>
     </div>
 </div>

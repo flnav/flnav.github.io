@@ -875,3 +875,407 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
                     assets/css/home.css
                     ...done in 12.384679137 seconds.
                     
+      Regenerating: 2 file(s) changed at 2025-02-15 17:18:30
+                    images/linkimage/logo-dark.svg
+                    _data/links.yml
+                    ...done in 12.623792396 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:18:43
+                    _data/links.yml
+                    ...done in 11.700781675 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:18:55
+                    _data/links.yml
+                    ...done in 11.533431557 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:41:07
+                    assets/js/home.js
+                    ...done in 13.183149441 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:44:06
+                    assets/js/home.js
+                    ...done in 13.380738002 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:47:32
+                    assets/js/home.js
+                    ...done in 12.956436834 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 17:49:26
+                    assets/js/home.js
+                    ...done in 13.257907818 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:06:30
+                    assets/js/home.js
+                    ...done in 12.043563111 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:14:06
+                    assets/js/home.js
+                    ...done in 12.430942287 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:14:20
+                    assets/js/home.js
+                    ...done in 12.371840572 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:15:22
+                    assets/js/home.js
+                    ...done in 14.181251023 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:17:19
+                    assets/js/home.js
+                    ...done in 13.824329074 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:22:01
+                    assets/js/home.js
+                    ...done in 12.399637079 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:22:26
+                    assets/js/home.js
+                    ...done in 14.097502563 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:22:46
+                    assets/js/home.js
+                    ...done in 13.15549777 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:25:33
+                    assets/js/home.js
+                    ...done in 12.477977488 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:25:46
+                    assets/js/home.js
+                    ...done in 11.765771365 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:34:33
+                    assets/js/home.js
+                    ...done in 13.09075907 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:35:13
+                    assets/js/home.js
+                    ...done in 11.843764652 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:39:46
+                    _layouts/default.html
+[31m  Liquid Exception: Liquid syntax error (line 55): 'if' tag was never closed in /home/feilong/FL-Navi/_layouts/default.html[0m
+[33m             Error: Liquid syntax error (line 55): 'if' tag was never closed[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:42:04
+                    _layouts/default.html
+                    ...done in 13.572588421 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:44:13
+                    assets/js/home.js
+                    ...done in 13.507842877 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:46:23
+                    assets/js/home.js
+                    ...done in 11.819030498 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:47:40
+                    assets/js/home.js
+                    ...done in 15.386766063 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:55:09
+                    assets/js/home.js
+                    ...done in 13.275383625 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:56:47
+                    assets/js/home.js
+                    ...done in 12.479258891 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:57:47
+                    assets/js/home.js
+                    ...done in 12.72083833 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 18:58:00
+                    assets/js/home.js
+                    ...done in 11.825312984 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:06:52
+                    _data/links.yml
+                    ...done in 13.149596818 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:15:44
+                    assets/js/home.js
+                    ...done in 12.788628963 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:16:42
+                    _layouts/default.html
+                    ...done in 12.943690354 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:17:17
+                    assets/js/home.js
+                    ...done in 13.856675851 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:21:46
+                    assets/js/home.js
+                    ...done in 12.080808632 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:22:39
+                    assets/js/home.js
+                    ...done in 13.058285338 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:24:21
+                    assets/js/home.js
+                    ...done in 13.735577592 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:24:59
+                    assets/js/home.js
+                    ...done in 12.87326483 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:26:44
+                    assets/js/home.js
+                    ...done in 12.656252191 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:28:32
+                    assets/js/home.js
+                    ...done in 12.848090922 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:32:05
+                    assets/js/home.js
+                    ...done in 13.017199553 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:36:53
+                    assets/js/home.js
+                    ...done in 11.828805962 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:38:59
+                    assets/js/home.js
+                    ...done in 13.565916451 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 19:40:47
+                    assets/js/home.js
+                    ...done in 11.933919102 seconds.
+                    
+[2025-02-15 20:22:08] ERROR '/js/twint_ch.js' not found.
+[2025-02-15 22:44:32] ERROR '/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:32] ERROR '/xmlrpc.php' not found.
+[2025-02-15 22:44:33] ERROR '/blog/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:33] ERROR '/web/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:33] ERROR '/wordpress/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:34] ERROR '/website/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:34] ERROR '/wp/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:34] ERROR '/news/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:34] ERROR '/2018/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:35] ERROR '/2019/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:35] ERROR '/shop/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:35] ERROR '/wp1/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:36] ERROR '/test/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:36] ERROR '/media/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:36] ERROR '/wp2/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:37] ERROR '/site/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:37] ERROR '/cms/wp-includes/wlwmanifest.xml' not found.
+[2025-02-15 22:44:37] ERROR '/sito/wp-includes/wlwmanifest.xml' not found.
+      Regenerating: 2 file(s) changed at 2025-02-15 22:47:04
+                    _data/links.yml
+                    images/linkimage/wanfanglogo.svg
+                    ...done in 12.551481527 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:47:17
+                    _data/links.yml
+                    ...done in 12.995410522 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-02-15 22:49:00
+                    _data/links.yml
+                    images/linkimage/chaoxingqikan.svg
+                    ...done in 12.460700438 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:49:12
+                    _data/links.yml
+                    ...done in 12.105794852 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-02-15 22:50:01
+                    _data/links.yml
+                    images/linkimage/weipuwang.svg
+                    ...done in 12.43117321 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:50:13
+                    _data/links.yml
+                    ...done in 12.640059907 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:51:33
+                    images/linkimage/cssci.png
+                    ...done in 12.151780024 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:51:45
+                    _data/links.yml
+                    ...done in 11.55386348 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-02-15 22:53:24
+                    _data/links.yml
+                    images/linkimage/beijingdaxuetushuguan.svg
+                    ...done in 12.48220053 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:53:37
+                    _data/links.yml
+                    ...done in 11.474989269 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:55:43
+                    _data/links.yml
+                    ...done in 12.115997442 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:55:55
+                    _data/links.yml
+                    ...done in 11.578903347 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-02-15 22:57:33
+                    _data/links.yml
+                    images/linkimage/elsevier-non-solus-new-grey.svg
+                    ...done in 12.452591318 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-02-15 22:57:46
+                    _data/links.yml
+                    images/linkimage/elsevier-non-solus-new-grey.svg
+                    ...done in 13.104651177 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:59:22
+                    _data/links.yml
+                    ...done in 13.33801044 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:59:36
+                    _data/links.yml
+                    ...done in 11.69129861 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 22:59:51
+                    _data/links.yml
+                    ...done in 12.370708349 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:31:36
+                    about/index.html
+                    ...done in 13.557154018 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:32:44
+                    about/index.html
+                    ...done in 13.732689947 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:32:58
+                    _includes/header.html
+                    ...done in 13.068671841 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:36:06
+                    about/index.html
+                    ...done in 13.004047488 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:41:04
+                    about/index.html
+                    ...done in 12.863476149 seconds.
+                    
+[2025-02-15 23:41:23] ERROR '/about/avatar-placeholder.png' not found.
+      Regenerating: 1 file(s) changed at 2025-02-15 23:43:11
+                    about/index.html
+                    ...done in 12.319128325 seconds.
+                    
+[2025-02-15 23:43:38] ERROR '/image/logo-dark.svg' not found.
+[2025-02-15 23:43:43] ERROR '/image/logo-dark.svg' not found.
+[2025-02-15 23:44:03] ERROR '/image/logo-dark.svg' not found.
+      Regenerating: 1 file(s) changed at 2025-02-15 23:44:19
+                    about/index.html
+                    ...done in 12.856097816 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:45:14
+                    about/index.html
+                    ...done in 12.02521177 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:45:50
+                    about/index.html
+                    ...done in 12.154120613 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:47:27
+                    _includes/header.html
+                    ...done in 13.64086213 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:47:41
+                    about/index.html
+                    ...done in 13.264306141 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:48:36
+                    about/index.html
+                    ...done in 12.366660464 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:51:43
+                    about/index.html
+                    ...done in 12.883703383 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:51:58
+                    about/index.html
+                    ...done in 11.783016183 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:52:46
+                    about/index.html
+                    ...done in 12.770975526 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:52:59
+                    about/index.html
+                    ...done in 12.152914877 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:53:13
+                    about/index.html
+                    ...done in 11.506722719 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:54:32
+                    about/index.html
+                    ...done in 13.159880664 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:54:47
+                    about/index.html
+                    ...done in 13.019943522 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:56:39
+                    about/index.html
+                    ...done in 12.651969679 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:57:37
+                    about/index.html
+                    ...done in 12.872317903 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:58:34
+                    about/index.html
+                    ...done in 13.055901244 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-15 23:58:55
+                    about/index.html
+                    ...done in 13.453253574 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:00:11
+                    about/index.html
+                    ...done in 13.003801473 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:01:07
+                    about/index.html
+                    ...done in 12.791700342 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:01:44
+                    about/index.html
+                    ...done in 12.607209121 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:03:16
+                    about/index.html
+                    ...done in 12.425612791 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:03:48
+                    about/index.html
+                    ...done in 11.600885868 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:04:54
+                    about/index.html
+                    ...done in 12.601918972 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:05:11
+                    about/index.html
+                    ...done in 11.581426583 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:05:22
+                    about/index.html
+                    ...done in 12.052537818 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:06:39
+                    about/index.html
+                    ...done in 12.280601816 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:08:20
+                    about/index.html
+                    ...done in 12.363433785 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-02-16 00:09:12
+                    about/index.html
+                    ...done in 13.645660363 seconds.
+                    

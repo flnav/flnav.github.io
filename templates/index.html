@@ -139,7 +139,7 @@
 
             <!-- 预览区域 -->
             <div class="ui segment" style="display: flex; justify-content: center; align-items: center;">
-                <a href="#" class="ui mini label" id="preview-link">
+                <a href="#" class="ui small label" id="preview-link">
                     <i class="icon" id="preview-icon"></i>
                     <img src="" alt="" class="link-image" id="preview-image">
                     <span id="preview-name"></span>
@@ -309,7 +309,7 @@
                 const imageUrl = $('#image-url-input').val();
 
                 // 更新链接样式
-                $('#preview-link').removeClass().addClass(`ui mini ${style || ''} label`);
+                $('#preview-link').removeClass().addClass(`ui small ${style || ''} label`);
 
                 // 更新图标
                 if (icon) {

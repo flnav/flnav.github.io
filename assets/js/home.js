@@ -195,3 +195,62 @@ var sugParams = {
     "sugSubmit": false //选中提示框中词条时是否提交表单
 };
 BaiduSuggestion.bind('search-query', sugParams);
+
+
+
+// add by feilong 20250215
+// date range
+var establishedAt = new Date($('meta[name=established_at]').attr('content'));
+function siteEstablishedDays() {
+    let d = new Date();
+    let today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    return Math.floor((today - establishedAt) / 86400000 + 1);
+};
+
+
+function updateOutlinks() {
+    // 获取外链统计
+    $.getJSON('{{ site.data.analytics.matomo.url }}', {
+        'module': 'API',
+        'method': 'Actions.getOutlinks',
+        'idSite': '{{ site.data.analytics.matomo.site_id }}',
+        'period': 'range',
+        'date': `last${siteEstablishedDays()}`,
+        'format': 'JSON',
+        'filter_limit': '-1',
+        'token_auth': '{{ site.data.analytics.matomo.token }}'
+    }, function(data) {
+        // 构建域名映射字典
+        console.log(data);
+        const domainStats = {};
+        data.forEach(item => {
+            domainStats[item.label] = item.nb_visits;
+        });
+
+        // 遍历所有外链并插入统计信息
+        $('.ui.labels a').each(function() {
+            const $link = $(this);
+            try {
+                // 提取标准化域名（自动去除www前缀）
+                const url = new URL($link.attr('href'));
+                let domain = url.hostname.replace(/^www\./i, ''); // 移除www前缀
+                
+                // 获取匹配的访问次数
+                const visits = domainStats[domain] || 0;
+                
+                // 插入统计标签（在链接后添加）
+                $link.append(
+                    `<div class="detail">${visits}</div>`
+                );
+            } catch (e) {
+                console.warn('无效链接地址:', $link.attr('href'));
+            }
+        });
+    });
+}
+
+
+// 在DOM加载完成后执行
+/* $(document).ready(function() {
+    updateOutlinks();
+}); */

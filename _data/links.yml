@@ -62,6 +62,12 @@
       style: basic
       url: https://www.urongda.com/logos
       image: https://www.urongda.com/favicon/favicon.ico
+    - name: 书签管理
+      style: black
+      url: https://edit.flpro.cn/
+    - name: 外链跳转统计
+      icon: 'external alternate '
+      style: basic
   - name: AI工具
     links:
     - name: DeepSeek
@@ -582,29 +588,34 @@
 
       image: images/linkimage/cnki.png
     - name: 万方数据知识服务平台
-      style: large red
+      style: large basic
       url: https://g.wanfangdata.com.cn/index.html
 
+      image: images/linkimage/wanfanglogo.svg
     - name: 超星数字图书馆
       style: basic
       url: https://edu.sslibrary.com/
 
+      image: images/linkimage/chaoxingqikan.svg
     - name: 维普期刊官网
-      style: large black
+      style: large basic
       url: http://cstj.cqvip.com/
 
+      image: images/linkimage/weipuwang.svg
     - name: CSSCI（南大核心）中文社会科学引文索引
-      style: large brown
+      style: large basic
       url: https://cssrac.nju.edu.cn/
 
+      image: images/linkimage/cssci.png
     - name: CSCD中国科学引文数据库
       style: large teal
       url: http://sciencechina.cn/cscd_source.jsp
 
     - name: 中文核心期刊（北大核心）
-      style: large green
+      style: large basic
       url: https://www.lib.pku.edu.cn/portal/cn/bggk/dtjj/qikanyaomu
 
+      image: images/linkimage/beijingdaxuetushuguan.svg
     - name: 核心期刊查询系统（上交大）
       style: large red
       url: http://corejournal.lib.sjtu.edu.cn/
@@ -689,17 +700,19 @@
       url: https://jcr.clarivate.com/jcr/home
 
     - name: ESI基本科学指标(ISI)
-      style: olive
+      style: olive large
       url: https://esi.clarivate.com
 
     - name: EI工程索引(Elsevier)
       style: big pink
       url: http://www.engineeringvillage.com/
 
+      image: images/linkimage/elsevier-non-solus-new-grey.svg
     - name: ScienceDirect(Elsevier)
       style: big orange
       url: https://www.sciencedirect.com/
 
+      image: images/linkimage/elsevier-non-solus-new-grey.svg
     - name: IEEExplorer(IEE Electronic)
       style: big primary
       url: http://ieeexplore.ieee.org/
