@@ -20,7 +20,16 @@ dayjs.locale('zh-cn');
 dayjs.extend(window.dayjs_plugin_relativeTime);
 (function updateBuildTimeBadge() {
     if (!document.hidden) {
-        $('#build-time img').attr('src', `https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E4%BA%8E-${encodeURIComponent(dayjs($('meta[name=built_at]').attr('content')).fromNow())}-brightgreen?logo=jekyll`);
+		/* // Get the build time from the meta tag 
+		const buildTime = $('meta[name=updated_at]').attr('content'); 
+		// Format the build time relative to now 
+		const formattedTime = dayjs(buildTime).fromNow(); 
+		// Encode the formatted time 
+		const encodedTime = encodeURIComponent(formattedTime); 
+		console.log(buildTime);
+		// Log the formatted time 
+		console.log(formattedTime); */
+        $('#build-time img').attr('src', `https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E4%BA%8E-${encodeURIComponent(dayjs($('meta[name=updated_at]').attr('content')).fromNow())}-brightgreen?logo=jekyll`);
     };
     setTimeout(function () {
         updateBuildTimeBadge();
@@ -69,7 +78,7 @@ function updateDropdown() {
 function setCookie(name, value) {
     Cookies.set(name, value, {
         expires: 365,
-        domain: '.byr-navi.com',
+        domain: '.navi.flpro.cn',
         secure: true
     });
 };
@@ -224,24 +233,31 @@ function updateOutlinks() {
         console.log(data);
         const domainStats = {};
         data.forEach(item => {
-            domainStats[item.label] = item.nb_visits;
+            domainStats[item.label] = {
+                hits: item.nb_hits || 0,    // 总点击量
+                visits: item.nb_visits || 0 // 唯一访问量
+            };
         });
-
         // 遍历所有外链并插入统计信息
         $('.ui.labels a').each(function() {
             const $link = $(this);
             try {
-                // 提取标准化域名（自动去除www前缀）
+                // 提取标准化域名
                 const url = new URL($link.attr('href'));
-                let domain = url.hostname.replace(/^www\./i, ''); // 移除www前缀
+                let domain = url.hostname
                 
                 // 获取匹配的访问次数
-                const visits = domainStats[domain] || 0;
+                const stats = domainStats[domain] || { hits: 0, visits: 0 };
                 
                 // 插入统计标签（在链接后添加）
-                $link.append(
-                    `<div class="detail">${visits}</div>`
-                );
+				// 移除旧的统计并添加新数据
+				$link.find('.detail').remove();
+                // 仅在有有效数据时插入标签
+                if (stats.hits !== 0 || stats.visits !== 0) {
+                    $link.append(
+                        `<div class="detail">${stats.hits} (${stats.visits})</div>`
+                    );
+                }
             } catch (e) {
                 console.warn('无效链接地址:', $link.attr('href'));
             }
@@ -250,7 +266,10 @@ function updateOutlinks() {
 }
 
 
-// 在DOM加载完成后执行
-/* $(document).ready(function() {
-    updateOutlinks();
-}); */
+$(document).ready(function() {
+  // 点击标签时触发统计更新
+  $('.trigger-outlink-stats').on('click', function(e) {
+    e.preventDefault(); // 阻止默认跳转
+    updateOutlinks();    // 执行更新函数
+  });
+});

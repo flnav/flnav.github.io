@@ -4,141 +4,258 @@ title: 关于
 active_key: about
 ---
 
-<div class="ui vertical stripe segment">
-    <div class="ui container">
-        <!-- 个人信息卡片 -->
-        <div class="ui raised stackable card" style="width: 100%;">
-            <div class="content">
-                <div class="ui grid">
-                    <div class="four wide column" style="text-align: center; display: flex; align-items: center; justify-content: center;">
-                        <img src="/images/logo-dark.svg" class="ui medium circular image" alt="头像" style="width: 100px; height: auto;">
-                    </div>
-                    <div class="twelve wide column">
-                        <h1 class="ui header">飞龙
-                            <div class="sub header">小学生一枚</div>
-                        </h1>
-                        <div class="ui horizontal list">
-                            <div class="item">
-                                <i class="mail icon"></i>
-                                feilong.shi@163.com
-                            </div>
-                            <div class="item">
-                                <i class="phone icon"></i>
-                                176-6402-2868
-                            </div>
-                            <div class="item">
-                                <i class="map marker icon"></i>
-                                山东 · 济南
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<style>
+	@media (max-width: 768px) {
+		#contact-information>div {
+			flex-direction: column;
+			gap: 8px !important;
+		}
 
-        <!-- 技能展示 -->
-        <h2 class="ui horizontal divider header">
-            <i class="code icon"></i>
-            技术能力
-        </h2>
-        <div class="ui three statistics">
-            <div class="statistic">
-                <div class="value">2+</div>
-                <div class="label">年开发经验</div>
-            </div>
-            <div class="statistic">
-                <div class="value">0+</div>
-                <div class="label">个项目完成</div>
-            </div>
-            <div class="statistic">
-                <div class="value">99%</div>
-                <div class="label">客户满意度</div>
-            </div>
-        </div>
+		#contact-information a {
+			width: 100%;
+		}
 
-        <div class="ui segments">
-            <div class="ui secondary segment">技术栈</div>
-            <div class="ui segment">
-                <div class="ui indicating progress" data-percent="90">
-                    <div class="bar" style="width: 90%;">
-                        <div class="progress">JavaScript (90%)</div>
-                    </div>
-                </div>
-                <div class="ui indicating progress" data-percent="85">
-                    <div class="bar" style="width: 85%;">
-                        <div class="progress">Python (85%)</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		.ui.horizontal.list>.item:not(:last-child) {
+			margin-right: 0.5rem;
+			/* 可自由调整的间距值 */
+		}
+	}
+</style>
+<style>
+	/* 呼吸动画定义 */
+	@keyframes breathe {
+		0% {
+			box-shadow: 0 0 0 0 rgba(var(--rgb), 0.4);
+		}
 
-        <!-- 教育经历 -->
-        <h2 class="ui horizontal divider header">
-            <i class="graduation cap icon"></i>
-            教育经历
-        </h2>
-        <div class="ui relaxed list">
-            <div class="item">
-                <i class="large university middle aligned icon"></i>
-                <div class="content">
-                    <div class="header">山东科技大学</div>
-                    <div class="description">金属材料工程学士 | 2018-2022</div>
-                </div>
-            </div>
-            <div class="item">
-                <i class="large university middle aligned icon"></i>
-                <div class="content">
-                    <div class="header">山东大学</div>
-                    <div class="description">博士在读 | 2022-至今</div>
-                </div>
-            </div>
-        </div>
+		100% {
+			box-shadow: 0 0 0 3px rgba(var(--rgb), 0);
+		}
+	}
 
-        <!-- 项目经验 -->
-        <h2 class="ui horizontal divider header">
-            <i class="folder open icon"></i>
-            项目经验
-        </h2>
-        <div class="ui three stackable cards">
-            <div class="ui card">
-                <div class="content">
-                    <div class="header">Lammps科学计算</div>
-                    <div class="meta">技术负责人</div>
-                    <div class="description">
-                        <p>Lammps相关计算</p>
-                        <div class="ui horizontal list">
-                            <div class="ui label">Python</div>
-                            <div class="ui label">Lammps</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	/* 基础按钮样式 */
+	.ui.horizontal.list .item .button {
+		/* 毛玻璃基础 */
+		background: rgba(255, 255, 255, 0.1) !important;
+		backdrop-filter: blur(8px);
+		/* 动画设置 */
+		animation: breathe 2s infinite;
+		/* 过渡效果 */
+		transition: all 0.3s ease;
+	}
 
-        <!-- 联系方式 -->
-        <h2 class="ui horizontal divider header">
-            <i class="address book icon"></i>
-            联系方式
-        </h2>
-        <table class="ui sortable celled table">
-            <thead>
-                <tr>
-                    <th><i class="qq icon"></i> QQ</th>
-                    <th><i class="wechat icon"></i> 微信</th>
-                    <th><i class="mail icon"></i> 邮箱</th>
-                    <th><i class="github icon"></i> GitHub</th>
-                    <th><i class="globe icon"></i> 个人网站</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>3450058588</td>
-                    <td>Shi-FL</td>
-                    <td><a href="mailto:feilong.shi@163.com">feilong.shi@163.com</a></td>
-                    <td><a href="#">@shifeilong</a></td>
-                    <td><a href="#">www.feilong.online</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+	/* 图标颜色继承按钮颜色 */
+	.ui.horizontal.list .item .button i {
+		color: inherit;
+	}
+
+	/* 单独设置每个按钮颜色 */
+	.ui.horizontal.list .item:nth-child(1) .button {
+		--color: #2AA9E0;
+		--rgb: 42, 169, 224;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(2) .button {
+		--color: #333;
+		--rgb: 51, 51, 51;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(3) .button {
+		--color: #EA4335;
+		--rgb: 234, 67, 53;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(4) .button {
+		--color: #34B7F1;
+		--rgb: 52, 183, 241;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(5) .button {
+		--color: #12B7F5;
+		--rgb: 18, 183, 245;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(6) .button {
+		--color: #09B83E;
+		--rgb: 9, 184, 62;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(7) .button {
+		--color: #E6162D;
+		--rgb: 230, 22, 45;
+		color: var(--color);
+	}
+
+	.ui.horizontal.list .item:nth-child(8) .button {
+		--color: #DB4437;
+		--rgb: 219, 68, 55;
+		color: var(--color);
+	}
+
+
+	/* 新增旋转动画 */
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	/* 悬停时图标旋转 */
+	.ui.horizontal.list .item .button:hover i {
+		animation: rotate 1s linear infinite;
+		display: inline-block;
+		/* 确保transform生效 */
+	}
+
+
+	/* 悬停增强效果 */
+	.ui.horizontal.list .item .button:hover {
+		transform: translateY(-3px) scale(1.1);
+		background: rgba(255, 255, 255, 0.2) !important;
+	}
+
+	/* 边框颜色同步 */
+	.ui.horizontal.list .item .button {
+		border: 1px solid rgba(var(--rgb), 0.3) !important;
+	}
+</style>
+<div class="ui vertical segment" style="padding-top: 50px; padding-bottom: 50px;">
+
+	<div class="ui container">
+		<!-- 个人信息区域 -->
+		<div class="ui centered blue horizontal card" style="width: 100%;">
+			<div class="image">
+				<img class="ui wireframe image" src="/images/head.jpg">
+			</div>
+			<div class="content">
+				<div class="header" style="color: #2185D0;">
+					<i class="blue user tie icon"></i>
+					飞龙
+				</div>
+				<div class="meta">
+					<span class="category">Scientific Computing Explorer</span>
+				</div>
+				<div class="ui horizontal list">
+					<a class="item" href="https://feilong.online" target="_blank">
+						<button class="ui tiny circular basic icon button">
+							<i class="globe icon"></i>
+						</button>
+					</a>
+					<a class="item" href="https://github.com/shifeilong" target="_blank">
+						<button class="ui tiny circular basic icon button">
+							<i class="github icon"></i>
+						</button>
+					</a>
+					<a class="item" href="mailto:feilong.shi@163.com">
+						<button class="ui tiny circular basic icon button">
+							<i class="mail icon"></i>
+						</button>
+					</a>
+					<a class="item" href="tel:17664022868">
+						<button class="ui tiny circular basic icon button">
+							<i class="mobile alternate icon"></i>
+						</button>
+					</a>
+					<a class="item" href="tencent://AddContact/?fromId=xx&fromSubId=1&subcmd=all&uin=3450058588">
+						<button class="ui tiny circular basic icon button">
+							<i class="qq icon"></i> <!-- qq -->
+						</button>
+					</a>
+					<a class="item" href="weixin://dl/chat?Shi-FL">
+						<button class="ui tiny circular basic icon button">
+							<i class="weixin icon"></i>
+						</button>
+					</a>
+					<a class="item" href="https://weibo.com/u/6580261340" target="_blank">
+						<button class="ui tiny circular basic icon button">
+							<i class="weibo icon"></i>
+						</button>
+					</a>
+					<a class="item" href="mailto:feilong.online@gmail.com" target="_blank">
+						<button class="ui tiny circular basic icon button">
+							<i class="google icon"></i>
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="extra content">
+				<a class="ui tiny teal basic tag label"><i class="university icon"></i><i
+						class="check circle outline icon"></i>山东科技大学学士</a>
+				<a class="ui tiny blue basic tag label"><i class="graduation cap icon"></i><i
+						class="clipboard list icon"></i>山东大学硕博连读在读</a>
+			</div>
+		</div>
+
+		<div class="ui centered teal card" style="width: 100%;">
+			<div class="content">
+				<div class="header" style="color: #00B5AD;">
+					<i class="teal code icon"></i>
+					技术能力
+				</div>
+				<div class="meta">
+					<a>Personal Scientific Computing Ability</a>
+				</div>
+				<div class="ui active blue small progress" data-percent="85" style="margin-bottom: 10px;">
+					<div class="bar" style="width: 85%">
+						<div class="progress">Python (85%)</div>
+					</div>
+				</div>
+				<div class="ui active green small progress" data-percent="70" style="margin-bottom: 10px;">
+					<div class="bar" style="width: 70%">
+						<div class="progress">LAMMPS (70%)</div>
+					</div>
+				</div>
+				<div class="ui active red small progress" data-percent="30" style="margin-bottom: 10px;">
+					<div class="bar" style="width: 30%">
+						<div class="progress">VASP (30%)</div>
+					</div>
+				</div>
+			</div>
+			<div class="extra content">
+				<a class="ui tiny basic tag label"><i class="tasks icon"></i>5+ 学术项目</a>
+				<a class="ui tiny primary basic tag label"><i class="history icon"></i>2+ 年研究经验</a>
+				<a class="ui tiny red basic tag label"><i class="dollar sign icon"></i>0.7K+ Money</a>
+			</div>
+
+		</div>
+
+		<!-- 联系方式 -->
+		<h2 class="ui horizontal divider header" style="padding-top: 50px;">
+			<i class="address book icon"></i>
+			联系方式
+		</h2>
+		<div id="contact-information">
+			<div style="display: flex; flex-wrap: wrap; text-align: center; justify-content: space-between; gap: 2px;">
+				<a href="https://github.com/shifeilong" target="_blank"><img
+						src="https://img.shields.io/badge/GitHub-@shifeilong-181717?logo=github" alt="GitHub"></a>
+				<a href="mailto:feilong.shi@163.com"><img
+						src="https://img.shields.io/badge/Email-feilong.shi@163.com-D81E06?logo=data:image/svg+xml;charset=utf-8;base64,PHN2ZyB0PSIxNzM5NzYzMzQ0NDI2IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEzNDUyIiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCI+PHBhdGggZD0iTTU5Mi4yOTg2NjcgNjYxLjc2YzYwLjQ1ODY2Ny00Ny41NzMzMzMgNjcuMDcyLTQ5LjkyIDg0Ljk5Mi0yNy4zOTIgMTUuNTczMzMzIDE5LjI0MjY2NyAxMi4yNDUzMzMgMjIuNzQxMzMzLTkxLjczMzMzNCAxMTMuMzY1MzMzLTM0LjY4OCAzMC41OTItNjMuNzQ0IDYyLjI5MzMzMy02My43NDQgNzEuMzgxMzM0IDAgNy45MzYtOC45NiAxNC43NjI2NjctMTkuMDI5MzMzIDE0Ljc2MjY2Ni0xMC4wMjY2NjcgMC00Ni45MzMzMzMgMTkuMjg1MzMzLTgxLjQ5MzMzMyA0NC4yODhDMzUzLjAyNCA5MjYuODkwNjY3IDIyNy44NCA5ODEuMzMzMzMzIDE4NC4xOTIgOTgxLjMzMzMzM2MtNzEuNDY2NjY3IDAtNjcuMDcyLTcxLjM4MTMzMyA1LjYzMi05MS43MzMzMzMgMTI0LjExNzMzMy0zNC4wOTA2NjcgMjUxLjYwNTMzMy0xMDYuNTgxMzMzIDQwMi40MzItMjI3Ljg0eiBtLTQ2Ljg0OC0yMDAuNjE4NjY3YzE0LjUwNjY2Ny01LjcxNzMzMyAzOS4xMjUzMzMtNy45Nzg2NjcgNTQuODI2NjY2LTUuNTg5MzMzIDE1LjU3MzMzMyAxLjEwOTMzMyA1MS4zNzA2NjcgNS42NzQ2NjcgODAuNDI2NjY3IDkuMDQ1MzMzIDEyOC41MTIgMTQuODA1MzMzIDIyNC42NCAxMzIuNjkzMzMzIDIxNC42MTMzMzMgMjU5LjYyNjY2Ny01LjU0NjY2NyA3MC4yMjkzMzMtMjQuNTc2IDEwNi41Mzg2NjctODEuNTc4NjY2IDE1OC42MzQ2NjctODkuNTE0NjY3IDgxLjUzNi0yMTQuNjk4NjY3IDEyMS4yMTYtMjU3LjEwOTMzNCA4Mi42ODgtMjcuOTg5MzMzLTI2LjExMi01MC4zMDQtODEuNzA2NjY3LTQxLjM0NC0xMDMuMjEwNjY3IDUuNTQ2NjY3LTE1LjkxNDY2NyAxMC4wNjkzMzMtMTUuOTE0NjY3IDQxLjM0NCAxLjE1MiA3MC40IDM2LjI2NjY2NyAxNzEuMDA4LTIuMjYxMzMzIDIyOS4xMi04Ny4yOTYgNTguMTU0NjY3LTg2LjE4NjY2NyAzMy40OTMzMzMtMTgwLjI2NjY2Ny00Ni45MzMzMzMtMTgwLjI2NjY2Ny0yOS4wNTYgMC00MC4yMzQ2NjctNi43NDEzMzMtNTEuMzcwNjY3LTMxLjcwMTMzMy0yMS4zMzMzMzMtNDQuMTYtNjMuNzQ0LTQ2LjM3ODY2Ny0xMTEuODI5MzMzLTQuNDgtMjIzLjUzMDY2NyAxOTYuMDUzMzMzLTQzMS40ODggMzAyLjU5Mi00NzguNDIxMzMzIDI0NS45MzA2NjctMzAuMTY1MzMzLTM2LjIyNC02Ljc0MTMzMy01NC4zNTczMzMgMTE3LjMzMzMzMy05MC42NjY2NjcgNDIuNTM4NjY3LTEyLjU0NCAxMTIuOTM4NjY3LTQ5LjgzNDY2NyAxOTEuMTQ2NjY3LTEwMy4xNjggMTExLjc4NjY2Ny03NC43NTIgMTI0LjA3NDY2Ny04Ni4wNTg2NjcgMTE5LjY4LTExMi4xNzA2NjctNC41MjI2NjctMjEuNTA0IDAtMzAuNTkyIDIwLjA5Ni0zOC41Mjh6IG0tMTkxLjE0NjY2Ny00MTAuMjgyNjY2YzYwLjMzMDY2Ny0xMi40NTg2NjcgMjU3LjAyNC0xMC4yNCAzMDcuMzcwNjY3IDMuMzI4IDk1LjA2MTMzMyAyNS4wMDI2NjcgMTEwLjYzNDY2NyA0MS45NDEzMzMgMTM4LjY2NjY2NiAxNjAgMTYuNzI1MzMzIDcwLjI3MiAxNS42MTYgMTAxLjk3MzMzMy00LjUyMjY2NiAxNTAuNjk4NjY2LTIyLjMxNDY2NyA1NS41OTQ2NjctNjQuODUzMzMzIDY5LjEyLTIwMS4yMTYgNjguMDEwNjY3LTEwOS42MTA2NjctMS4xMDkzMzMtMTExLjc4NjY2NyAwLTEzMC44MTYgMjkuNDQtMjMuNTA5MzMzIDM4LjQ0MjY2Ny0xMTguNTcwNjY3IDExNC40MzItMTYwLjk4MTMzNCAxMzAuMzQ2NjY3LTEyOC41MTIgNDYuMzc4NjY3LTIwMC4xMDY2NjcgNTAuOTQ0LTIxMS4yODUzMzMgMTQuNjc3MzMzLTExLjEzNi0zNS4yIDEzLjM5NzMzMy01Ni43MDQgNjYuMDA1MzMzLTU2LjcwNCA2NS44MzQ2NjcgMCAxNzQuMzM2LTQ0LjI0NTMzMyAyMDUuNjEwNjY3LTgyLjc3MzMzMyAxMi4yNDUzMzMtMTMuNTY4IDQuNDM3MzMzLTE3LjA2NjY2Ny00OC4wODUzMzMtMjEuNTQ2NjY3LTcwLjQtNS41ODkzMzMtOTUuMDE4NjY3LTI4LjMzMDY2Ny0xMDguMzczMzM0LTk5LjcxMi0xMi4zNzMzMzMtNjEuMTg0LTEwLjA2OTMzMy0xNjguODMyIDIuMjE4NjY3LTE5My44MzQ2NjcgMTMuNDgyNjY3LTIzLjcyMjY2NyA1MC4zNDY2NjctMjkuNDQgNjIuNjM0NjY3LTkuMDQ1MzMzIDQuNTIyNjY3IDcuOTM2IDcuODUwNjY3IDQ5LjgzNDY2NyA4Ljk2IDk1LjIzMiAyLjIxODY2NyAxMjQuNjcyIDguOTYgMTMwLjM4OTMzMyAxNzIuMTYgMTI0LjY3MiA3Mi43MDQtMi4zNDY2NjcgMTUyLjAyMTMzMy00LjU2NTMzMyAxNzguODU4NjY2LTUuNzE3MzMzIDcxLjUwOTMzMyAwIDk2LjEyOC0zMC41OTIgODcuMjEwNjY3LTEwOS45MDkzMzQtNy44NTA2NjctNzEuMzM4NjY3LTIzLjU1Mi0xMDAuODIxMzMzLTYyLjY3NzMzMy0xMTUuNjI2NjY2LTM0LjU2LTE0Ljc2MjY2Ny0yMzEuMzgxMzMzLTE5LjI0MjY2Ny0zMDkuNTg5MzM0LTYuODI2NjY3LTU4LjExMiA3Ljk3ODY2Ny01OS4yMjEzMzMgNy45Nzg2NjctNTkuMjIxMzMzLTIwLjM5NDY2NyAwLTMzLjkyIDEyLjI0NTMzMy00My4wMDggNjcuMDcyLTU0LjMxNDY2NnogbS0yLjM0NjY2NyAxNjcuNjhjNy44NTA2NjctOS4wNDUzMzMgNTAuMzg5MzMzLTEzLjUyNTMzMyAxMzMuMDM0NjY3LTEyLjUwMTMzNCAxNTguNzIgMS4xOTQ2NjcgMTUwLjgyNjY2Ny0xLjE1MiAxNDYuNDMyIDM1LjE1NzMzNGwtMy4zMjggMzAuNTkyLTEzOS43NzYgMS4xMDkzMzNjLTEyNS4xODQgMC0xMzkuNzc2LTIuMjE4NjY3LTE0My4xMDQtMjAuMzk0NjY3LTIuMTc2LTExLjMwNjY2NyAxLjEwOTMzMy0yNS45ODQgNi43NDEzMzMtMzMuOTJ6IiBmaWxsPSIjRDgxRTA2IiBwLWlkPSIxMzQ1MyI+PC9wYXRoPjwvc3ZnPg==" alt="Email"></a>
+				<a href="weixin://dl/chat?Shi-FL"><img src="https://img.shields.io/badge/ 微信-Shi--FL-07C160?logo=wechat"
+						alt="微信"></a>
+				<a href="tencent://AddContact/?fromId=xx&fromSubId=1&subcmd=all&uin=3450058588"><img
+						src="https://img.shields.io/badge/QQ-3450058588-1EBAFC?logo=data:image/svg+xml;charset=utf-8;base64,PHN2ZyB0PSIxNzM5NzYyNTk4Njk1IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijg4MTciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4Ij48cGF0aCBkPSJNNTExLjAzNyA5ODYuOTRjLTg1LjUwMiAwLTE2My45ODYtMjYuNjg2LTIxNC41MTctNjYuNTQ0LTI1LjY2IDcuMTQ5LTU4LjQ4NiAxOC42NTUtNzkuMjAyIDMyLjkyMS0xNy43MjUgMTIuMjAyLTE1LjUxNiAyNC42NDctMTIuMzIgMjkuNjcgMTQuMDI3IDIyLjA2OSAyNDAuNjIyIDE0LjA5MiAzMDYuMDQgNy4yMTl2LTMuMjY1eiIgZmlsbD0iI0ZBQUQwOCIgcC1pZD0iODgxOCI+PC9wYXRoPjxwYXRoIGQ9Ik00OTUuNjI3IDk4Ni45NGM4NS41MDEgMCAxNjMuOTg2LTI2LjY4NiAyMTQuNTE4LTY2LjU0NCAyNS42NiA3LjE0OSA1OC40ODUgMTguNjU1IDc5LjIwMyAzMi45MjEgMTcuNzI0IDEyLjIwMiAxNS41MTIgMjQuNjQ3IDEyLjMyIDI5LjY3LTE0LjAyNyAyMi4wNjktMjQwLjYyMyAxNC4wOTItMzA2LjA0MiA3LjIxOXYtMy4yNjV6IiBmaWxsPSIjRkFBRDA4IiBwLWlkPSI4ODE5Ij48L3BhdGg+PHBhdGggZD0iTTQ5Ni4xMzcgNDcyLjAyNmMxNDAuNzMtMC45MzUgMjUzLjUxNC0yNy41MDIgMjkxLjczLTM3LjY5NiA5LjExLTIuNDMyIDEzLjk4NC02Ljc4OSAxMy45ODQtNi43ODkgMC4wMzItMS4yNSAwLjU3OC0yMi4zNDggMC41NzgtMzMuMjMyIDAtMTgzLjI4Ny04OC42OTUtMzY3LjQ1OC0zMDYuODEyLTM2Ny40N0MyNzcuNSAyNi44NTEgMTg4LjggMjExLjAyMSAxODguOCAzOTQuMzFjMCAxMC44ODQgMC41NSAzMS45ODIgMC41ODMgMzMuMjMyIDAgMCAzLjk2NSA0LjA3NiAxMS4yMzEgNi4wNDggMzUuMjgzIDkuNTc5IDE1MC4xOSAzNy40ODIgMjk0LjQ4NSAzOC40MzdoMS4wMzd6TTg4My41MDEgNjI2Ljk2N2MtOC42Ni0yNy44MjUtMjAuNDg0LTYwLjI3My0zMi40NTUtOTEuNDM0IDAgMC02Ljg4Ni0wLjg0OC0xMC4zNjYgMC4xNTgtMTA3LjQyNCAzMS4xNTItMjM3LjYyNCA1MS4wMDYtMzM2Ljg0NSA0OS44MDhoLTEuMDI2Yy05OC42NjQgMS4xODYtMjI3Ljk4Mi0xOC40NC0zMzUuMDQ0LTQ5LjI4OC00LjA5LTEuMTc2LTEyLjE2OC0wLjY3Ny0xMi4xNjgtMC42NzctMTEuOTcgMzEuMTYtMjMuNzkzIDYzLjYwOC0zMi40NTMgOTEuNDMzLTQxLjMgMTMyLjY3OS0yNy45MiAxODcuNTg3LTE3LjczMSAxODguODE4IDIxLjg2MiAyLjYzOCA4NS4wOTktOTkuODggODUuMDk5LTk5Ljg4IDAgMTA0LjE3IDk0LjIxMiAyNjQuMTI1IDMwOS45NDcgMjY1LjU5NmE3NjUuODc3IDc2NS44NzcgMCAwIDEgNS43MjUgMGMyMTUuNzM4LTEuNDcxIDMwOS45NDctMTYxLjQyNCAzMDkuOTQ3LTI2NS41OTUgMCAwIDYzLjIzNiAxMDIuNTE5IDg1LjEwMiA5OS44OCAxMC4xODYtMS4yMzEgMjMuNTY2LTU2LjE0LTE3LjczMi0xODguODE5IiBwLWlkPSI4ODIwIj48L3BhdGg+PHBhdGggZD0iTTQyOS4yMDggMzAzLjkxMWMtMjkuNzYgMS4zMjMtNTUuMTk1LTMyLjExMy01Ni43OS03NC42Mi0xLjYxOC00Mi41MzUgMjEuMTgzLTc4LjA4NyA1MC45NS03OS40MTcgMjkuNzMyLTEuMzA1IDU1LjE0OSAzMi4xMTYgNTYuNzY1IDc0LjY0IDEuNjI5IDQyLjUzNS0yMS4xNzcgNzguMDgtNTAuOTI1IDc5LjM5N20yMjAuNDQ4LTc0LjYyYy0xLjU5MyA0Mi41MDctMjcuMDMgNzUuOTQxLTU2Ljc5IDc0LjYyLTI5Ljc0Ni0xLjMyLTUyLjU1My0zNi44NjItNTAuOTI0LTc5LjM5NyAxLjYxNC00Mi41MjYgMjcuMDMtNzUuOTQ4IDU2Ljc2NC03NC42MzkgMjkuNzcgMS4zMyA1Mi41NyAzNi44ODEgNTAuOTUxIDc5LjQxNyIgZmlsbD0iI0ZGRkZGRiIgcC1pZD0iODgyMSI+PC9wYXRoPjxwYXRoIGQ9Ik02OTUuNDA1IDM1OS4wNjljLTcuODEtMTguNzgzLTg2LjQ2Ni0zOS43MDktMTgzLjg0My0zOS43MDloLTEuMDQ1Yy05Ny4zNzYgMC0xNzYuMDMzIDIwLjkyNi0xODMuODQyIDM5LjcwOWE2LjY2IDYuNjYgMCAwIDAtMC41NyAyLjY3MmMwIDEuMzUzIDAuNDE4IDIuNTc1IDEuMDcyIDMuNjEyIDYuNTggMTAuNDE2IDkzLjkyNCA2MS44ODUgMTgzLjM0MSA2MS44ODVoMS4wNDVjODkuNDE2IDAgMTc2Ljc1OC01MS40NjYgMTgzLjM0LTYxLjg4M2E2Ljc3NSA2Ljc3NSAwIDAgMCAxLjA2OS0zLjYyMiA2LjY2IDYuNjYgMCAwIDAtMC41NjctMi42NjQiIGZpbGw9IiNGQUFEMDgiIHAtaWQ9Ijg4MjIiPjwvcGF0aD48cGF0aCBkPSJNNDY0LjY3NCAyMzkuMzM1YzEuMzQ0IDE2Ljk0Ni03Ljg3IDMyLTIwLjU1IDMzLjY0NS0xMi43MDEgMS42NDctMjQuMDc0LTEwLjc1NS0yNS40MjYtMjcuNzEtMS4zMjYtMTYuOTU0IDcuODczLTMyLjAwOCAyMC41MzQtMzMuNjQgMTIuNzIyLTEuNjUyIDI0LjExNCAxMC43NiAyNS40NDIgMjcuNzA1bTc3Ljk3IDguNDY0YzIuNzAyLTQuMzkyIDIxLjE0OS0yNy40ODggNTkuMzI4LTE5LjA3OCAxMC4wMjggMi4yMDggMTQuNjY3IDUuNDU3IDE1LjY0NiA2LjczNyAxLjQ0NSAxLjg4OCAxLjg0IDQuNTc2IDAuMzc1IDguMTk2LTIuOTAzIDcuMTc0LTguODk0IDYuOTc5LTEyLjIxNyA1LjU3NS0yLjE0NC0wLjkwNy0yOC43MzYtMTYuOTQ4LTUzLjIzMiA2Ljk5LTEuNjg1IDEuNjQ4LTQuNyAyLjIxMi03LjU1OCAwLjI1OC0yLjg1Ni0xLjk1Ni00LjAzOC01LjkyMy0yLjM0Mi04LjY3OCIgcC1pZD0iODgyMyI+PC9wYXRoPjxwYXRoIGQ9Ik01MDMuODIxIDU4OS4zMjhoLTEuMDMxYy02Ny44MDYgMC44MDItMTUwLjAyMi04LjAwNC0yMjkuNjM4LTIzLjM4MS02LjgxNyAzOC42OC0xMC45MzQgODcuMjk0LTcuMzk5IDE0NS4yNzUgOC45MjggMTQ2LjU0MyA5Ny43MjggMjM4LjY1MiAyMzQuNzkzIDIzOS45OTZoNS41N2MxMzcuMDY1LTEuMzQ0IDIyNS44NjUtOTMuNDUzIDIzNC43OTYtMjM5Ljk5NiAzLjUzNS01Ny45ODYtMC41ODQtMTA2LjYtNy40MDMtMTQ1LjI4My03OS42MzEgMTUuMzg1LTE2MS44NjEgMjQuMTk2LTIyOS42ODggMjMuMzg5IiBmaWxsPSIjRkZGRkZGIiBwLWlkPSI4ODI0Ij48L3BhdGg+PHBhdGggZD0iTTMxMC42OTMgNTgxLjM1djE0Ni42MzNzNjkuMjg3IDEzLjU1MiAxMzguNyA0LjE3VjU5Ni44OTdjLTQzLjk3NC0yLjQxMy05MS40LTcuNzktMTM4LjctMTUuNTQ2IiBmaWxsPSIjRUIxQzI2IiBwLWlkPSI4ODI1Ij48L3BhdGg+PHBhdGggZD0iTTgwNi41MDQgNDI3LjIzOHMtMTMwLjExMiA0My4wOC0zMDIuNjYgNDQuMzA5aC0xLjAyNWMtMTcyLjI2NC0xLjIyNC0zMDIuMjE3LTQ0LjE2MS0zMDIuNjYtNDQuMzA5TDE1Ni41OCA1NDEuMzIxYzEwOC45OTggMzQuNDY0IDI0NC4wOTMgNTYuNjc3IDM0Ni4yMzggNTUuMzg3bDEuMDI0LTAuMDAyYzEwMi4xNTIgMS4yOTcgMjM3LjIyNi0yMC45MTcgMzQ2LjI0LTU1LjM4NWwtNDMuNTc5LTExNC4wODN6IiBmaWxsPSIjRUIxQzI2IiBwLWlkPSI4ODI2Ij48L3BhdGg+PC9zdmc+" alt="QQ"></a>
+				<!-- 新增电话 -->
+				<a href="tel:17664022868">
+					<img src="https://img.shields.io/badge/Phone-17664022868-33E358?logo=apple" alt="Phone">
+				</a>
+				<a href="mailto:feilong.online@gmail.com">
+					<img src="https://img.shields.io/badge/Gmail-feilong.online@gmail.com-blue?logo=data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KPHBhdGggZmlsbD0iIzRjYWY1MCIgZD0iTTQ1LDE2LjJsLTUsMi43NWwtNSw0Ljc1TDM1LDQwaDdjMS42NTcsMCwzLTEuMzQzLDMtM1YxNi4yeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxZTg4ZTUiIGQ9Ik0zLDE2LjJsMy42MTQsMS43MUwxMywyMy43VjQwSDZjLTEuNjU3LDAtMy0xLjM0My0zLTNWMTYuMnoiPjwvcGF0aD48cG9seWdvbiBmaWxsPSIjZTUzOTM1IiBwb2ludHM9IjM1LDExLjIgMjQsMTkuNDUgMTMsMTEuMiAxMiwxNyAxMywyMy43IDI0LDMxLjk1IDM1LDIzLjcgMzYsMTciPjwvcG9seWdvbj48cGF0aCBmaWxsPSIjYzYyODI4IiBkPSJNMywxMi4yOThWMTYuMmwxMCw3LjVWMTEuMkw5Ljg3Niw4Ljg1OUM5LjEzMiw4LjMwMSw4LjIyOCw4LDcuMjk4LDhoMEM0LjkyNCw4LDMsOS45MjQsMywxMi4yOTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZiYzAyZCIgZD0iTTQ1LDEyLjI5OFYxNi4ybC0xMCw3LjVWMTEuMmwzLjEyNC0yLjM0MUMzOC44NjgsOC4zMDEsMzkuNzcyLDgsNDAuNzAyLDhoMCBDNDMuMDc2LDgsNDUsOS45MjQsNDUsMTIuMjk4eiI+PC9wYXRoPgo8L3N2Zz4=" alt="Gmail">
+				</a>
+				<a href="https://weibo.com/u/6580261340" target="_blank">
+					<img src="https://img.shields.io/badge/Weibo-shifeilong-E79115?logo=data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTM0LDI5Yy0wLjYtNS44LTcuNi05LjgtMTYtOC45Yy00LjksMC41LTkuNCwyLjYtMTEuOSw1LjZDNC41LDI3LjYsMy44LDI5LjgsNCwzMmMwLjUsNS4zLDYuNCw5LDEzLjgsOWMwLjcsMCwxLjQsMCwyLjItMC4xYzQuOS0wLjUsOS40LTIuNiwxMS45LTUuNkMzMy41LDMzLjQsMzQuMiwzMS4yLDM0LDI5eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNEMzJGMkYiIGQ9Ik0xOS44LDM4LjlDMTIuNywzOS42LDYuNSwzNi40LDYsMzEuOGMtMC41LTQuNiw1LTksMTIuMS05LjdjNy4yLTAuNywxMy4zLDIuNSwxMy44LDcuMUMzMi40LDMzLjksMjcsMzguMiwxOS44LDM4LjkgTTM0LjcsMjMuOWMtMC42LTAuMi0xLTAuMy0wLjctMS4xYzAuNy0xLjcsMC44LTMuMiwwLTQuM2MtMS40LTItNS4zLTEuOS05LjctMC4xYzAsMC0xLjQsMC42LTEtMC41YzAuNy0yLjIsMC42LTQtMC41LTVDMjAuNCwxMC41LDE0LDEzLDguNSwxOC40QzQuNCwyMi41LDIsMjYuOCwyLDMwLjVDMiwzNy43LDExLjIsNDIsMjAuMyw0MkMzMi4xLDQyLDQwLDM1LjIsNDAsMjkuOEM0MCwyNi41LDM3LjIsMjQuNywzNC43LDIzLjkiPjwvcGF0aD48cGF0aCBmaWxsPSIjMjYzMjM4IiBkPSJNMjAuOSwzMC40Yy0wLjMsMC41LTAuOSwwLjgtMS40LDAuNmMtMC41LTAuMi0wLjYtMC44LTAuNC0xLjNjMC4zLTAuNSwwLjktMC44LDEuMy0wLjVDMjEsMjkuMywyMS4xLDI5LjgsMjAuOSwzMC40IE0xNy42LDMyLjhjLTAuNywxLTIuMywxLjUtMy41LDFjLTEuMi0wLjUtMS41LTEuNy0wLjgtMi42YzAuNy0xLDIuMi0xLjQsMy40LTFDMTgsMzAuNiwxOC40LDMxLjgsMTcuNiwzMi44IE0yMC41LDI1LjJjLTMuNS0wLjktNy40LDAuOC04LjksMy44Yy0xLjUsMy4xLTAuMSw2LjUsMy41LDcuNmMzLjYsMS4yLDcuOS0wLjYsOS40LTMuOUMyNiwyOS41LDI0LjEsMjYuMSwyMC41LDI1LjIiPjwvcGF0aD48cGF0aCBmaWxsPSIjRjlBODI1IiBkPSJNNDMuOSAyMEExLjUgMS41IDAgMSAwIDQzLjkgMjNBMS41IDEuNSAwIDEgMCA0My45IDIwWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGOUE4MjUiIGQ9Ik00NS4zLDIyQzQ1LjMsMjIsNDUuMywyMiw0NS4zLDIyYy0wLjIsMC42LTAuOCwxLTEuNCwxYy0wLjgsMC0xLjUtMC43LTEuNS0xLjVjMC0wLjIsMC0wLjQsMC4xLTAuNkM0Mi44LDIwLDQzLDE5LDQzLDE4YzAtNS00LTktOS05Yy0wLjQsMC0wLjksMC0xLjMsMC4xYzAsMCwwLDAtMC4xLDBjMCwwLTAuMSwwLTAuMSwwYy0wLjgsMC0xLjUtMC43LTEuNS0xLjVzMC43LTEuNSwxLjUtMS41YzAsMCwwLDAsMCwwQzMzLDYsMzMuNSw2LDM0LDZjNi42LDAsMTIsNS40LDEyLDEyQzQ2LDE5LjQsNDUuOCwyMC43LDQ1LjMsMjJ6IE00MCwxOGMwLTMuMy0yLjctNi02LTZjLTAuMiwwLTAuNCwwLTAuNywwYzAsMCwwLDAtMC4xLDBjLTAuNywwLjEtMS4zLDAuNy0xLjMsMS41YzAsMC44LDAuNywxLjUsMS41LDEuNWMwLDAsMC4xLDAsMC4xLDBjMCwwLDAsMCwwLDBjMC4xLDAsMC4zLDAsMC40LDBjMS43LDAsMywxLjMsMywzYzAsMC4zLTAuMSwwLjctMC4yLDFjMCwwLDAsMCwwLDBjLTAuMSwwLjItMC4xLDAuMy0wLjEsMC41YzAsMC44LDAuNywxLjUsMS41LDEuNWMwLjYsMCwxLjEtMC40LDEuNC0wLjljMCwwLDAsMCwwLDBjMCwwLDAtMC4xLDAtMC4xYzAtMC4xLDAtMC4xLDAuMS0wLjJDMzkuOSwxOS4yLDQwLDE4LjYsNDAsMTh6Ij48L3BhdGg+Cjwvc3ZnPg=="  alt="Weibo"> 
+				</a>
+			</div>
+		</div>
+
+	</div>
 </div>

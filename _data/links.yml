@@ -2,9 +2,9 @@
   - name: 收藏夹
     links:
     - name: FL-Online
-      icon: heartbeat red
       style: large basic
       url: https://flpro.cn/
+      image: images/linkimage/logo-dark.svg
     - name: Matomo
       style: basic
       url: https://matomo.flpro.cn/
@@ -16,8 +16,8 @@
       url: https://pw.flpro.cn/
 
     - name: 机房温度
-      icon: temperature high red
-      style: basic
+      icon: temperature high blue
+      style: basic large
       url: https://t.flpro.cn/
 
     - name: Local NAS
@@ -54,20 +54,26 @@
       url: https://msdn.itellyou.cn/
 
       image: images/linkimage/MSDNitellyou.svg
+    - name: SMS-Active
+      style: basic
+      url: https://sms-activate.guru/cn
+      image: images/linkimage/sms-active.svg
     - name: love
-      icon: heart red
+      icon: heartbeat red
       style: basic large
       url: https://love.flpro.cn
     - name: 矢量校徽
       style: basic
       url: https://www.urongda.com/logos
-      image: https://www.urongda.com/favicon/favicon.ico
+      icon: school
     - name: 书签管理
-      style: black
-      url: https://edit.flpro.cn/
-    - name: 外链跳转统计
-      icon: 'external alternate '
       style: basic
+      url: https://edit.flpro.cn/
+      icon: 'bookmark '
+    - name: 外链跳转统计
+      icon: external link square alternate icon
+      style: basic trigger-outlink-stats
+      url: '#'
   - name: AI工具
     links:
     - name: DeepSeek
@@ -99,26 +105,26 @@
       style: basic
       url: https://chat.typegpt.net/
 
-    - name: 秘塔写作猫
-      style: basic
-      url: https://xiezuocat.com/
+    - name: 秘塔AI搜索
+      style: basic large
+      url: https://metaso.cn/
 
       image: images/linkimage/AI-copy.svg
+    - name: 纳米AI搜索
+      style: basic large
+      url: https://n.cn/
+
+      image: images/linkimage/AI.svg
+    - name: 豆包
+      style: large basic
+      url: https://www.doubao.com/chat/
+
+      image: images/linkimage/-_AI_-Mac-512x512.png
     - name: Kimi
       style: basic
       url: https://kimi.moonshot.cn/
 
       image: images/linkimage/kimi.svg
-    - name: 秘塔AI搜索
-      style: basic
-      url: https://metaso.cn/
-
-      image: images/linkimage/AI-copy.svg
-    - name: 纳米AI搜索
-      style: basic
-      url: https://n.cn/
-
-      image: images/linkimage/AI.svg
     - name: 腾讯元宝
       style: basic
       url: https://yuanbao.tencent.com/chat/
@@ -134,16 +140,16 @@
       url: https://thinkany.so/zh
 
       image: images/linkimage/thinkany.png
-    - name: 豆包
-      style: large basic
-      url: https://www.doubao.com/chat/
-
-      image: images/linkimage/-_AI_-Mac-512x512.png
     - name: 海螺AI
       style: basic
       url: https://hailuoai.com/
 
       image: images/linkimage/favicon-192.png
+    - name: 秘塔写作猫
+      style: basic
+      url: https://xiezuocat.com/
+
+      image: images/linkimage/AI-copy.svg
 - categories:
   - name: 娱乐
     links:
@@ -162,21 +168,26 @@
       url: https://www.douyin.com/
 
       image: images/linkimage/douyin_2.svg
+    - name: 西瓜视频
+      style: basic
+      url: https://www.ixigua.com/
+
+      image: images/linkimage/ixigua.svg
     - name: 腾讯视频
       style: basic large
       url: https://v.qq.com/
 
       image: images/linkimage/tencent.svg
-    - name: 芒果
-      style: basic
-      url: http://mgtv.com/
-
-      image: images/linkimage/mangguoTV.svg
     - name: 优酷
       style: basic large
       url: https://youku.com/
 
       image: images/linkimage/youku_3.svg
+    - name: 芒果
+      style: basic
+      url: http://mgtv.com/
+
+      image: images/linkimage/mangguoTV.svg
     - name: AcFun
       style: basic
       url: https://www.acfun.cn/
@@ -255,10 +266,10 @@
 
       image: images/linkimage/xinlangyouxiang.svg
     - name: Gmail
-      icon: google red
       style: basic
       url: https://mail.google.com/
 
+      image: images/linkimage/icons8-gmail.svg
   - name: 社交
     links:
     - name: 微博
@@ -276,21 +287,16 @@
       style: large basic
       url: https://www.zhihu.com/
 
-    - name: Instagram
-      icon: instagram pink
-      style: basic
-      url: https://www.instagram.com/
-
     - name: 快手
       style: basic
       url: https://www.kuaishou.com/
 
       image: images/linkimage/kuaishou.svg
-    - name: 西瓜视频
+    - name: Instagram
+      icon: instagram pink
       style: basic
-      url: https://www.ixigua.com/
+      url: https://www.instagram.com/
 
-      image: images/linkimage/ixigua.svg
     - name: Facebook
       icon: facebook f blue
       style: basic
@@ -346,9 +352,9 @@
     links:
     - name: Sci-Hub官网(yyds)
       style: large basic
-      icon: crow
       url: https://sci-hub.se/
 
+      image: images/linkimage/ravenround.png
     - name: Sci-Hub中文社区
       style: basic
       icon: react blue
@@ -492,7 +498,7 @@
     - name: 校园网自助服务平台
       icon: rss
       style: basic
-      url: http://202.194.7.101:8800
+      url: http://css.sdu.edu.cn:8800/
 
 
   - name: 山科导航
@@ -683,26 +689,32 @@
       style: basic
       url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.SSCI
 
+      image: images/linkimage/web_of_science.svg
     - name: ISTP科技会议录索引(ISI)
       style: basic
       url: http://webofknowledge.com/?DestApp=WOS&editions=ISTP
 
+      image: images/linkimage/web_of_science.svg
     - name: A&HCI艺术与人文引文索引(ISI)
       style: basic
       url: https://www.webofscience.com/wos/woscc/search-with-editions?editions=WOS.AHCI
 
+      image: images/linkimage/web_of_science.svg
     - name: BIOSIS Previews生物学文摘(ISI)
       style: basic
       url: https://www.webofscience.com/wos/biosis/basic-search
 
+      image: images/linkimage/web_of_science.svg
     - name: JCR期刊引证报告(ISI)
-      style: green
+      style: basic
       url: https://jcr.clarivate.com/jcr/home
 
+      image: images/linkimage/web_of_science.svg
     - name: ESI基本科学指标(ISI)
-      style: olive large
+      style: large basic
       url: https://esi.clarivate.com
 
+      image: images/linkimage/web_of_science.svg
     - name: EI工程索引(Elsevier)
       style: big pink
       url: http://www.engineeringvillage.com/
@@ -713,28 +725,31 @@
       url: https://www.sciencedirect.com/
 
       image: images/linkimage/elsevier-non-solus-new-grey.svg
-    - name: IEEExplorer(IEE Electronic)
+    - name: IEEE Xplorer
       style: big primary
       url: http://ieeexplore.ieee.org/
 
+      image: images/linkimage/ieee_logo_white.svg
     - name: SpringerLink期刊&图书
       style: large basic
-      icon: chess knight
       url: https://link.springer.com/
 
+      image: images/linkimage/apple-touch-icon-springerlink.png
     - name: Springer Materials
       style: large basic
-      icon: chess knight
       url: https://materials.springer.com/
 
+      image: images/linkimage/apple-touch-icon-springerlink.png
     - name: Science《科学》学术期刊
-      style: large red
+      style: large basic
       url: http://www.sciencemag.org
 
+      image: images/linkimage/favicon-science.ico
     - name: Nature 《自然》科学杂志
-      style: large black
+      style: large basic
       url: http://www.nature.com/
 
+      image: images/linkimage/favicon-nature.ico
     - name: Wiley Online Library
       style: basic
       url: https://onlinelibrary.wiley.com/
