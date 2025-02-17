@@ -230,7 +230,6 @@ function updateOutlinks() {
         'token_auth': '{{ site.data.analytics.matomo.token }}'
     }, function(data) {
         // 构建域名映射字典
-        console.log(data);
         const domainStats = {};
         data.forEach(item => {
             domainStats[item.label] = {

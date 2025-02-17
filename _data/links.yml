@@ -39,7 +39,7 @@
       style: basic medium
       url: https://www.lammps.org/
 
-      image: images/linkimage/logo.gif
+      image: https://www.lammps.org/movies/logo.gif
     - name: VASP
       style: basic
       url: https://www.vasp.at/
@@ -119,7 +119,7 @@
       style: large basic
       url: https://www.doubao.com/chat/
 
-      image: images/linkimage/-_AI_-Mac-512x512.png
+      image: images/linkimage/logo-icon.png
     - name: Kimi
       style: basic
       url: https://kimi.moonshot.cn/
@@ -139,7 +139,7 @@
       style: basic
       url: https://thinkany.so/zh
 
-      image: images/linkimage/thinkany.png
+      image: images/linkimage/thinkany.svg
     - name: 海螺AI
       style: basic
       url: https://hailuoai.com/

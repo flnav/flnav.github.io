@@ -18,9 +18,9 @@
   name: 必应
   url: https://cn.bing.com/search?q={query}
   shortcut:
-    icon: /images/searchicon/Bing.png
+    icon: /images/searchicon/bing.svg
     style: basic
-    show: false
+    show: true
 
 - id: baidumap
   name: 百度地图
@@ -34,7 +34,7 @@
   name: 快递查询
   url: https://kuaidi100.com/?nu={query}
   shortcut:
-    icon: /images/searchicon/kuaidi.png
+    icon: /images/searchicon/kuaidi.svg
     style: basic
     show: false
 
@@ -42,7 +42,7 @@
   name: 国际查件
   url: https://t.17track.net/zh-cn#nums={query}
   shortcut:
-    icon: /images/searchicon/17track.png
+    icon: /images/searchicon/17track.svg
     style: basic
     show: false
 
@@ -66,7 +66,7 @@
   name: 知乎
   url: https://zhihu.com/search?q={query}
   shortcut:
-    icon: /images/searchicon/zhihu.png
+    icon: /images/searchicon/zhihu.svg
     style: basic
     show: true
 
@@ -82,7 +82,7 @@
   name: 豆瓣
   url: https://douban.com/search?q={query}
   shortcut:
-    icon: /images/searchicon/douban.png
+    icon: /images/searchicon/douban.svg
     style: basic
     show: false      
 
@@ -90,7 +90,7 @@
   name: 微信公众号
   url: http://weixin.sogou.com/weixin?type=1&query={query}&ie=utf8
   shortcut:
-    icon: /images/searchicon/weixin.png
+    icon: /images/searchicon/weixin.svg
     style: basic
     show: false
 
@@ -98,7 +98,7 @@
   name: 微信文章
   url: http://weixin.sogou.com/weixin?type=2&query={query}&ie=utf8
   shortcut:
-    icon: /images/searchicon/weixin.png
+    icon: /images/searchicon/weixin.svg
     style: basic
     show: false
 
@@ -106,7 +106,7 @@
   name: 微信小程序
   url: https://minapp.com/miniapp/search/?query={query}
   shortcut:
-    icon: /images/searchicon/weixin.png
+    icon: /images/searchicon/weixin.svg
     style: basic
     show: false
 
@@ -138,7 +138,7 @@
   name: 天猫
   url: https://list.tmall.com/search_product.htm?q={query}
   shortcut:
-    icon: /images/searchicon/Tianmao.png
+    icon: /images/searchicon/tianmao.svg
     style: basic
     show: false
 
@@ -146,7 +146,7 @@
   name: 京东
   url: https://search.jd.com/Search?keyword={query}&enc=utf-8
   shortcut:
-    icon: /images/searchicon/jingdong.png
+    icon: /images/searchicon/jingdong.svg
     style: basic
     show: false
 
@@ -170,7 +170,7 @@
   name: 哔哩哔哩
   url: https://search.bilibili.com/all?keyword={query}
   shortcut:
-    icon: /images/searchicon/bilibili.png
+    icon: /images/searchicon/bilibili.svg
     style: basic
     show: true
 
@@ -178,7 +178,7 @@
   name: YouTube
   url: https://youtube.com/results?search_query={query}
   shortcut:
-    icon: /images/searchicon/youtube.png
+    icon: /images/searchicon/youtube.svg
     style: basic
     show: false
 
@@ -186,7 +186,7 @@
   name: GitHub
   url: https://github.com/search?q={query}
   shortcut:
-    icon: /images/searchicon/github.png
+    icon: /images/searchicon/github.svg
     style: basic
     show: true
     
@@ -202,7 +202,7 @@
   name: 中国知网（主题）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=SU
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/sj_cnki.svg
     style: basic
     show: true
 
@@ -210,7 +210,7 @@
   name: 中国知网（篇关摘）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=TKA
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/sj_cnki.svg
     style: basic
     show: false
 
@@ -218,7 +218,7 @@
   name: 中国知网（关键词）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=KY
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/sj_cnki.svg
     style: basic
     show: false
     
@@ -226,7 +226,7 @@
   name: 中国知网（篇名）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=TI
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/sj_cnki.svg
     style: basic
     show: false
  
@@ -234,7 +234,7 @@
   name: 中国知网（全文）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FT
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/sj_cnki.svg
     style: basic
     show: false
   
@@ -242,7 +242,7 @@
   name: 中国知网（作者）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AU
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
 
@@ -250,7 +250,7 @@
   name: 中国知网（第一作者）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FI
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
 
@@ -258,7 +258,7 @@
   name: 中国知网（通讯作者）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=RP
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
  
@@ -266,7 +266,7 @@
   name: 中国知网（作者单位）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AF
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
 
@@ -274,7 +274,7 @@
   name: 中国知网（基金）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=FU
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
 
@@ -282,7 +282,7 @@
   name: 中国知网（摘要）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=AB
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
         
@@ -290,7 +290,7 @@
   name: 中国知网（小标题）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=CO
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -298,7 +298,7 @@
   name: 中国知网（参考文献）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=RF
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -306,7 +306,7 @@
   name: 中国知网（分类号）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=CLC
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -314,7 +314,7 @@
   name: 中国知网（文献来源）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=LY
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -322,7 +322,7 @@
   name: 中国知网（DOI）
   url: https://kns.cnki.net/kns8/defaultresult/index?kw={query}&korder=DOI
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -330,7 +330,7 @@
   name: 知网海外版
   url: http://chn.oversea.cnki.net/kns/DefaultResult/Index?dbcode=SCDB&kw={query}&korder=SU
   shortcut:
-    icon: /images/searchicon/cnki.png
+    icon: /images/searchicon/zhiwang.svg
     style: basic
     show: false
     
@@ -338,7 +338,7 @@
   name: 万方数据（全部）
   url: https://s.wanfangdata.com.cn/paper?q={query}
   shortcut:
-    icon: /images/searchicon/wanfang.png
+    icon: /images/searchicon/wanfanglogo.svg
     style: basic
     show: true
  
@@ -346,7 +346,7 @@
   name: 万方数据（关键词）
   url: https://s.wanfangdata.com.cn/paper?q=关键词%3A{query}
   shortcut:
-    icon: /images/searchicon/wanfang.png
+    icon: /images/searchicon/wanfanglogo.svg
     style: basic
     show: false
     
@@ -354,7 +354,7 @@
   name: 万方数据（作者）
   url: https://s.wanfangdata.com.cn/paper?q=作者%3A{query}
   shortcut:
-    icon: /images/searchicon/wanfang.png
+    icon: /images/searchicon/wanfanglogo.svg
     style: basic
     show: false
 
@@ -362,7 +362,7 @@
   name: 万方数据（摘要）
   url: https://s.wanfangdata.com.cn/paper?q=摘要%3A{query}
   shortcut:
-    icon: /images/searchicon/wanfang.png
+    icon: /images/searchicon/wanfanglogo.svg
     style: basic
     show: false
     
@@ -372,7 +372,7 @@
   shortcut:
     icon: /images/searchicon/cssci.png
     style: basic
-    show: true
+    show: false
    
 - id: baiduxueshu
   name: 百度学术
@@ -394,7 +394,7 @@
   name: Web of Science
   url: http://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&{query}
   shortcut:
-    icon: /images/searchicon/web-of-science.png
+    icon: /images/searchicon/web_of_science.svg
     style: basic
     show: true  
     
@@ -402,7 +402,7 @@
   name: sciencedirect
   url: https://www.sciencedirect.com/search?qs={query}
   shortcut:
-    icon: /images/searchicon/elsevier.png
+    icon: /images/searchicon/elsevier-non-solus-new-grey.svg
     style: basic
     show: true  
 
@@ -410,7 +410,7 @@
   name: IEEE Xplore
   url: http://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}
   shortcut:
-    icon: /images/searchicon/IEEE.png
+    icon: /images/searchicon/IEEE.svg
     style: basic
     show: true
 
@@ -418,7 +418,7 @@
   name: 谷歌学术
   url: https://scholar.google.com/scholar?q={query}
   shortcut:
-    icon: /images/searchicon/googlescholar.png
+    icon: /images/searchicon/googlescholar.svg
     style: basic
     show: true  
     
@@ -426,7 +426,7 @@
   name: SCI-HUB
   url: http://sci-hub.se/{query}
   shortcut:
-    icon: /images/searchicon/sinhub.ico
+    icon: /images/searchicon/ravenround.png
     style: basic
     show: true  
 
@@ -434,7 +434,7 @@
   name: Zlibrary
   url:   https://zh.booksc.org/s/?q={query}
   shortcut:
-    icon: /images/searchicon/zlibrary.png
+    icon: /images/searchicon/Z-Library.svg
     style: basic
     show: true 
     
@@ -442,6 +442,6 @@
   name: Semantic Scholar
   url: https://api.semanticscholar.org/{query}
   shortcut:
-    icon: /images/searchicon/semanticscholar.png
+    icon: /images/searchicon/semantic-scholar-search.svg
     style: basic
     show: true    

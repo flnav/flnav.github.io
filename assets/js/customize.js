@@ -3,7 +3,7 @@
 function setJSONCookie(name, value) {
     Cookies.set(name, JSON.stringify(value), {
         expires: 365,
-        domain: '.flnav.github.io',
+        domain: '.navi.flpro.cn',
         secure: true
     });
 };
@@ -84,7 +84,7 @@ $('.ui.button.shortcut-toggle-show').each(function () {
 // reset button
 $('#reset-cookie').click(function () {
     Cookies.remove('byr_navi_search_shortcuts', {
-        domain: '.flnav.github.io'
+        domain: '.navi.flpro.cn'
     });
     location.reload(true);
 });

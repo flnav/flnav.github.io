@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1079.24 757.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #003894;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f08300;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="1016.42 380.06 1016.42 757.82 839.01 757.82 1016.42 380.06"/>
+  <path class="cls-2" d="M88.7.42L0,189.93h190.55v567.9h190.55V.42H88.7ZM889.31.42h-444.55v189.51h354.81l-265.69,567.9h190.55L1079.24,0l-189.93.42ZM889.31.42"/>
+</svg>
