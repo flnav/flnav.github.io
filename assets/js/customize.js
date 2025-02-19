@@ -1,17 +1,27 @@
 // customize.js
 
+// 定义需要设置的域名列表
+const domains = ['.navi.flpro.cn', '.flpro.cn', '.flnav.github.io'];
 function setJSONCookie(name, value) {
-    Cookies.set(name, JSON.stringify(value), {
-        expires: 365,
-        domain: '.navi.flpro.cn',
-        secure: true
+    domains.forEach(domain => {
+        Cookies.set(name, JSON.stringify(value), {
+            expires: 365,
+            domain: domain, // 遍历设置每个域名
+            secure: true
+        });
     });
 };
 
 function updateJSONCookie(name, key, value) {
     let shortcuts = JSON.parse(Cookies.get(name));
     shortcuts[key] = value;
-    setJSONCookie(name, shortcuts);
+    domains.forEach(domain => {
+        Cookies.set(name, JSON.stringify(shortcuts), {
+            expires: 365,
+            domain: domain,
+            secure: true
+        });
+    });
 };
 
 // initialize cookie
@@ -83,8 +93,10 @@ $('.ui.button.shortcut-toggle-show').each(function () {
 
 // reset button
 $('#reset-cookie').click(function () {
-    Cookies.remove('byr_navi_search_shortcuts', {
-        domain: '.navi.flpro.cn'
+    domains.forEach(domain => {
+        Cookies.remove('byr_navi_search_shortcuts', {
+            domain: domain
+        });
     });
     location.reload(true);
 });
