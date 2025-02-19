@@ -65,8 +65,8 @@
 
 @media only screen and (max-width: 1000px) {
     .ui.masthead .ui.text.container {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
     .ui.masthead h1.ui.header {
         margin-top: 0em;

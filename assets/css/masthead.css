@@ -31,59 +31,92 @@
     height: 100%;
     content: '';
     background-size: cover;
-    opacity: 0.45;
+    opacity: 0.8;
+    mix-blend-mode: normal;
 }
+
+
 .ui.inverted.masthead.segment.bg1:after {
-    background-image: url('/images/backgrounds/1.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#c6ee4a,#42eca6,#64b3d9,#c6ee4a,#42eca6);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg2:after {
-    background-image: url('/images/backgrounds/2.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#498ada,#5b73df,#897ed3,#498ada,#5b73df);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg3:after {
-    background-image: url('/images/backgrounds/3.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#41b497,#7f47c5,#c29c46,#41b497,#7f47c5);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg4:after {
-    background-image: url('/images/backgrounds/4.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#0080ff,#388363,#fcf8d6,#0080ff,#388363);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg5:after {
-    background-image: url('/images/backgrounds/5.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#bd4faf,#5794db,#57b1c6,#bd4faf,#5794db);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg6:after {
-    background-image: url('/images/backgrounds/6.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#246655,#462466,#b66d52,#246655,#462466);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg7:after {
-    background-image: url('/images/backgrounds/7.jpg');
+  animation: animateBg 14s linear infinite;
+  background-image: linear-gradient(0deg,#71c66c,#ff8000,#db5779,#71c66c,#ff8000);
+  background-size: 100% 400%;
 }
 .ui.inverted.masthead.segment.bg8:after {
-    background-image: url('/images/backgrounds/8.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#71c66c,#ff8000,#db5779,#71c66c,#ff8000);
+  background-size: 400% 100%;
 }
 .ui.inverted.masthead.segment.bg9:after {
-    background-image: url('/images/backgrounds/9.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#bd4faf,#5794db,#bd4faf,#5794db);
+  background-size: 300% 100%;
 }
 .ui.inverted.masthead.segment.bg10:after {
-    background-image: url('/images/backgrounds/10.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#0080ff,#388363,#fcf8d6,#0080ff,#388363);
+  background-size: 400% 100%;
 }
 .ui.inverted.masthead.segment.bg11:after {
-    background-image: url('/images/backgrounds/11.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#246655,#462466,#b66d52,#246655,#462466);
+  background-size: 400% 100%;
 }
 .ui.inverted.masthead.segment.bg12:after {
-    background-image: url('/images/backgrounds/12.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#41b497,#7f47c5,#c29c46,#41b497,#7f47c5);
+  background-size: 400% 100%;
 }
 .ui.inverted.masthead.segment.bg13:after {
-    background-image: url('/images/backgrounds/13.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#def2a0,#c6ee4a,#42eca6,#64b3d9,#def2a0,#c6ee4a);
+  background-size: 500% 100%;
 }
 .ui.inverted.masthead.segment.bg14:after {
-    background-image: url('/images/backgrounds/14.jpg');
+  animation: animateBgl 14s linear infinite;
+  background-image: linear-gradient(90deg,#208ea2,#498ada,#5b73df,#897ed3,#208ea2,#498ada);
+  background-size: 500% 100%;
 }
-.ui.inverted.masthead.segment.bg15:after {
-    background-image: url('/images/backgrounds/15.jpg');
+
+@keyframes animateBg {
+  0% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
 }
-.ui.inverted.masthead.segment.bg16:after {
-    background-image: url('/images/backgrounds/16.jpg');
+@keyframes animateBgl {
+  0% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
 }
-.ui.inverted.masthead.segment.bg17:after {
-    background-image: url('/images/backgrounds/17.jpg');
-}
+
+
 .ui.inverted.masthead.segment,
 .ui.inverted.masthead.segment:after {
     -ms-transition:

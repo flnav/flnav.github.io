@@ -370,9 +370,9 @@
   name: CSSCI
   url:  http://cssci.nju.edu.cn/ly_search_view.html?title={query}+++15&pagenum=20&order_type=nian&order_px=DESC
   shortcut:
-    icon: /images/searchicon/cssci.png
+    icon: /images/searchicon/cssci.svg
     style: basic
-    show: false
+    show: true
    
 - id: baiduxueshu
   name: 百度学术

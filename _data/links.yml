@@ -5,6 +5,10 @@
       style: large basic
       url: https://flpro.cn/
       image: images/linkimage/logo-dark.svg
+    - name: love
+      icon: heartbeat red
+      style: basic large
+      url: https://love.flpro.cn
     - name: Matomo
       style: basic
       url: https://matomo.flpro.cn/
@@ -58,10 +62,6 @@
       style: basic
       url: https://sms-activate.guru/cn
       image: images/linkimage/sms-active.svg
-    - name: love
-      icon: heartbeat red
-      style: basic large
-      url: https://love.flpro.cn
     - name: 矢量校徽
       style: basic
       url: https://www.urongda.com/logos
@@ -612,7 +612,7 @@
       style: large basic
       url: https://cssrac.nju.edu.cn/
 
-      image: images/linkimage/cssci.png
+      image: images/linkimage/cssci.svg
     - name: CSCD中国科学引文数据库
       style: large teal
       url: http://sciencechina.cn/cscd_source.jsp
