@@ -1,9 +1,9 @@
 - categories:
   - name: 收藏夹
     links:
-    - name: FL-Online
+    - name: Feilong-Online
       style: large basic
-      url: https://flpro.cn/
+      url: https://feilong.online/
       image: images/linkimage/logo-dark.svg
     - name: love
       icon: heartbeat red
@@ -53,6 +53,14 @@
       style: basic
       url: https://120.46.205.153:40265/genius
       image: images/linkimage/bt.svg
+    - name: qq音乐
+      style: basic
+      url: https://y.qq.com
+      image: images/linkimage/QQyinle.svg
+    - name: 网易云音乐
+      style: basic
+      url: https://music.163.com/
+      image: images/linkimage/wangyiyunyinle.svg
     - name: MSDN
       style: basic
       url: https://msdn.itellyou.cn/
@@ -66,6 +74,22 @@
       style: basic
       url: https://www.urongda.com/logos
       icon: school
+    - name: 腾讯云控制台
+      style: basic
+      url: https://console.cloud.tencent.com/
+      image: images/linkimage/tengxunyun_-copy.svg
+    - name: 华为云控制台
+      style: basic
+      url: https://console.huaweicloud.com
+      image: images/linkimage/huaweiyun-copy.svg
+    - name: 阿里云控制台
+      style: basic
+      url: https://home.console.aliyun.com/
+      image: images/linkimage/aliyun.svg
+    - name: 阿里巴巴矢量图标库
+      style: black
+      url: https://www.iconfont.cn/
+      image: images/linkimage/iconfont.svg
     - name: 书签管理
       style: basic
       url: https://edit.flpro.cn/
@@ -501,6 +525,10 @@
       url: http://css.sdu.edu.cn:8800/
 
 
+    - name: 山东大学测速网站
+      icon: wifi
+      style: basic
+      url: https://test.sdu.edu.cn/
   - name: 山科导航
     links:
     - name: 山东科技大学
