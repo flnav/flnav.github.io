@@ -8,10 +8,10 @@
     - name: love
       icon: heartbeat red
       style: basic large
-      url: https://love.flpro.cn
+      url: https://love.feilong.online
     - name: Matomo
       style: basic
-      url: https://matomo.flpro.cn/
+      url: https://matomo.feilong.online/
 
       image: images/linkimage/matomo.svg
     - name: Secret
@@ -92,7 +92,7 @@
       image: images/linkimage/iconfont.svg
     - name: 书签管理
       style: basic
-      url: https://edit.flpro.cn/
+      url: https://edit.feilong.online/
       icon: 'bookmark '
     - name: 外链跳转统计
       icon: external link square alternate icon
