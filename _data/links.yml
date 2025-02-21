@@ -17,7 +17,7 @@
     - name: Secret
       icon: user secret
       style: basic
-      url: https://pw.flpro.cn/
+      url: https://vault.feilong.online
 
     - name: 机房温度
       icon: temperature high blue
