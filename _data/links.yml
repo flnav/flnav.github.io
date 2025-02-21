@@ -22,22 +22,17 @@
     - name: 机房温度
       icon: temperature high blue
       style: basic large
-      url: https://t.flpro.cn/
+      url: https://t.feilong.online/
 
     - name: Local NAS
       icon: hdd
       style: basic
-      url: http://ldsm.flpro.cn/
+      url: http://ldsm.feilong.online/
 
     - name: Sever NAS
       icon: hdd outline
       style: basic
-      url: http://dsm.flpro.cn/
-
-    - name: PDF Search
-      icon: search
-      style: basic
-      url: https://so.flpro.cn/
+      url: http://dsm.feilong.online/
 
     - name: Lammps
       style: basic medium
