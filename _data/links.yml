@@ -9,6 +9,10 @@
       icon: heartbeat red
       style: basic large
       url: https://love.feilong.online
+    - name: emby
+      url: http://win.feilong.online:8096/
+      image: images/linkimage/emby.svg
+      style: basic
     - name: Matomo
       style: basic
       url: https://matomo.feilong.online/
@@ -69,6 +73,9 @@
       style: basic
       url: https://www.urongda.com/logos
       icon: school
+    - name: IP234
+      style: basic
+      image: images/linkimage/ip234.png
     - name: 腾讯云控制台
       style: basic
       url: https://console.cloud.tencent.com/
@@ -85,18 +92,50 @@
       style: basic
       url: https://console.volcengine.com/home
       image: images/linkimage/huoshan.svg
+    - name: 易算桌面
+      style: blue
+      url: https://desktop.yeesuan.com
+      image: images/linkimage/yisuanwhiteLogo.png
+    - name: Interatomic Potentials Repository
+      style: black
+      url: https://www.ctcms.nist.gov/potentials/
+      image: images/linkimage/iprlogo.png
+    - name: lammpstube mdpotentials
+      style: basic
+      url: https://lammpstube.com/mdpotentials/
+      image: images/linkimage/mdip.svg
     - name: 阿里巴巴矢量图标库
       style: black
       url: https://www.iconfont.cn/
       image: images/linkimage/iconfont.svg
-    - name: 书签管理
-      style: basic
-      url: https://edit.feilong.online/
-      icon: 'bookmark '
     - name: 外链跳转统计
       icon: external link square alternate icon
       style: basic trigger-outlink-stats
       url: '#'
+    - name: 书签管理
+      style: basic
+      url: https://edit.feilong.online/
+      icon: 'bookmark '
+    - name: 电视直播
+      icon: tv
+      style: basic
+      url: https://iptv807.com/
+    - name: 樱花frp
+      style: basic
+      url: https://www.natfrp.com/
+      image: images/linkimage/faviconyinghuafrp.ico
+    - name: MSN天气
+      style: basic
+      url: https://www.msn.cn/zh-cn/weather?ocid=ansmsnweather
+      image: https://www.msn.cn/favicon.ico
+    - name: FlashDSC数据合并小工具
+      icon: flask blue
+      style: basic
+      url: https://dsc.feilong.online
+    - name: Weichky的博客
+      style: basic large
+      url: https://blog.weichky.com/
+      image: https://assets.weichky.com/favicon.ico
   - name: AI工具
     links:
     - name: DeepSeek
@@ -138,6 +177,22 @@
       url: https://n.cn/
 
       image: images/linkimage/AI.svg
+    - name: 山大AI助手
+      style: basic large
+      url: https://aiassist.sdu.edu.cn
+      image: images/linkimage/sdu-logo.svg
+    - name: 浙江大学大先生
+      style: basic
+      url: https://chat.zju.edu.cn
+      image: images/linkimage/zhejiangdaxue-logo.svg
+    - name: 硅基流动
+      style: basic
+      url: https://cloud.siliconflow.cn/i/ScahhEao
+      image: images/linkimage/siliconflow.svg
+    - name: Cherry Studio
+      style: basic
+      url: https://cherry-ai.com
+      image: images/linkimage/a-ziyuan6os-icon.svg
     - name: 豆包
       style: large basic
       url: https://www.doubao.com/chat/
@@ -173,6 +228,15 @@
       url: https://xiezuocat.com/
 
       image: images/linkimage/AI-copy.svg
+    - name: 百度AI
+      style: basic
+      url: https://chat.baidu.com/
+      image: 
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAqCAMAAAAqEZ1jAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAhOAAAITgBRZYxYAAAAKJQTFRFAAAAenb/RpP/k2j/XXf7cXX6P5z7i2n8W3j7ZHP7jmn9VID7Qpf8jWn8Xnr6iWr8YHb7i2n8RJb9dWz8WXr8mWj9RpP8W3n8bW/8l2j+QJz9Q5f9ToT8fWv9ZW/8lWj9VID8YnX7Pp79QZr9pWb+RJT8m2f9k2j9SYz8jWn9hmr8UIT8fmv8VX78Xnn7d2z8ZHT7WHr7bm77Xnb7Z3D7YHH7RJOQRAAAACJ0Uk5TABAgICAwQEBAWF5gZXBwgICbn5+fo7+/vsLP39/f3urv73XwOA8AAAKfSURBVHja7dbJcuIwFIXhIzCxMTMNcdwMDoMZY4NxeP9X66srEckYQlPVvcvPBhZ8dVSIAvz03xNV/Luq4Xq9Hgo8nfDqjXq97hS1yXZNhXg2Z3o+f1KnLqx62y17Pp5smp+158EUaW6I52rkxLF3eoNpt1Ne+bR+Fd8U5Oc8Px6P5M0Evgq11ytpy0jgbk6e5cSxd2pb7yKOikpTouWyhbsNMsnpefZpOzsCI7c8brkM74/LqFSC7HkwVTu9lsB14ZJy745LlDdV5+3iQTXC7s9z3pNEggOh9s3woOFqJT2BmzUSLnMQEEeeh2+rkraiOrjZeL+XXEBwyp71Ybg+hWL+iltGt8ftKQI9QMzSlDxz9VofssIMdxitdJEvbo3jxqAGKXtt6N4OkpvgkmiFa50Ch1UU8zab/Ya4Br/IUnnewHCHg+FEh7/ExUIXdq+KG4N7z3hfzXDkaa5FmGpdMENrYWWjaoDrJtJLu4ajFFfbUduryN1ue4brb2KpjSvgvETe53R24U6Ggz+RYJnsCTMujmMJ9qELErkv9y7cyXAGtNCoI2Dqx9ymAl1bcYMLJ2NO5fZ2dmHLxiBGrJlxEAl7M1HkTFUzseeiWHOxYK+CrwLltRX3qTk7/4PbTXDdaBHLxytMdcllaaA56U1RSEyU56M0jotfYBLvynM091ni0GGtPO73nLkR7AaK6yqOKnG1g+wXrnqZz9nrw87bszdjjn/dDGffbgdX9YmT4HykaoLTp/UABGfyypx7a1yFNb0wpl7BddW8geSO5JU5TE63xhmOPb2uok8reN1Nrn4qjQNBlmfdvkB5beaoMgdP4LpFgbNuX3svtSwABoZ7WPOKa0Inxgl7DurMdfFXVV7savjK8WQ1/cz5+Q9e7A/jUZeiPQO0fwAAAABJRU5ErkJggg==
+    - name: LiveBench
+      icon: atom blue
+      style: basic
+      url: https://livebench.ai/#/
 - categories:
   - name: 娱乐
     links:
@@ -347,6 +411,10 @@
       url: https://scholar.google.com.hk/
 
       image: images/linkimage/a-Google_Scholar_logo1.svg
+    - name: 虫部落学术搜索
+      style: basic
+      url: https://scholar.chongbuluo.com
+      image: images/linkimage/chongbuluosousuolight-icon.svg
     - name: 镜像Ⅰ
       style: basic
       url: https://xueshu.dailyheadlines.cc/
@@ -371,6 +439,10 @@
       style: basic
       url: http://scholar.scqylaw.com/
 
+    - name: LetPub分区查询工具
+      url: https://www.letpub.com.cn
+      image: images/linkimage/ico0.png
+      style: basic
   - name: SCI-HUB
     links:
     - name: Sci-Hub官网(yyds)
@@ -518,16 +590,24 @@
       style: basic
       url: https://www.stu.sdu.edu.cn/
 
+    - name: 山东大学测速网站
+      icon: wifi
+      style: basic
+      url: https://test.sdu.edu.cn/
     - name: 校园网自助服务平台
       icon: rss
       style: basic
       url: http://css.sdu.edu.cn:8800/
 
 
-    - name: 山东大学测速网站
-      icon: wifi
+    - name: 校园网认证界面
+      url: http://202.194.15.87/srun_portal_pc?ac_id=9&theme=pro
       style: basic
-      url: https://test.sdu.edu.cn/
+      image: images/linkimage/xiaoyuanwangwifiluyou.svg
+    - name: 校内Pypi镜像
+      icon: python green
+      style: basic
+      url: https://mirrors.sdu.edu.cn/pypi/simple/
   - name: 山科导航
     links:
     - name: 山东科技大学

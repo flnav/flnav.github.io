@@ -1,6 +1,6 @@
 - id: baidu
   name: 百度
-  url: https://baidu.com/s?ie=utf-8&wd={query}
+  url: https://baidu.com/s?wd={query}
   shortcut:
     icon: /images/searchicon/baidu.svg
     style: basic

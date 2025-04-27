@@ -4,337 +4,69 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
        Destination: /home/feilong/FL-Navi/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 23.493 seconds.
+                    done in 24.114 seconds.
  Auto-regeneration: enabled for '/home/feilong/FL-Navi'
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
-      Regenerating: 1 file(s) changed at 2025-02-19 12:08:11
+      Regenerating: 1 file(s) changed at 2025-03-17 17:43:58
                     _data/links.yml
-                    ...done in 11.891393387 seconds.
+                    ...done in 12.410736512 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-19 14:43:16
-                    assets/js/customize.js
-                    ...done in 12.007770395 seconds.
+      Regenerating: 1 file(s) changed at 2025-04-14 17:55:15
+                    images/linkimage/ico0.png
+                    ...done in 13.165213651 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-19 14:43:29
-                    assets/js/customize.js
-                    ...done in 11.41880276 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:48:26
-                    assets/js/customize.js
-                    ...done in 12.114283979 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:56:33
-                    assets/js/customize.js
-                    ...done in 11.718394488 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:57:39
-                    assets/js/customize.js
-                    ...done in 12.176241967 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:58:01
-                    assets/js/customize.js
-                    ...done in 11.916905234 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:58:14
-                    assets/js/customize.js
-                    ...done in 11.804078482 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 14:58:37
-                    assets/js/customize.js
-                    ...done in 12.595752728 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:38:35
-                    _layouts/default.html
-                    ...done in 11.79427808 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:39:43
-                    _layouts/default.html
-                    ...done in 11.876617316 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:50:52
-                    _layouts/default.html
-                    ...done in 11.47741279 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:51:03
-                    _layouts/default.html
-                    ...done in 10.852961478 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:51:14
-                    _layouts/default.html
-                    ...done in 11.359637527 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 17:52:03
-                    _layouts/default.html
-                    ...done in 11.338365286 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:10:23
-                    _layouts/default.html
-                    ...done in 11.562081078 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:10:35
-                    _layouts/default.html
-                    ...done in 10.608498932 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:11:47
-                    _layouts/default.html
-                    ...done in 10.845336957 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:13:47
-                    _layouts/default.html
-                    ...done in 11.917499696 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:13:59
-                    _layouts/default.html
-                    ...done in 11.554380551 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:15:00
-                    _layouts/default.html
-                    ...done in 11.704935978 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:28:29
-                    _layouts/default.html
-                    ...done in 11.853885512 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:39:33
-                    _layouts/default.html
-                    ...done in 12.118702189 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:39:45
-                    _layouts/default.html
-                    ...done in 10.573974447 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:40:09
-                    _layouts/default.html
-                    ...done in 11.403016575 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:40:21
-                    _layouts/default.html
-                    ...done in 10.495360606 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:40:32
-                    _layouts/default.html
-                    ...done in 9.522409382 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:40:42
-                    _layouts/default.html
-                    ...done in 10.753283853 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:40:57
-                    _layouts/default.html
-                    ...done in 12.330676464 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:41:18
-                    _layouts/default.html
-                    ...done in 11.024092337 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:42:28
-                    _layouts/default.html
-                    ...done in 11.890574453 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:45:13
-                    _layouts/default.html
-                    ...done in 11.627488026 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:45:25
-                    _layouts/default.html
-                    ...done in 11.327517698 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:47:44
-                    _layouts/default.html
-                    ...done in 12.071376696 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:47:56
-                    _layouts/default.html
-                    ...done in 12.309407354 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2025-02-19 18:49:15
-                    assets/APlayer/Meting.min.js
-                    assets/APlayer/APlayer.min.js
-                    ...done in 11.938520635 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:49:27
-                    assets/APlayer/APlayer.min.css
-                    ...done in 11.168190182 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:50:13
-                    _layouts/default.html
-                    ...done in 11.357956596 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 18:50:59
-                    _layouts/default.html
-                    ...done in 11.844685741 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 19:39:01
-                    _layouts/default.html
-                    ...done in 12.516956007 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:39:11
-                    _layouts/default.html
-                    ...done in 11.977624219 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:40:15
-                    _layouts/default.html
-                    ...done in 11.729343725 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:40:27
-                    _layouts/default.html
-                    ...done in 11.491614897 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:44:31
-                    _layouts/default.html
-                    ...done in 13.173722651 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:51:03
-                    _layouts/default.html
-                    ...done in 12.486695266 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:54:03
-                    _layouts/default.html
-                    ...done in 12.541312836 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:58:50
-                    _layouts/default.html
-                    ...done in 12.070118982 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-19 23:59:20
-                    assets/APlayer/Meting.min.js
-                    ...done in 12.237772172 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 00:07:26
-                    _layouts/default.html
-                    ...done in 11.968800146 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 10:40:31
+      Regenerating: 1 file(s) changed at 2025-04-14 17:55:29
                     _data/links.yml
-                    ...done in 12.009685503 seconds.
+                    ...done in 11.435521333 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 10:42:51
-                    images/linkimage/tencentcloud-copy.svg
-                    ...done in 11.902352871 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 10:43:03
+      Regenerating: 1 file(s) changed at 2025-04-22 01:57:16
                     _data/links.yml
-                    ...done in 11.592782151 seconds.
+                    ...done in 47.541289917 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:39:18
-                    assets/APlayer/Meting.min.js
-                    ...done in 12.56517117 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2025-02-20 11:47:50
+      Regenerating: 1 file(s) changed at 2025-04-22 01:58:03
                     _data/links.yml
-                    images/linkimage/huaweiyun-copy.svg
-                    ...done in 12.378236121 seconds.
+                    ...done in 13.136280815 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:48:02
+      Regenerating: 1 file(s) changed at 2025-04-24 17:21:48
                     _data/links.yml
-                    ...done in 11.292655005 seconds.
+                    ...done in 17.23277697 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:49:41
-                    images/linkimage/aliyun.svg
-                    ...done in 11.93215887 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 11:49:53
+      Regenerating: 1 file(s) changed at 2025-04-24 17:22:05
                     _data/links.yml
-                    ...done in 11.794116003 seconds.
+                    ...done in 12.872320549 seconds.
                     
-      Regenerating: 2 file(s) changed at 2025-02-20 11:50:28
+      Regenerating: 1 file(s) changed at 2025-04-24 17:26:42
                     _data/links.yml
-                    images/linkimage/tengxunyun_-copy.svg
-                    ...done in 11.111812274 seconds.
+                    ...done in 13.318106215 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:50:39
+      Regenerating: 1 file(s) changed at 2025-04-24 17:26:56
                     _data/links.yml
-                    ...done in 10.924851556 seconds.
+                    ...done in 11.560382587 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:50:50
+      Regenerating: 1 file(s) changed at 2025-04-24 17:27:09
                     _data/links.yml
-                    ...done in 10.271365787 seconds.
+                    ...done in 13.479519686 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:51:00
+      Regenerating: 1 file(s) changed at 2025-04-24 17:28:21
                     _data/links.yml
-                    ...done in 9.64337289 seconds.
+                    ...done in 12.596731653 seconds.
                     
-      Regenerating: 2 file(s) changed at 2025-02-20 11:53:27
-                    _data/links.yml
-                    images/linkimage/iconfont.svg
-                    ...done in 11.711869804 seconds.
+      Regenerating: 1 file(s) changed at 2025-04-27 21:58:39
+                    assets/css/home (1).css
+[33m             Error: No such file or directory @ rb_file_s_stat - /home/feilong/FL-Navi/assets/css/home (1).css[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:53:39
-                    _data/links.yml
-                    ...done in 12.064310349 seconds.
+      Regenerating: 2 file(s) changed at 2025-04-27 21:58:52
+                    assets/css/home.css.bak2
+                    assets/css/home (1).css
+                    ...done in 13.321395483 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 11:55:50
-                    _data/links.yml
-                    ...done in 13.009287965 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 11:57:57
+      Regenerating: 1 file(s) changed at 2025-04-27 21:59:07
                     assets/css/home.css
-                    ...done in 12.317784273 seconds.
+                    ...done in 13.466524745 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-02-20 12:05:42
-                    assets/js/customize.js
-                    ...done in 11.734804725 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-20 12:06:06
-                    assets/js/customize.js
-                    ...done in 11.426959022 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2025-02-21 00:54:04
+      Regenerating: 1 file(s) changed at 2025-04-28 00:32:34
                     _data/links.yml
-                    images/linkimage/wangyiyunyinle.svg
-                    ...done in 12.03515894 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 00:54:16
-                    _data/links.yml
-                    ...done in 12.089376766 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2025-02-21 00:58:23
-                    _data/links.yml
-                    images/linkimage/QQyinle.svg
-                    ...done in 11.85864003 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 00:58:35
-                    _data/links.yml
-                    ...done in 11.583784117 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 00:58:47
-                    _data/links.yml
-                    ...done in 11.949339153 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 13:52:10
-                    _data/analytics.yml
-                    ...done in 12.855997317 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 13:52:58
-                    _data/analytics.yml
-                    ...done in 14.75304792 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 14:08:19
-                    _data/links.yml
-                    ...done in 13.669475717 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 14:08:33
-                    _data/links.yml
-                    ...done in 12.697265248 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 14:08:46
-                    _data/links.yml
-                    ...done in 12.777750373 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 14:20:25
-                    _data/links.yml
-                    ...done in 12.381644862 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 15:43:01
-                    _data/analytics.yml
-                    ...done in 12.958779665 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 15:44:54
-                    assets/js/customize.js
-                    ...done in 12.928465652 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-02-21 15:45:07
-                    assets/js/customize.js
-                    ...done in 12.978562177 seconds.
+                    ...done in 13.215477733 seconds.
                     
