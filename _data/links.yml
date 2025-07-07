@@ -2,13 +2,21 @@
   - name: 收藏夹
     links:
     - name: Feilong-Online
-      style: large basic
+      style: large basic black
       url: https://feilong.online/
       image: images/linkimage/logo-dark.svg
+    - name: 龙博
+      icon: blog
+      style: basic large orange
+      url: https://loong.blog/
     - name: love
-      icon: heartbeat red
-      style: basic large
+      icon: heartbeat
+      style: basic large pink
       url: https://love.feilong.online
+    - name: blog后台
+      icon: blog
+      style: basic
+      url: https://loong.blog/wp-admin/
     - name: emby
       url: http://win.feilong.online:8096/
       image: images/linkimage/emby.svg
@@ -52,6 +60,10 @@
       style: basic
       url: https://120.46.205.153:40265/genius
       image: images/linkimage/bt.svg
+    - name: 腾讯云宝塔面板
+      style: basic
+      url: https://43.153.122.84:22315/genius
+      image: images/linkimage/bt.svg
     - name: qq音乐
       style: basic
       url: https://y.qq.com
@@ -73,9 +85,14 @@
       style: basic
       url: https://www.urongda.com/logos
       icon: school
+    - name: Interatomic Potentials Repository
+      style: black
+      url: https://www.ctcms.nist.gov/potentials/
+      image: images/linkimage/iprlogo.png
     - name: IP234
       style: basic
       image: images/linkimage/ip234.png
+      url: https://www.ip234.in
     - name: 腾讯云控制台
       style: basic
       url: https://console.cloud.tencent.com/
@@ -96,10 +113,6 @@
       style: blue
       url: https://desktop.yeesuan.com
       image: images/linkimage/yisuanwhiteLogo.png
-    - name: Interatomic Potentials Repository
-      style: black
-      url: https://www.ctcms.nist.gov/potentials/
-      image: images/linkimage/iprlogo.png
     - name: lammpstube mdpotentials
       style: basic
       url: https://lammpstube.com/mdpotentials/
@@ -108,14 +121,6 @@
       style: black
       url: https://www.iconfont.cn/
       image: images/linkimage/iconfont.svg
-    - name: 外链跳转统计
-      icon: external link square alternate icon
-      style: basic trigger-outlink-stats
-      url: '#'
-    - name: 书签管理
-      style: basic
-      url: https://edit.feilong.online/
-      icon: 'bookmark '
     - name: 电视直播
       icon: tv
       style: basic
@@ -136,12 +141,51 @@
       style: basic large
       url: https://blog.weichky.com/
       image: https://assets.weichky.com/favicon.ico
+    - name: piecewise linear fitting
+      style: blue
+      url: https://jekel.me/piecewise_linear_fit_py/
+    - name: Namesilo
+      style: basic
+      url: https://www.namesilo.com/
+      image: https://www.namesilo.com/favicon.ico
+    - name: Speedtest
+      style: basic
+      url: https://www.speedtest.net/
+      image: images/linkimage/Speedtest.svg
+    - name: 测速网
+      style: basic
+      url: https://www.speedtest.cn/
+      image: images/linkimage/SpeedTestweb.svg
+    - name: Pai Li (李湃)
+      style: basic
+      url: https://lipai.github.io/index.html#
+    - name: SimpleTex
+      style: basic
+      image: https://simpletex.cn/favicon.ico
+      url: https://www.simpletex.cn/
+    - name: 计算器套件
+      style: basic
+      url: https://www.geogebra.org/calculator
+      image: images/linkimage/geogebra.svg
+    - name: 书签管理
+      style: basic
+      url: https://edit.feilong.online/
+      icon: 'bookmark '
+    - name: 外链跳转统计
+      icon: external link square alternate icon
+      style: basic trigger-outlink-stats
+      url: '#'
+    - name: 测试号
+      icon: wechat green
+      style: basic
+      url: 
+        https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
   - name: AI工具
     links:
     - name: DeepSeek
       style: large basic
       url: https://www.deepseek.com/
-      image: images/linkimage/deepseek-logo.svg
+      image: images/linkimage/deepseek-tou.svg
     - name: ChatGPT官网
       style: large basic
       url: https://chat.openai.com/
@@ -255,6 +299,10 @@
       url: https://www.douyin.com/
 
       image: images/linkimage/douyin_2.svg
+    - name: 你的生活指南
+      style: basic
+      url: https://www.xiaohongshu.com/
+      image: images/linkimage/xiaohongshu2.svg
     - name: 西瓜视频
       style: basic
       url: https://www.ixigua.com/
@@ -323,10 +371,10 @@
 
       image: images/linkimage/csdn.svg
     - name: OneDrive
-      icon: microsoft
       style: basic
       url: https://onedrive.live.com/about/zh-cn/signin/
 
+      image: images/linkimage/microsoft.svg
     - name: '12306'
       icon: train red
       style: basic
@@ -440,7 +488,7 @@
       url: http://scholar.scqylaw.com/
 
     - name: LetPub分区查询工具
-      url: https://www.letpub.com.cn
+      url: https://www.letpub.com.cn/index.php?page=journalapp
       image: images/linkimage/ico0.png
       style: basic
   - name: SCI-HUB
@@ -537,7 +585,7 @@
     - name: 图书馆
       icon: book reader orange
       style: large basic
-      url: http://www.lib.sdu.edu.cn/index.html
+      url: https://library.sdu.edu.cn
 
     - name: 信息化公共服务平台
       icon: laptop black

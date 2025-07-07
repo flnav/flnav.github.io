@@ -3,18 +3,18 @@ repository_url: https://github.com/flnav/flnav.github.io
 
 timezone: Asia/Shanghai
 lang: zh_CN
-title: 飞龙在线 · FeiLong-Online
-alias_en: FeiLong-Online
+title: 飞龙在线 · Feilong-Online
+alias_en: Feilong-Online
 alias_cn: 飞龙在线
-description: FeiLong-Online
-keywords: 飞龙, 飛龍, search, FL, Nav, Navigation, Online, FeiLong, Online
-url: https://feilong.online/
+description: Feilong-Online
+keywords: 飞龙, 飛龍, search, FL, Nav, Navigation, Online, Feilong, Online
+url: https://feilong.online
 established_at: "2022-07-20T00:00+08:00"
 
 author: ShiFeilong
-author_url: https://feilong.online/
+author_url: https://feilong.online
 organization: 鲁ICP备2024111425号
-organization_url: https://beian.miit.gov.cn/
+organization_url: https://beian.miit.gov.cn
 contact: contact[at]feilong[dot]online
 
 image: /images/logo.png

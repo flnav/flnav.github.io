@@ -4,69 +4,46 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
        Destination: /home/feilong/FL-Navi/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 24.114 seconds.
+                    done in 25.698 seconds.
  Auto-regeneration: enabled for '/home/feilong/FL-Navi'
-    Server address: http://127.0.0.1:4000
-  Server running... press ctrl-c to stop.
-      Regenerating: 1 file(s) changed at 2025-03-17 17:43:58
+      Regenerating: 1 file(s) changed at 2025-06-10 23:12:01
+                    source/logo-dark.png
+                    ...done in 11.953682601 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-10 23:23:14
+                    source/weichky.png
+                    ...done in 12.050360534 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:40:29
+                    images/linkimage/deepseek.svg
+                    ...done in 12.976659285 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:40:42
                     _data/links.yml
-                    ...done in 12.410736512 seconds.
+                    ...done in 14.193156328 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-14 17:55:15
-                    images/linkimage/ico0.png
-                    ...done in 13.165213651 seconds.
+      Regenerating: 1 file(s) changed at 2025-06-11 14:44:05
+                    images/linkimage/deepseek-tou.svg
+                    ...done in 12.79868417 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-14 17:55:29
+      Regenerating: 1 file(s) changed at 2025-06-11 14:44:17
                     _data/links.yml
-                    ...done in 11.435521333 seconds.
+                    ...done in 12.34047765 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-22 01:57:16
+      Regenerating: 1 file(s) changed at 2025-06-11 19:08:56
                     _data/links.yml
-                    ...done in 47.541289917 seconds.
+                    ...done in 12.174047785 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-22 01:58:03
+      Regenerating: 2 file(s) changed at 2025-06-25 10:43:17
                     _data/links.yml
-                    ...done in 13.136280815 seconds.
+                    images/linkimage/microsoft.svg
+                    ...done in 19.41433466 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-24 17:21:48
+      Regenerating: 1 file(s) changed at 2025-06-25 10:43:36
                     _data/links.yml
-                    ...done in 17.23277697 seconds.
+                    ...done in 11.368442763 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-04-24 17:22:05
+      Regenerating: 1 file(s) changed at 2025-07-06 01:07:37
                     _data/links.yml
-                    ...done in 12.872320549 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-24 17:26:42
-                    _data/links.yml
-                    ...done in 13.318106215 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-24 17:26:56
-                    _data/links.yml
-                    ...done in 11.560382587 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-24 17:27:09
-                    _data/links.yml
-                    ...done in 13.479519686 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-24 17:28:21
-                    _data/links.yml
-                    ...done in 12.596731653 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-27 21:58:39
-                    assets/css/home (1).css
-[33m             Error: No such file or directory @ rb_file_s_stat - /home/feilong/FL-Navi/assets/css/home (1).css[0m
-[33m             Error: Run jekyll build --trace for more information.[0m
-                    
-      Regenerating: 2 file(s) changed at 2025-04-27 21:58:52
-                    assets/css/home.css.bak2
-                    assets/css/home (1).css
-                    ...done in 13.321395483 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-27 21:59:07
-                    assets/css/home.css
-                    ...done in 13.466524745 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-04-28 00:32:34
-                    _data/links.yml
-                    ...done in 13.215477733 seconds.
+                    ...done in 12.851984919 seconds.
                     
