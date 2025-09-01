@@ -1,11 +1,11 @@
-- id: baidu
-  name: 百度
-  url: https://baidu.com/s?wd={query}
+- id: bing
+  name: 必应
+  url: https://cn.bing.com/search?q={query}
   shortcut:
-    icon: /images/searchicon/baidu.svg
+    icon: /images/searchicon/bing.svg
     style: basic
     show: true
-
+    
 - id: google
   name: 谷歌
   url: https://google.com/search?q={query}
@@ -14,11 +14,11 @@
     style: basic
     show: true
 
-- id: bing
-  name: 必应
-  url: https://cn.bing.com/search?q={query}
+- id: baidu
+  name: 百度
+  url: https://baidu.com/s?wd={query}
   shortcut:
-    icon: /images/searchicon/bing.svg
+    icon: /images/searchicon/baidu.svg
     style: basic
     show: true
 

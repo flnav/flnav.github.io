@@ -1,0 +1,40 @@
+nohup: ignoring input
+Configuration file: /home/feilong/FL-Navi/_config.yml
+            Source: /home/feilong/FL-Navi
+       Destination: /home/feilong/FL-Navi/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 32.071 seconds.
+ Auto-regeneration: enabled for '/home/feilong/FL-Navi'
+      Regenerating: 1 file(s) changed at 2025-08-30 20:05:57
+                    _data/search_services.yml
+                    ...done in 24.60744482 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-08-30 20:06:21
+                    _data/search_services.yml
+                    ...done in 12.025678421 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:22:15
+                    _data/links.yml
+                    ...done in 25.337967164 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:23:14
+                    _data/links.yml
+                    ...done in 13.709472913 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:23:28
+                    _data/links.yml
+                    ...done in 8.855284347 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:23:45
+                    _data/links.yml
+                    ...done in 3.381653276 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:24:09
+                    _data/links.yml
+                    ...done in 8.560245571 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-09-01 19:24:17
+                    _data/links.yml
+                    ...done in 12.921239613 seconds.
+                    

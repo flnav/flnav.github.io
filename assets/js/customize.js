@@ -1,7 +1,7 @@
 // customize.js
 
 // 定义需要设置的域名列表
-const domains = ['.feilong.onLine', '.flnav.github.io','.12fl.com'];
+const domains = ['.feilong.onLine', '.flnav.github.io','.12fl.com','.feilong.xyz'];
 function setJSONCookie(name, value) {
     domains.forEach(domain => {
         Cookies.set(name, JSON.stringify(value), {

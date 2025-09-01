@@ -1,0 +1,49 @@
+nohup: ignoring input
+Configuration file: /home/feilong/FL-Navi/_config.yml
+            Source: /home/feilong/FL-Navi
+       Destination: /home/feilong/FL-Navi/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 25.698 seconds.
+ Auto-regeneration: enabled for '/home/feilong/FL-Navi'
+      Regenerating: 1 file(s) changed at 2025-06-10 23:12:01
+                    source/logo-dark.png
+                    ...done in 11.953682601 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-10 23:23:14
+                    source/weichky.png
+                    ...done in 12.050360534 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:40:29
+                    images/linkimage/deepseek.svg
+                    ...done in 12.976659285 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:40:42
+                    _data/links.yml
+                    ...done in 14.193156328 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:44:05
+                    images/linkimage/deepseek-tou.svg
+                    ...done in 12.79868417 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 14:44:17
+                    _data/links.yml
+                    ...done in 12.34047765 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-11 19:08:56
+                    _data/links.yml
+                    ...done in 12.174047785 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2025-06-25 10:43:17
+                    _data/links.yml
+                    images/linkimage/microsoft.svg
+                    ...done in 19.41433466 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-06-25 10:43:36
+                    _data/links.yml
+                    ...done in 11.368442763 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-07-06 01:07:37
+                    _data/links.yml
+                    ...done in 12.851984919 seconds.
+                    
