@@ -19,7 +19,7 @@
       url: https://loong.blog/wp-admin/
     - name: Nextcloud
       style: basic
-      url: https://cloud.feilong.online/
+      url: https://pan.feilong.xyz/
       image: images/linkimage/nextcloud_.svg
     - name: emby
       url: http://win.feilong.online:8096/
@@ -40,16 +40,6 @@
       style: basic large
       url: https://t.feilong.online/
 
-    - name: Local NAS
-      icon: hdd
-      style: basic
-      url: http://ldsm.feilong.online/
-
-    - name: Sever NAS
-      icon: hdd outline
-      style: basic
-      url: http://dsm.feilong.online/
-
     - name: Lammps
       style: basic medium
       url: https://www.lammps.org/
@@ -62,7 +52,7 @@
       image: images/linkimage/vasp.svg
     - name: 宝塔面板
       style: basic
-      url: https://120.46.205.153:40265/genius
+      url: https://1.15.141.136:52138/genius
       image: images/linkimage/bt.svg
     - name: 本地宝塔面板
       url: https://180.201.22.49:22315/genius
@@ -101,6 +91,9 @@
       style: basic
       image: images/linkimage/ip234.png
       url: https://www.ip234.in
+    - name: IPinfo
+      style: basic
+      url: https://ipinfo.io
     - name: 腾讯云控制台
       style: basic
       url: https://console.cloud.tencent.com/
@@ -180,6 +173,9 @@
       style: basic
       url: 
         https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
+    - name: 爱果资源
+      style: basic
+      url: https://app.agzy.cn
     - name: 书签管理
       style: basic
       url: https://edit.feilong.online/
@@ -227,6 +223,14 @@
       style: basic
       url: https://chat.typegpt.net/
 
+    - name: Google Gemini
+      style: basic large
+      url: https://gemini.google.com/app
+      image: images/linkimage/gemini.svg
+    - name: Grok
+      style: basic large
+      url: https://grok.com/
+      image: images/linkimage/Grok.svg
     - name: 秘塔AI搜索
       style: basic large
       url: https://metaso.cn/
@@ -264,7 +268,7 @@
 
       image: images/linkimage/kimi.svg
     - name: 腾讯元宝
-      style: basic
+      style: basic large
       url: https://yuanbao.tencent.com/chat/
 
       image: images/linkimage/-copy.svg
@@ -297,6 +301,18 @@
       icon: atom blue
       style: basic
       url: https://livebench.ai/#/
+    - name: 文心一言
+      style: basic
+      url: https://yiyan.baidu.com/
+      image: images/linkimage/wenxin.svg
+    - name: 火山引擎AI体验中心
+      style: basic
+      url: https://exp.volcengine.com/
+      image: images/linkimage/huoshanfangzhou.svg
+    - name: Qwen
+      style: basic
+      url: https://chat.qwen.ai/
+      image: images/linkimage/qianwen.svg
 - categories:
   - name: 娱乐
     links:

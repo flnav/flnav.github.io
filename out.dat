@@ -4,34 +4,13 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
        Destination: /home/feilong/FL-Navi/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 4.964 seconds.
+                    done in 20.508 seconds.
  Auto-regeneration: enabled for '/home/feilong/FL-Navi'
-      Regenerating: 1 file(s) changed at 2025-09-02 01:20:13
-                    log5.dat
-                    ...done in 2.603847857 seconds.
+      Regenerating: 1 file(s) changed at 2025-10-26 23:39:52
+                    _data/links.yml
+                    ...done in 2.643698279 seconds.
                     
-      Regenerating: 1 file(s) changed at 2025-09-02 02:44:26
-                    _data/analytics.yml
-                    ...done in 14.428544748 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-09-02 02:55:38
-                    _data/analytics.yml
-                    ...done in 3.157478872 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-09-02 03:20:47
-                    _data/analytics.yml
-                    ...done in 2.498506268 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-09-02 03:58:57
-                    _data/analytics.yml
-                    ...done in 2.273558781 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2025-09-02 04:03:18
-                    _data/analytics.yml
-                    ...done in 2.115880055 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2025-09-03 18:59:31
-                    assets/APlayer/APlayer.min.css.map
-                    assets/APlayer/APlayer.min.js.map
-                    ...done in 14.471029177 seconds.
+      Regenerating: 1 file(s) changed at 2025-10-26 23:40:06
+                    _data/links.yml
+                    ...done in 1.966053284 seconds.
                     
