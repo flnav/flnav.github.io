@@ -313,6 +313,14 @@
       style: basic
       url: https://chat.qwen.ai/
       image: images/linkimage/qianwen.svg
+    - name: RAGFlow
+      style: basic
+      url: https://ragflow.io/
+      image: images/linkimage/ragflow.svg
+    - name: Ollama
+      style: basic
+      url: https://ollama.com/
+      image: images/linkimage/ollama.png
 - categories:
   - name: 娱乐
     links:
