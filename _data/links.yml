@@ -21,10 +21,6 @@
       style: basic
       url: https://pan.feilong.xyz/
       image: images/linkimage/nextcloud_.svg
-    - name: emby
-      url: http://win.feilong.online:8096/
-      image: images/linkimage/emby.svg
-      style: basic
     - name: Matomo
       style: basic
       url: https://matomo.feilong.online/
@@ -50,18 +46,10 @@
       url: https://www.vasp.at/
 
       image: images/linkimage/vasp.svg
-    - name: 宝塔面板
+    - name: FlashDSC数据合并小工具
+      icon: flask blue
       style: basic
-      url: https://1.15.141.136:52138/genius
-      image: images/linkimage/bt.svg
-    - name: 本地宝塔面板
-      url: https://180.201.22.49:22315/genius
-      style: basic
-      image: images/linkimage/bt.svg
-    - name: 腾讯云宝塔面板
-      style: basic
-      url: https://43.153.122.84:22315/genius
-      image: images/linkimage/bt.svg
+      url: https://dsc.feilong.online
     - name: qq音乐
       style: basic
       url: https://y.qq.com
@@ -94,22 +82,6 @@
     - name: IPinfo
       style: basic
       url: https://ipinfo.io
-    - name: 腾讯云控制台
-      style: basic
-      url: https://console.cloud.tencent.com/
-      image: images/linkimage/tengxunyun_-copy.svg
-    - name: 华为云控制台
-      style: basic
-      url: https://console.huaweicloud.com
-      image: images/linkimage/huaweiyun-copy.svg
-    - name: 阿里云控制台
-      style: basic
-      url: https://home.console.aliyun.com/
-      image: images/linkimage/aliyun.svg
-    - name: 火山方舟管理控制台
-      style: basic
-      url: https://console.volcengine.com/home
-      image: images/linkimage/huoshan.svg
     - name: 易算桌面
       style: blue
       url: https://desktop.yeesuan.com
@@ -134,10 +106,6 @@
       style: basic
       url: https://www.msn.cn/zh-cn/weather?ocid=ansmsnweather
       image: https://www.msn.cn/favicon.ico
-    - name: FlashDSC数据合并小工具
-      icon: flask blue
-      style: basic
-      url: https://dsc.feilong.online
     - name: Weichky的博客
       style: basic large
       url: https://blog.weichky.com/
@@ -149,14 +117,6 @@
       style: basic
       url: https://www.namesilo.com/
       image: https://www.namesilo.com/favicon.ico
-    - name: Speedtest
-      style: basic
-      url: https://www.speedtest.net/
-      image: images/linkimage/Speedtest.svg
-    - name: 测速网
-      style: basic
-      url: https://www.speedtest.cn/
-      image: images/linkimage/SpeedTestweb.svg
     - name: Pai Li (李湃)
       style: basic
       url: https://lipai.github.io/index.html#
@@ -176,14 +136,6 @@
     - name: 爱果资源
       style: basic
       url: https://app.agzy.cn
-    - name: 书签管理
-      style: basic
-      url: https://edit.feilong.online/
-      icon: 'bookmark '
-    - name: 外链跳转统计
-      icon: external link square alternate icon
-      style: basic trigger-outlink-stats
-      url: '#'
   - name: AI工具
     links:
     - name: DeepSeek
@@ -194,14 +146,6 @@
       style: large basic
       url: https://chat.openai.com/
 
-      image: images/linkimage/ChatGPT.svg
-    - name: ChatGPT本地
-      style: basic large
-      url: https://gpt.feilong.xyz
-      image: images/linkimage/ChatGPT.svg
-    - name: ChatGPT在线
-      style: basic large
-      url: https://gpt.feilong.online
       image: images/linkimage/ChatGPT.svg
     - name: ChatGPT分享1
       icon: share alternate green
@@ -321,6 +265,14 @@
       style: basic
       url: https://ollama.com/
       image: images/linkimage/ollama.png
+    - name: Lmarena
+      style: basic
+      url: https://lmarena.ai/
+      image: images/linkimage/lmarena.svg
+    - name: Meta
+      style: basic
+      url: https://www.meta.ai/
+      image: images/linkimage/Meta.svg
 - categories:
   - name: 娱乐
     links:
@@ -768,7 +720,7 @@
     - name: 四六级成绩查询
       icon: edit
       style: basic
-      url: https://cet.neea.edu.cn/cet/query.html
+      url: https://cet.neea.edu.cn/
 
     - name: 学信网
       icon: dove red
@@ -978,3 +930,151 @@
       style: basic
       url: http://www.worldscientific.com/page/worldscinet
 
+
+- categories:
+  - name: Server
+    links:
+    - name: 腾讯云宝塔面板（上海）
+      style: basic
+      url: https://1.15.141.136:52138/genius
+      image: images/linkimage/bt.svg
+    - name: 腾讯云宝塔面板（硅谷）
+      style: basic
+      url: https://43.153.122.84:22315/genius
+      image: images/linkimage/bt.svg
+    - name: Dell Server宝塔面板
+      url: https://180.201.22.49:22315/genius
+      style: basic
+      image: images/linkimage/bt.svg
+    - name: Home Server 1Panel
+      style: basic
+      url: https://ipv6.feilong.online:15553/genius
+      image: images/linkimage/1Panel.svg
+    - name: My EasyTier
+      style: basic
+      image: images/linkimage/easytier.png
+      url: https://easytier.feilong.xyz/
+    - name: My ZeroTier
+      style: basic
+      url: https://zerotier.feilong.xyz/
+      image: images/linkimage/ZeroTier.svg
+    - name: DDNS-GO
+      style: basic
+      url: https://ipv6.feilong.online:19876/
+      image: images/linkimage/ddns-go.svg
+    - name: 工位路由器管理
+      style: basic
+      url: http://feilong.ticp.vip/cgi-bin/luci/
+      image: images/linkimage/luyouqi.svg
+    - name: Home Server Speedtest
+      url: https://ipv6.feilong.online:12345/
+      image: images/linkimage/LibreSpeed.svg
+      style: basic
+    - name: Dell Server Speedtest
+      style: basic
+      url: http://10.10.28.30:38080/
+      image: images/linkimage/LibreSpeed.svg
+    - name: Speedtest
+      style: basic
+      url: https://www.speedtest.net/
+      image: images/linkimage/Speedtest.svg
+    - name: 测速网
+      style: basic
+      url: https://www.speedtest.cn/
+      image: images/linkimage/SpeedTestweb.svg
+    - name: 腾讯云控制台
+      style: basic
+      url: https://console.cloud.tencent.com/
+      image: images/linkimage/tengxunyun_-copy.svg
+    - name: 阿里云控制台
+      style: basic
+      url: https://home.console.aliyun.com/
+      image: images/linkimage/aliyun.svg
+    - name: 华为云控制台
+      style: basic
+      url: https://console.huaweicloud.com
+      image: images/linkimage/huaweiyun-copy.svg
+    - name: 火山方舟管理控制台
+      style: basic
+      url: https://console.volcengine.com/home
+      image: images/linkimage/huoshan.svg
+    - name: 贝锐花生壳管理
+      style: basic
+      url: https://console.hsk.oray.com/
+      image: images/linkimage/huashengke.svg
+    - name: Emby Local
+      url: http://emby.feilong.xyz/
+      image: images/linkimage/emby.svg
+      style: basic
+    - name: Emby Online IPV4
+      style: basic
+      url: https://emby.feilong.online/
+      image: images/linkimage/emby.svg
+    - name: Emby Online IPV6
+      style: basic
+      url: https://ipv6.feilong.online:18096/
+      image: images/linkimage/emby.svg
+
+    - name: SyncTV Local
+      style: basic
+      url: https://synctv.feilong.xyz/
+      image: images/linkimage/SyncTV.svg
+    - name: SyncTV Online IPV4
+      style: basic
+      url: https://synctv.feilong.online/
+      image: images/linkimage/SyncTV.svg
+
+    - name: SyncTV Online IPV6
+      style: basic
+      url: https://ipv6.feilong.online:18087/
+      image: images/linkimage/SyncTV.svg
+    - name: AList Local
+      style: basic
+      url: https://alist.feilong.xyz/
+      image: images/linkimage/alist.svg
+    - name: AList Online IPV4
+      style: basic
+      url: https://alist.feilong.online/
+      image: images/linkimage/alist.svg
+
+    - name: AList Online IPV6
+      style: basic
+      url: https://ipv6.feilong.online:15244/
+      image: images/linkimage/alist.svg
+
+    - name: loong Share Local
+      style: basic
+      url: https://share.feilong.xyz/
+      image: images/linkimage/file_file_share.svg
+    - name: loong Share Online IPV4
+      style: basic
+      url: https://share.feilong.online/
+      image: images/linkimage/file_file_share.svg
+    - name: loong Share Online IPV6
+      style: basic
+      url: https://ipv6.feilong.online:23000/
+      image: images/linkimage/file_file_share.svg
+    - name: 文件快递柜 IPV4
+      style: basic
+      url: https://filecodebox.feilong.online/
+      image: images/linkimage/FileCodeBox.svg
+    - name: 文件快递柜 IPV6
+      style: basic
+      url: https://ipv6.feilong.online:21345/
+      image: images/linkimage/FileCodeBox.svg
+    - name: 云剪切板 IPV4
+      style: basic
+      url: https://clipboard.feilong.online/
+      image: images/linkimage/jianqie.svg
+    - name: 云剪切板 IPV6
+      style: basic
+      url: https://ipv6.feilong.online:19501/
+      image: images/linkimage/jianqie.svg
+    - name: 书签管理
+      style: basic
+      url: https://edit.feilong.online/
+      icon: 'bookmark '
+    - name: 外链跳转统计
+      icon: external link square alternate icon
+      style: basic trigger-outlink-stats
+      url: '#'

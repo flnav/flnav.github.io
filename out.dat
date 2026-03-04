@@ -30,3 +30,65 @@ Configuration file: /home/feilong/FL-Navi/_config.yml
                     _data/links.yml
                     ...done in 12.467481393 seconds.
                     
+      Regenerating: 1 file(s) changed at 2025-11-12 21:15:13
+                    _data/links.yml
+                    ...done in 14.808173349 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-11-16 01:46:18
+                    _data/links.yml
+                    ...done in 14.096549456 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-11-20 13:14:28
+                    images/linkimage/lmarena.svg
+                    ...done in 14.486571897 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-11-20 13:14:43
+                    _data/links.yml
+                    ...done in 12.114395577 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-11-20 13:20:39
+                    images/linkimage/Meta.svg
+                    ...done in 14.664158772 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-11-20 13:20:54
+                    _data/links.yml
+                    ...done in 14.742231359 seconds.
+                    
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `build` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+/home/feilong/gems/gems/jekyll-watch-2.2.1/lib/jekyll/watcher.rb:123:in `sleep': SIGTERM (SignalException)
+	from /home/feilong/gems/gems/jekyll-watch-2.2.1/lib/jekyll/watcher.rb:123:in `block in sleep_forever'
+	from /home/feilong/gems/gems/jekyll-watch-2.2.1/lib/jekyll/watcher.rb:123:in `loop'
+	from /home/feilong/gems/gems/jekyll-watch-2.2.1/lib/jekyll/watcher.rb:123:in `sleep_forever'
+	from /home/feilong/gems/gems/jekyll-watch-2.2.1/lib/jekyll/watcher.rb:37:in `watch'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:77:in `watch'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:43:in `process'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /home/feilong/gems/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /home/feilong/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /home/feilong/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /home/feilong/gems/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /home/feilong/gems/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /home/feilong/gems/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /home/feilong/gems/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /home/feilong/gems/bin/jekyll:25:in `load'
+	from /home/feilong/gems/bin/jekyll:25:in `<top (required)>'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli/exec.rb:58:in `load'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli/exec.rb:58:in `kernel_load'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli/exec.rb:23:in `run'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli.rb:456:in `exec'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli.rb:35:in `dispatch'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/cli.rb:29:in `start'
+	from /home/feilong/gems/gems/bundler-2.5.23/exe/bundle:28:in `block in <top (required)>'
+	from /home/feilong/gems/gems/bundler-2.5.23/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /home/feilong/gems/gems/bundler-2.5.23/exe/bundle:20:in `<top (required)>'
+	from /home/feilong/gems/bin/bundle:25:in `load'
+	from /home/feilong/gems/bin/bundle:25:in `<main>'
