@@ -5,32 +5,6 @@
       style: large basic black
       url: https://feilong.online/
       image: images/linkimage/logo-dark.svg
-    - name: 龙博
-      icon: blog
-      style: basic large orange
-      url: https://loong.blog/
-    - name: love
-      icon: heartbeat
-      style: basic large pink
-      url: https://love.feilong.online
-    - name: blog后台
-      icon: blog
-      style: basic
-      url: https://loong.blog/wp-admin/
-    - name: Nextcloud
-      style: basic
-      url: https://pan.feilong.xyz/
-      image: images/linkimage/nextcloud_.svg
-    - name: Matomo
-      style: basic
-      url: https://matomo.feilong.online/
-
-      image: images/linkimage/matomo.svg
-    - name: Secret
-      icon: user secret
-      style: basic
-      url: https://vault.feilong.online
-
     - name: 机房温度
       icon: temperature high blue
       style: basic large
@@ -46,10 +20,6 @@
       url: https://www.vasp.at/
 
       image: images/linkimage/vasp.svg
-    - name: FlashDSC数据合并小工具
-      icon: flask blue
-      style: basic
-      url: https://dsc.feilong.online
     - name: qq音乐
       style: basic
       url: https://y.qq.com
@@ -106,6 +76,10 @@
       style: basic
       url: https://www.msn.cn/zh-cn/weather?ocid=ansmsnweather
       image: https://www.msn.cn/favicon.ico
+    - name: Stardew Valley官方维基
+      style: basic large
+      url: https://zh.stardewvalleywiki.com/
+      image: images/linkimage/Stardew_Valley.png
     - name: Weichky的博客
       style: basic large
       url: https://blog.weichky.com/
@@ -136,6 +110,24 @@
     - name: 爱果资源
       style: basic
       url: https://app.agzy.cn
+    - name: PDF工具箱
+      style: basic
+      url: https://www.ilovepdf.com/zh-cn
+      image: images/linkimage/ilovepdf.svg
+    - name: Desmos
+      style: basic
+      url: https://www.desmos.com/?lang=zh-CN
+    - name: ManateeLazyCat
+      style: basic
+      url: https://manateelazycat.github.io/index.html
+    - name: v2rayN
+      style: basic
+      url: https://github.com/2dust/v2rayN
+      image: images/linkimage/v2rayn-1.svg
+    - name: 国内矢量标志收录
+      style: basic
+      url: https://svglogo.top/
+      image: images/linkimage/svglogo.svg
   - name: AI工具
     links:
     - name: DeepSeek
@@ -147,26 +139,26 @@
       url: https://chat.openai.com/
 
       image: images/linkimage/ChatGPT.svg
-    - name: ChatGPT分享1
-      icon: share alternate green
+    - name: OpenAI API
       style: basic
-      url: https://sharedchat.fun/
-
-    - name: ChatGPT分享2
-      icon: share alternate green
-      style: basic
-      url: https://free01.xyz/
-
-    - name: ChatGPT分享3
-      icon: share alternate green
-      style: basic
-      url: https://free.netfly.top/
-
-    - name: ChatGPT分享4
-      icon: share alternate green
-      style: basic
-      url: https://chat.typegpt.net/
-
+      url: https://platform.openai.com/
+      image: images/linkimage/ChatGPT.svg
+    - name: OpenClaw
+      style: basic large
+      url: https://openclaw.ai
+      image: images/linkimage/openclaw.svg
+    - name: Claude
+      style: basic large
+      url: https://claude.com/
+      image: images/linkimage/claude.svg
+    - name: Ollama
+      style: basic large
+      url: https://ollama.com/
+      image: images/linkimage/Ollama.svg
+    - name: Hugging Face
+      style: basic large
+      url: https://huggingface.co/
+      image: images/linkimage/huggingface_logo-noborder.svg
     - name: Google Gemini
       style: basic large
       url: https://gemini.google.com/app
@@ -261,10 +253,6 @@
       style: basic
       url: https://ragflow.io/
       image: images/linkimage/ragflow.svg
-    - name: Ollama
-      style: basic
-      url: https://ollama.com/
-      image: images/linkimage/ollama.png
     - name: Lmarena
       style: basic
       url: https://lmarena.ai/
@@ -273,6 +261,14 @@
       style: basic
       url: https://www.meta.ai/
       image: images/linkimage/Meta.svg
+    - name: ComfyUI
+      style: basic
+      url: https://docs.comfy.org/
+      image: images/linkimage/comfyui-logo.svg
+    - name: Tavily
+      style: basic
+      url: https://app.tavily.com/home
+      image: images/linkimage/tavily_logo.svg
 - categories:
   - name: 娱乐
     links:
@@ -348,7 +344,7 @@
       url: https://filehelper.weixin.qq.com/
 
     - name: GitHub
-      icon: github black
+      icon: github black large
       style: basic
       url: https://github.com/
 
@@ -932,7 +928,7 @@
 
 
 - categories:
-  - name: Server
+  - name: My Server
     links:
     - name: 腾讯云宝塔面板（上海）
       style: basic
@@ -1002,6 +998,63 @@
       style: basic
       url: https://console.hsk.oray.com/
       image: images/linkimage/huashengke.svg
+
+    - name: CLI Proxy API Management Center
+      style: basic
+      url: https://api.feilong.online/management.html
+      image: images/linkimage/CLIProxyAPI.jpg
+    - name: OneAPI
+      style: basic
+      url: https://oneapi.feilong.online
+      image: images/linkimage/ChatGPT.svg
+  - name: My Web
+    links:
+    - name: 龙博
+      icon: blog
+      style: basic orange large
+      url: https://blog.feilong.xyz/
+    - name: blog后台
+      icon: edit
+      style: basic
+      url: https://blog.feilong.xyz/wp-admin/
+    - name: 龙博 IPV4
+      icon: blog
+      style: basic orange large
+      url: https://blog.feilong.online/
+    - name: blog后台 IPV4
+      icon: edit
+      style: basic
+      url: https://blog.feilong.online/wp-admin
+    - name: 龙博 IPV6
+      icon: blog
+      style: basic orange large
+      url: https://ipv6.feilong.online:28090/
+    - name: blog后台 IPV6
+      icon: edit
+      style: basic
+      url: https://ipv6.feilong.online:28090/wp-admin
+    - name: love
+      icon: heartbeat
+      style: basic large pink
+      url: https://love.feilong.online
+    - name: Nextcloud
+      style: basic
+      url: https://pan.feilong.xyz/
+      image: images/linkimage/nextcloud_.svg
+    - name: Matomo
+      style: basic
+      url: https://matomo.feilong.online/
+
+      image: images/linkimage/matomo.svg
+    - name: Secret
+      icon: user secret
+      style: basic
+      url: https://vault.feilong.online
+
+    - name: FlashDSC数据合并小工具
+      icon: flask blue
+      style: basic
+      url: https://dsc.feilong.online
     - name: Emby Local
       url: http://emby.feilong.xyz/
       image: images/linkimage/emby.svg
@@ -1070,6 +1123,12 @@
       style: basic
       url: https://ipv6.feilong.online:19501/
       image: images/linkimage/jianqie.svg
+    - name: Call-me IPV4
+      style: basic
+      url: https://callme.feilong.online
+    - name: Call-me IPV6
+      style: basic
+      url: https://ipv6.feilong.online:55588/
     - name: 书签管理
       style: basic
       url: https://edit.feilong.online/
