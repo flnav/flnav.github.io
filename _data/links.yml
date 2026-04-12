@@ -1007,6 +1007,10 @@
       style: basic
       url: https://oneapi.feilong.online
       image: images/linkimage/ChatGPT.svg
+    - name: MyOpenClaw
+      style: basic
+      url: https://openclaw.feilong.online
+      image: images/linkimage/openclaw.svg
   - name: My Web
     links:
     - name: 龙博
